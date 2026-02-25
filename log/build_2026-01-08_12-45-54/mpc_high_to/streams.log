@@ -1,0 +1,22 @@
+[0.054s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[1.121s] [100%] Built target high_solver
+[1.144s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[1.146s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to
+[1.157s] -- Install configuration: ""
+[1.158s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/mpc_high_to/high_solver
+[1.158s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/package_run_dependencies/mpc_high_to
+[1.158s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/parent_prefix_path/mpc_high_to
+[1.159s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.sh
+[1.160s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.dsv
+[1.160s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.sh
+[1.160s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.dsv
+[1.160s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.bash
+[1.161s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.sh
+[1.161s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.zsh
+[1.161s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.dsv
+[1.161s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv
+[1.162s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/packages/mpc_high_to
+[1.162s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig.cmake
+[1.162s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig-version.cmake
+[1.162s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.xml
+[1.236s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to

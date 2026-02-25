@@ -1,0 +1,20 @@
+[  9%] [32m[1mLinking CXX executable low_solver[0m
+[100%] Built target low_solver
+-- Install configuration: ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver
+-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver" to ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.bash
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.zsh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/packages/mpc_low
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.xml

@@ -1,0 +1,42 @@
+[0.221s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[0.576s] [ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high_disc/acados_solver_holder.cpp.o[0m
+[0.576s] [ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[4.234s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[4.234s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:157:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[4.234s]   157 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+[4.234s]       |            [01;35m[K^~~~~[m[K
+[4.234s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:158:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[4.235s]   158 |     double [01;35m[Kutraj[m[K[NU * N];
+[4.235s]       |            [01;35m[K^~~~~[m[K
+[4.235s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktracking_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.235s]    29 |     double current_joint_goal[6], [01;35m[Kdouble tracking_goal[60][m[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+[4.235s]       |                                   [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[4.235s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcgoal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.235s]    29 |     double current_joint_goal[6], double tracking_goal[60], [01;35m[Kdouble cgoal[3][m[K, double results[16], double my_weights[10], double full_trajectory[140]) {
+[4.235s]       |                                                             [01;35m[K~~~~~~~^~~~~~~~[m[K
+[4.236s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.236s]    29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], [01;35m[Kdouble my_weights[10][m[K, double full_trajectory[140]) {
+[4.236s]       |                                                                                                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[19.272s] [ 15%] [32m[1mLinking CXX executable high_solver[0m
+[20.702s] [100%] Built target high_solver
+[20.718s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[20.740s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to
+[20.751s] -- Install configuration: ""
+[20.752s] -- Execute custom install script
+[20.752s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/lib/mpc_to/high_solver
+[20.753s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/package_run_dependencies/mpc_to
+[20.753s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/parent_prefix_path/mpc_to
+[20.753s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.sh
+[20.753s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.dsv
+[20.754s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.sh
+[20.754s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.dsv
+[20.754s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.bash
+[20.755s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.sh
+[20.755s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.zsh
+[20.755s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.dsv
+[20.755s] -- Symlinking: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.dsv
+[20.768s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/packages/mpc_to
+[20.769s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig.cmake
+[20.769s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig-version.cmake
+[20.769s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.xml
+[20.773s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to

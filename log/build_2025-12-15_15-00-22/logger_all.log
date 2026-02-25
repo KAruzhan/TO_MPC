@@ -1,0 +1,861 @@
+[0.269s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.269s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71769160df30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71769160da20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71769160da20>>, mixin_verb=('build',))
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.488s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.488s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/chri/CHRI_2025/Time_optimal_baseline'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['ignore', 'ignore_ament_install']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'ignore_ament_install'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['colcon_pkg']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'colcon_meta'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['ros']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'ros'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['cmake', 'python']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'cmake'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'python'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extensions ['python_setup_py']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers) by extension 'python_setup_py'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['ignore', 'ignore_ament_install']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'ignore'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'ignore_ament_install'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['colcon_pkg']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'colcon_pkg'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['colcon_meta']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'colcon_meta'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'cmake'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'python'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extensions ['python_setup_py']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code) by extension 'python_setup_py'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'ros'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['cmake', 'python']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'cmake'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'python'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extensions ['python_setup_py']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_constraints) by extension 'python_setup_py'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['ignore', 'ignore_ament_install']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'colcon_meta'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['ros']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'ros'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['cmake', 'python']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'cmake'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'python'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extensions ['python_setup_py']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_cost) by extension 'python_setup_py'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'ignore'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['colcon_pkg']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'colcon_pkg'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['colcon_meta']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'colcon_meta'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'ros'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['cmake', 'python']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'cmake'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'python'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extensions ['python_setup_py']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code/UR5_model) by extension 'python_setup_py'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['ignore', 'ignore_ament_install']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'ignore'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'ignore_ament_install'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'colcon_meta'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['ros']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'ros'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['cmake', 'python']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'cmake'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'python'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extensions ['python_setup_py']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low) by extension 'python_setup_py'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'ignore_ament_install'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['colcon_pkg']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'ros'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['cmake', 'python']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'cmake'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'python'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extensions ['python_setup_py']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_constraints) by extension 'python_setup_py'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'ignore_ament_install'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['colcon_pkg']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'colcon_pkg'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['colcon_meta']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'colcon_meta'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['ros']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'ros'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['cmake', 'python']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'cmake'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'python'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extensions ['python_setup_py']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_low/UR5_model) by extension 'python_setup_py'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'ignore_ament_install'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['colcon_pkg']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'colcon_pkg'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['colcon_meta']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'colcon_meta'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['ros']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'ros'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['cmake', 'python']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'cmake'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'python'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extensions ['python_setup_py']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old) by extension 'python_setup_py'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'ignore'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'ignore_ament_install'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['colcon_pkg']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'colcon_pkg'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['colcon_meta']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'colcon_meta'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['ros']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'ros'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['cmake', 'python']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'cmake'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'python'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extensions ['python_setup_py']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_constraints) by extension 'python_setup_py'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'ignore'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'ignore_ament_install'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['colcon_pkg']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'colcon_pkg'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['colcon_meta']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'colcon_meta'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['ros']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'ros'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['cmake', 'python']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'cmake'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'python'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extensions ['python_setup_py']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old/UR5_model) by extension 'python_setup_py'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['ignore', 'ignore_ament_install']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'ignore'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'ignore_ament_install'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['colcon_pkg']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'colcon_pkg'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['colcon_meta']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'colcon_meta'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['ros']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'ros'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['cmake', 'python']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'cmake'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'python'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extensions ['python_setup_py']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2) by extension 'python_setup_py'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'ignore'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'ignore_ament_install'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['colcon_pkg']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'colcon_pkg'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['colcon_meta']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'colcon_meta'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['ros']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'ros'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['cmake', 'python']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'cmake'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'python'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extensions ['python_setup_py']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_constraints) by extension 'python_setup_py'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'ignore'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['colcon_pkg']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['colcon_meta']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'ros'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['cmake', 'python']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'cmake'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'python'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extensions ['python_setup_py']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/c_generated_code_old2/UR5_model) by extension 'python_setup_py'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['ignore', 'ignore_ament_install']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'ignore'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['colcon_pkg']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'colcon_pkg'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['colcon_meta']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'colcon_meta'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['ros']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'ros'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['cmake', 'python']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'cmake'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'python'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extensions ['python_setup_py']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver) by extension 'python_setup_py'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'ignore_ament_install'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['colcon_pkg']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'ros'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['cmake', 'python']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'cmake'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'python'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extensions ['python_setup_py']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_constraints) by extension 'python_setup_py'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['colcon_pkg']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['colcon_meta']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'colcon_meta'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['ros']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'ros'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['cmake', 'python']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'cmake'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'python'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extensions ['python_setup_py']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_cost) by extension 'python_setup_py'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'ros'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['cmake', 'python']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver/UR5_model) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'ros'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['cmake', 'python']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'cmake'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'python'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extensions ['python_setup_py']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low) by extension 'python_setup_py'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'ros'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['cmake', 'python']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'cmake'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'python'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extensions ['python_setup_py']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_constraints) by extension 'python_setup_py'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'ignore'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'ignore_ament_install'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['colcon_pkg']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'colcon_meta'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['ros']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'ros'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['cmake', 'python']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'cmake'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'python'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extensions ['python_setup_py']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_low/UR5_model) by extension 'python_setup_py'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['colcon_pkg']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'colcon_pkg'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['colcon_meta']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'colcon_meta'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['ros']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'ros'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['cmake', 'python']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'cmake'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'python'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extensions ['python_setup_py']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old) by extension 'python_setup_py'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['colcon_pkg']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'colcon_pkg'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['colcon_meta']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'colcon_meta'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['ros']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'ros'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['cmake', 'python']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'cmake'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'python'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extensions ['python_setup_py']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_constraints) by extension 'python_setup_py'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'ignore'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['colcon_pkg']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'colcon_pkg'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['colcon_meta']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'colcon_meta'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['ros']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'ros'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['cmake', 'python']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'cmake'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'python'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extensions ['python_setup_py']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old/UR5_model) by extension 'python_setup_py'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['ignore', 'ignore_ament_install']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'ignore'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['colcon_pkg']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'colcon_pkg'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['colcon_meta']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'colcon_meta'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['ros']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'ros'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['cmake', 'python']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'cmake'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'python'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extensions ['python_setup_py']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2) by extension 'python_setup_py'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'ignore_ament_install'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['colcon_pkg']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'colcon_pkg'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['colcon_meta']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'colcon_meta'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['ros']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'ros'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['cmake', 'python']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'cmake'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'python'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extensions ['python_setup_py']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_constraints) by extension 'python_setup_py'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'ignore_ament_install'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['colcon_pkg']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'colcon_pkg'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['colcon_meta']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'colcon_meta'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['ros']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'ros'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['cmake', 'python']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'cmake'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'python'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extensions ['python_setup_py']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(solvers/solver_old2/UR5_model) by extension 'python_setup_py'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extension 'ignore'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extension 'ignore_ament_install'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extensions ['colcon_pkg']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extension 'colcon_pkg'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extensions ['colcon_meta']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extension 'colcon_meta'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extensions ['ros']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high) by extension 'ros'
+[0.543s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpc_high' with type 'ros.ament_cmake' and name 'mpc_high'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extension 'ignore_ament_install'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extensions ['colcon_pkg']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extension 'colcon_pkg'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extensions ['colcon_meta']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extension 'colcon_meta'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_high_to) by extension 'ros'
+[0.552s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpc_high_to' with type 'ros.ament_cmake' and name 'mpc_high_to'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extension 'colcon_pkg'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extensions ['colcon_meta']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extension 'colcon_meta'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extensions ['ros']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_low) by extension 'ros'
+[0.554s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpc_low' with type 'ros.ament_cmake' and name 'mpc_low'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extension 'ignore'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extension 'ignore_ament_install'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extensions ['colcon_pkg']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extension 'colcon_pkg'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extension 'colcon_meta'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extensions ['ros']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/mppi_controller) by extension 'ros'
+[0.570s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mppi_controller' with type 'ros.ament_python' and name 'mppi_controller'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extension 'ignore_ament_install'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extensions ['colcon_pkg']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extension 'colcon_pkg'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extensions ['colcon_meta']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extension 'colcon_meta'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extensions ['ros']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/pb_ur5_sim) by extension 'ros'
+[0.585s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pb_ur5_sim' with type 'ros.ament_python' and name 'pb_ur5_sim'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extension 'ignore'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extension 'ignore_ament_install'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extensions ['colcon_pkg']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extension 'colcon_pkg'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extensions ['colcon_meta']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extension 'colcon_meta'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extensions ['ros']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_utils) by extension 'ros'
+[0.597s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_utils' with type 'ros.ament_python' and name 'sim_utils'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['colcon_pkg']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'colcon_pkg'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['colcon_meta']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'colcon_meta'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['ros']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'ros'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['cmake', 'python']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'cmake'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'python'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extensions ['python_setup_py']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf) by extension 'python_setup_py'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'ignore'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'ignore_ament_install'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['colcon_pkg']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'colcon_pkg'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['colcon_meta']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'colcon_meta'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['ros']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'ros'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['cmake', 'python']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'cmake'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'python'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extensions ['python_setup_py']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5) by extension 'python_setup_py'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'ignore_ament_install'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['colcon_pkg']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'colcon_pkg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['colcon_meta']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'colcon_meta'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['ros']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'ros'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['cmake', 'python']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'cmake'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'python'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extensions ['python_setup_py']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/collision) by extension 'python_setup_py'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'ignore'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['colcon_pkg']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'colcon_pkg'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'colcon_meta'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'ros'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['cmake', 'python']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'cmake'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'python'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extensions ['python_setup_py']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_urdf/ur5/visual) by extension 'python_setup_py'
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.694s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.714s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 412 installed packages in /opt/ros/humble
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_target' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_clean_cache' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_clean_first' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'cmake_force_configure' from command line to 'False'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'ament_cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'catkin_cmake_args' from command line to 'None'
+[0.791s] Level 5:colcon.colcon_core.verb:set package 'mpc_high' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.791s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_high' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high', 'symlink_install': False, 'test_result_base': None}
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_target' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_clean_cache' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_clean_first' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'cmake_force_configure' from command line to 'False'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'ament_cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'catkin_cmake_args' from command line to 'None'
+[0.792s] Level 5:colcon.colcon_core.verb:set package 'mpc_high_to' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.792s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_high_to' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to', 'symlink_install': False, 'test_result_base': None}
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_target' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_clean_cache' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_clean_first' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_force_configure' from command line to 'False'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'ament_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'catkin_cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.793s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_low' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low', 'symlink_install': False, 'test_result_base': None}
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_args' from command line to 'None'
+[0.793s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_target' from command line to 'None'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'mppi_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.794s] DEBUG:colcon.colcon_core.verb:Building package 'mppi_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller', 'symlink_install': False, 'test_result_base': None}
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_args' from command line to 'None'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_target' from command line to 'None'
+[0.794s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'pb_ur5_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.795s] DEBUG:colcon.colcon_core.verb:Building package 'pb_ur5_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim', 'symlink_install': False, 'test_result_base': None}
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_target' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.795s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.796s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.796s] DEBUG:colcon.colcon_core.verb:Building package 'sim_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils', 'merge_install': False, 'path': '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils', 'symlink_install': False, 'test_result_base': None}
+[0.796s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.798s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high' with build type 'ament_cmake'
+[0.798s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high'
+[0.802s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.803s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.831s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to' with build type 'ament_cmake'
+[0.831s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to'
+[0.831s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.831s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.835s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low' with build type 'ament_cmake'
+[0.836s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low'
+[0.836s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.836s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.840s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller' with build type 'ament_python'
+[0.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('mppi_controller', 'ament_prefix_path')
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/ament_prefix_path.ps1'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/ament_prefix_path.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/ament_prefix_path.sh'
+[0.844s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.844s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim' with build type 'ament_python'
+[0.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('pb_ur5_sim', 'ament_prefix_path')
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/ament_prefix_path.ps1'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/ament_prefix_path.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/ament_prefix_path.sh'
+[0.851s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.851s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.855s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils' with build type 'ament_python'
+[0.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_utils', 'ament_prefix_path')
+[0.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/ament_prefix_path.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/ament_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/ament_prefix_path.sh'
+[0.860s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.860s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high -- -j16 -l16
+[0.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[0.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[1.309s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller'
+[1.310s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.310s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.683s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim'
+[1.683s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.684s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.177s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils'
+[2.178s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.178s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pb_ur5_sim build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/install.log --single-version-externally-managed install_data
+[4.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mppi_controller build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/install.log --single-version-externally-managed install_data
+[4.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_utils build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/install.log --single-version-externally-managed install_data
+[5.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pb_ur5_sim build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/install.log --single-version-externally-managed install_data
+[5.281s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim' for CMake module files
+[5.281s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim' for CMake config files
+[5.282s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib'
+[5.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/bin'
+[5.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/pkgconfig/pb_ur5_sim.pc'
+[5.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages'
+[5.284s] Level 1:colcon.colcon_core.shell:create_environment_hook('pb_ur5_sim', 'pythonpath')
+[5.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/pythonpath.ps1'
+[5.285s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/pythonpath.dsv'
+[5.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/hook/pythonpath.sh'
+[5.287s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/bin'
+[5.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pb_ur5_sim)
+[5.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/package.ps1'
+[5.289s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/package.dsv'
+[5.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/package.sh'
+[5.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/package.bash'
+[5.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/pb_ur5_sim/package.zsh'
+[5.293s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/share/colcon-core/packages/pb_ur5_sim)
+[5.788s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller' for CMake module files
+[5.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mppi_controller build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/install.log --single-version-externally-managed install_data
+[5.790s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller' for CMake config files
+[5.792s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib'
+[5.792s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/bin'
+[5.792s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/pkgconfig/mppi_controller.pc'
+[5.793s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages'
+[5.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('mppi_controller', 'pythonpath')
+[5.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/pythonpath.ps1'
+[5.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/pythonpath.dsv'
+[5.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/hook/pythonpath.sh'
+[5.797s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/bin'
+[5.798s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mppi_controller)
+[5.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/package.ps1'
+[5.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/package.dsv'
+[5.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/package.sh'
+[5.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/package.bash'
+[5.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/mppi_controller/package.zsh'
+[5.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/share/colcon-core/packages/mppi_controller)
+[5.836s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils' for CMake module files
+[5.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_utils build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/install.log --single-version-externally-managed install_data
+[5.838s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils' for CMake config files
+[5.840s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib'
+[5.840s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/bin'
+[5.840s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/pkgconfig/sim_utils.pc'
+[5.841s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages'
+[5.841s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_utils', 'pythonpath')
+[5.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/pythonpath.ps1'
+[5.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/pythonpath.dsv'
+[5.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/hook/pythonpath.sh'
+[5.846s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/bin'
+[5.846s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_utils)
+[5.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/package.ps1'
+[5.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/package.dsv'
+[5.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/package.sh'
+[5.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/package.bash'
+[5.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/sim_utils/package.zsh'
+[5.853s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/share/colcon-core/packages/sim_utils)
+[22.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[22.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low
+[22.727s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_low)
+[22.729s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low' for CMake module files
+[22.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low
+[22.731s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low' for CMake config files
+[22.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_low', 'cmake_prefix_path')
+[22.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.ps1'
+[22.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.dsv'
+[22.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.sh'
+[22.737s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib'
+[22.738s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/bin'
+[22.738s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/pkgconfig/mpc_low.pc'
+[22.739s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/python3.10/site-packages'
+[22.740s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/bin'
+[22.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.ps1'
+[22.742s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv'
+[22.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.sh'
+[22.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.bash'
+[22.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.zsh'
+[22.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/colcon-core/packages/mpc_low)
+[22.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_low)
+[22.750s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low' for CMake module files
+[22.751s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low' for CMake config files
+[22.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_low', 'cmake_prefix_path')
+[22.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.ps1'
+[22.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.dsv'
+[22.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.sh'
+[22.759s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib'
+[22.759s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/bin'
+[22.759s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/pkgconfig/mpc_low.pc'
+[22.760s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/python3.10/site-packages'
+[22.761s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/bin'
+[22.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.ps1'
+[22.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv'
+[22.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.sh'
+[22.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.bash'
+[22.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.zsh'
+[22.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/colcon-core/packages/mpc_low)
+[28.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high -- -j16 -l16
+[28.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high
+[28.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[28.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to
+[28.297s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_high)
+[28.298s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high' for CMake module files
+[28.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high
+[28.300s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high' for CMake config files
+[28.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_high', 'cmake_prefix_path')
+[28.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.ps1'
+[28.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.dsv'
+[28.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.sh'
+[28.305s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib'
+[28.305s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/bin'
+[28.305s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/pkgconfig/mpc_high.pc'
+[28.306s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/python3.10/site-packages'
+[28.307s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/bin'
+[28.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.ps1'
+[28.309s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.dsv'
+[28.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.sh'
+[28.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.bash'
+[28.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.zsh'
+[28.312s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/colcon-core/packages/mpc_high)
+[28.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_high)
+[28.314s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high' for CMake module files
+[28.315s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high' for CMake config files
+[28.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_high', 'cmake_prefix_path')
+[28.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.ps1'
+[28.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.dsv'
+[28.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/hook/cmake_prefix_path.sh'
+[28.319s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib'
+[28.320s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/bin'
+[28.320s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/pkgconfig/mpc_high.pc'
+[28.320s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/python3.10/site-packages'
+[28.321s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/bin'
+[28.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.ps1'
+[28.324s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.dsv'
+[28.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.sh'
+[28.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.bash'
+[28.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.zsh'
+[28.331s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/colcon-core/packages/mpc_high)
+[28.333s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_high_to)
+[28.333s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to' for CMake module files
+[28.335s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to' for CMake config files
+[28.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to
+[28.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_high_to', 'cmake_prefix_path')
+[28.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.ps1'
+[28.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.dsv'
+[28.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.sh'
+[28.340s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib'
+[28.340s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/bin'
+[28.340s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/pkgconfig/mpc_high_to.pc'
+[28.341s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/python3.10/site-packages'
+[28.341s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/bin'
+[28.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.ps1'
+[28.343s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv'
+[28.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.sh'
+[28.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.bash'
+[28.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.zsh'
+[28.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/colcon-core/packages/mpc_high_to)
+[28.348s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_high_to)
+[28.348s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to' for CMake module files
+[28.349s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to' for CMake config files
+[28.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_high_to', 'cmake_prefix_path')
+[28.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.ps1'
+[28.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.dsv'
+[28.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/hook/cmake_prefix_path.sh'
+[28.352s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib'
+[28.352s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/bin'
+[28.352s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/pkgconfig/mpc_high_to.pc'
+[28.353s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/python3.10/site-packages'
+[28.353s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/bin'
+[28.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.ps1'
+[28.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv'
+[28.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.sh'
+[28.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.bash'
+[28.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.zsh'
+[28.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/colcon-core/packages/mpc_high_to)
+[28.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.358s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.372s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.393s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.394s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/Time_optimal_baseline/install/local_setup.ps1'
+[28.395s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chri/CHRI_2025/Time_optimal_baseline/install/_local_setup_util_ps1.py'
+[28.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/Time_optimal_baseline/install/setup.ps1'
+[28.400s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/Time_optimal_baseline/install/local_setup.sh'
+[28.401s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chri/CHRI_2025/Time_optimal_baseline/install/_local_setup_util_sh.py'
+[28.402s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/Time_optimal_baseline/install/setup.sh'
+[28.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/Time_optimal_baseline/install/local_setup.bash'
+[28.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/Time_optimal_baseline/install/setup.bash'
+[28.405s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/Time_optimal_baseline/install/local_setup.zsh'
+[28.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/Time_optimal_baseline/install/setup.zsh'

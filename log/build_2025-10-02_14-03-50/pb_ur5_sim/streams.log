@@ -1,0 +1,26 @@
+[1.999s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pb_ur5_sim build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/install.log --single-version-externally-managed install_data
+[2.237s] /home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.237s]   warnings.warn(msg)
+[2.423s] running egg_info
+[2.453s] writing ../../build/pb_ur5_sim/pb_ur5_sim.egg-info/PKG-INFO
+[2.454s] writing dependency_links to ../../build/pb_ur5_sim/pb_ur5_sim.egg-info/dependency_links.txt
+[2.455s] writing entry points to ../../build/pb_ur5_sim/pb_ur5_sim.egg-info/entry_points.txt
+[2.455s] writing requirements to ../../build/pb_ur5_sim/pb_ur5_sim.egg-info/requires.txt
+[2.456s] writing top-level names to ../../build/pb_ur5_sim/pb_ur5_sim.egg-info/top_level.txt
+[2.520s] reading manifest file '../../build/pb_ur5_sim/pb_ur5_sim.egg-info/SOURCES.txt'
+[2.520s] adding license file 'LICENSE'
+[2.522s] writing manifest file '../../build/pb_ur5_sim/pb_ur5_sim.egg-info/SOURCES.txt'
+[2.522s] running build
+[2.522s] running build_py
+[2.523s] running install
+[2.529s] running install_lib
+[2.560s] running install_data
+[2.561s] running install_egg_info
+[2.594s] removing '/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages/pb_ur5_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[2.595s] Copying ../../build/pb_ur5_sim/pb_ur5_sim.egg-info to /home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages/pb_ur5_sim-0.0.0-py3.10.egg-info
+[2.595s] running install_scripts
+[2.838s] Installing my_node script to /home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/pb_ur5_sim
+[2.839s] Installing my_subscriber script to /home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/pb_ur5_sim
+[2.840s] Installing ur5_with_human script to /home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/pb_ur5_sim
+[2.841s] writing list of installed files to '/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/install.log'
+[2.869s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/pb_ur5_sim' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pb_ur5_sim build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/pb_ur5_sim/install.log --single-version-externally-managed install_data

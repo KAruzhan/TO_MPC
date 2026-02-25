@@ -1,0 +1,8 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/ur_communication.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/ur_realtime_communication.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/ur_velocity_controller.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/robot_state.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/robot_state_RT.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/do_output.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ur_driver[0m
+[100%] Built target ur_driver

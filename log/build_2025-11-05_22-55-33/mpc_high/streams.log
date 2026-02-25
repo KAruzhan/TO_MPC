@@ -1,0 +1,35 @@
+[0.062s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high -- -j16 -l16
+[0.814s] [  9%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[6.797s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[6.797s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:236:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.798s]   236 |             double [01;35m[Kmax_linear_vell_current[m[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);
+[6.798s]       |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.798s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:278:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.798s]   278 |             double [01;35m[Kmax_linear_vell[m[K = get_spheres_velocity(current_position, selected_vels, max_vell);
+[6.798s]       |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[6.798s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:281:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klin_vell_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.799s]   281 |             double [01;35m[Klin_vell_scale[m[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
+[6.799s]       |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[24.329s] [ 18%] [32m[1mLinking CXX executable high_solver[0m
+[25.956s] [100%] Built target high_solver
+[25.969s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high -- -j16 -l16
+[25.971s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high
+[25.981s] -- Install configuration: ""
+[25.982s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/mpc_high/high_solver
+[26.018s] -- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/mpc_high/high_solver" to ""
+[26.019s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/package_run_dependencies/mpc_high
+[26.019s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/parent_prefix_path/mpc_high
+[26.019s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/ament_prefix_path.sh
+[26.019s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/ament_prefix_path.dsv
+[26.019s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/path.sh
+[26.020s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/path.dsv
+[26.020s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.bash
+[26.020s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.sh
+[26.020s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.zsh
+[26.020s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.dsv
+[26.020s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.dsv
+[26.021s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/packages/mpc_high
+[26.021s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/cmake/mpc_highConfig.cmake
+[26.021s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/cmake/mpc_highConfig-version.cmake
+[26.021s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.xml
+[26.024s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high

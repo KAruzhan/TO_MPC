@@ -1,0 +1,5 @@
+[0.198s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[1.840s] [0mCMake Error: The source directory "/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to" does not exist.
+[1.840s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.840s] gmake: *** [Makefile:753: cmake_check_build_system] Error 1
+[1.844s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16

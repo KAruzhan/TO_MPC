@@ -1,0 +1,21 @@
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp:6:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp: In member function ‘void RobotCommandPublisher::timer_callback()’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp:336:45: warning: format ‘%e’ expects a matching ‘double’ argument [-Wformat=]
+  336 |             RCLCPP_INFO(this->get_logger(), "calc time [%.2f ms], j_error [%.4f], ocp_cost [%.6f], kkt [%.3e]",
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp:336:108: note: format string is defined here
+  336 |             RCLCPP_INFO(this->get_logger(), "calc time [%.2f ms], j_error [%.4f], ocp_cost [%.6f], kkt [%.3e]",
+      |                                                                                                         ~~~^
+      |                                                                                                            |
+      |                                                                                                            double

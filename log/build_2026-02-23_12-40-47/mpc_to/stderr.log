@@ -1,0 +1,387 @@
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function ‘UR5_dyn_disc_phi_fun_jac_hess_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function ‘UR5_dyn_disc_phi_fun_jac_hess_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:158:69: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  158 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_jac_hess_init_mem(int mem) {
+      |                                                                 ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function ‘UR5_dyn_disc_phi_fun_jac_hess_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:162:70: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  162 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_hess_free_mem(int mem) {
+      |                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function ‘UR5_dyn_disc_phi_fun_jac_hess_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:169:69: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  169 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_hess_release(int mem) {
+      |                                                                 ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function ‘UR5_dyn_disc_phi_fun_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function ‘UR5_cost_ext_cost_fun_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function ‘UR5_cost_ext_cost_fun_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function ‘UR5_dyn_disc_phi_fun_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:86:61: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_init_mem(int mem) {
+      |                                                         ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function ‘UR5_cost_ext_cost_fun_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:123:60: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  123 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_init_mem(int mem) {
+      |                                                        ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:90:62: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_free_mem(int mem) {
+      |                                                          ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function ‘UR5_dyn_disc_phi_fun_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:127:61: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  127 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_free_mem(int mem) {
+      |                                                         ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function ‘UR5_cost_ext_cost_fun_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:97:61: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_release(int mem) {
+      |                                                         ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function ‘UR5_dyn_disc_phi_fun_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:134:60: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  134 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_release(int mem) {
+      |                                                        ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function ‘UR5_cost_ext_cost_e_fun_jac_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:42: warning: unused parameter ‘arg’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                      ~~~~~~~~~~~~~~~~~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function ‘UR5_cost_ext_cost_e_fun_jac_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:86:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_init_mem(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function ‘UR5_cost_ext_cost_e_fun_jac_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:90:68: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_free_mem(int mem) {
+      |                                                                ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function ‘UR5_cost_ext_cost_e_fun_jac_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:97:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_release(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function ‘UR5_cost_ext_cost_0_fun_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function ‘UR5_cost_ext_cost_e_fun_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:42: warning: unused parameter ‘arg’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                      ~~~~~~~~~~~~~~~~~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function ‘UR5_cost_ext_cost_e_fun_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:74:63: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   74 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_init_mem(int mem) {
+      |                                                           ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function ‘UR5_cost_ext_cost_e_fun_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:78:64: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   78 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_free_mem(int mem) {
+      |                                                            ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function ‘UR5_cost_ext_cost_0_fun_jac_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function ‘UR5_cost_ext_cost_e_fun_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:85:63: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   85 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_release(int mem) {
+      |                                                           ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function ‘UR5_cost_ext_cost_0_fun_jac_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:113:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  113 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_init_mem(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function ‘UR5_cost_ext_cost_0_fun_jac_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:117:68: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  117 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_free_mem(int mem) {
+      |                                                                ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function ‘UR5_cost_ext_cost_0_fun_jac_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:124:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  124 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_release(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function ‘UR5_constr_h_fun_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function ‘UR5_constr_h_fun_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:262:56: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  262 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_init_mem(int mem) {
+      |                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function ‘UR5_constr_h_fun_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_0_fun_jac_hess_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:266:57: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  266 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_free_mem(int mem) {
+      |                                                     ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function ‘UR5_constr_h_fun_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:273:56: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  273 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_release(int mem) {
+      |                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_0_fun_jac_hess_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:117:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  117 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_hess_init_mem(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_0_fun_jac_hess_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:121:73: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  121 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_free_mem(int mem) {
+      |                                                                     ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_0_fun_jac_hess_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:128:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  128 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_release(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_e_fun_jac_hess_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:42: warning: unused parameter ‘arg’ [-Wunused-parameter]
+   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                      ~~~~~~~~~~~~~~~~~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_e_fun_jac_hess_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:90:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   90 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_hess_init_mem(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_e_fun_jac_hess_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:94:73: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   94 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_free_mem(int mem) {
+      |                                                                     ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_e_fun_jac_hess_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:101:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  101 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_release(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function ‘UR5_cost_ext_cost_0_fun_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:86:63: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_init_mem(int mem) {
+      |                                                           ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function ‘UR5_cost_ext_cost_0_fun_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:90:64: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_free_mem(int mem) {
+      |                                                            ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function ‘UR5_cost_ext_cost_0_fun_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:97:63: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_release(int mem) {
+      |                                                           ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:573:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  573 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_init_mem(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:577:68: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  577 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_free_mem(int mem) {
+      |                                                                ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:584:67: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  584 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_release(int mem) {
+      |                                                               ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function ‘UR5_dyn_disc_phi_fun_jac_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function ‘UR5_dyn_disc_phi_fun_jac_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:156:64: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  156 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_jac_init_mem(int mem) {
+      |                                                            ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function ‘UR5_dyn_disc_phi_fun_jac_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:160:65: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  160 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_free_mem(int mem) {
+      |                                                             ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function ‘UR5_dyn_disc_phi_fun_jac_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:167:64: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  167 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_release(int mem) {
+      |                                                            ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_hess_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_hess_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2077:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+ 2077 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_hess_init_mem(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_hess_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2081:73: warning: unused parameter ‘mem’ [-Wunused-parameter]
+ 2081 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_free_mem(int mem) {
+      |                                                                     ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function ‘UR5_constr_h_fun_jac_uxt_zt_hess_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2088:72: warning: unused parameter ‘mem’ [-Wunused-parameter]
+ 2088 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_release(int mem) {
+      |                                                                    ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function ‘UR5_cost_ext_cost_fun_jac_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function ‘UR5_cost_ext_cost_fun_jac_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:113:65: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  113 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_init_mem(int mem) {
+      |                                                             ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function ‘UR5_cost_ext_cost_fun_jac_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:117:66: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  117 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_free_mem(int mem) {
+      |                                                              ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function ‘UR5_cost_ext_cost_fun_jac_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:124:65: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  124 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_release(int mem) {
+      |                                                             ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_fun_jac_hess_f0’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:78: warning: unused parameter ‘iw’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                              ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:95: warning: unused parameter ‘w’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                               ^
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:102: warning: unused parameter ‘mem’ [-Wunused-parameter]
+   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+      |                                                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_fun_jac_hess_init_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:117:70: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  117 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_hess_init_mem(int mem) {
+      |                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_fun_jac_hess_free_mem’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:121:71: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  121 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_free_mem(int mem) {
+      |                                                                   ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function ‘UR5_cost_ext_cost_fun_jac_hess_release’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:128:70: warning: unused parameter ‘mem’ [-Wunused-parameter]
+  128 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_release(int mem) {
+      |                                                                  ~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function ‘UR5_acados_create_5_set_nlp_in’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:445:9: warning: unused variable ‘tmp_int’ [-Wunused-variable]
+  445 |     int tmp_int = 0;
+      |         ^~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function ‘UR5_acados_update_qp_solver_cond_N’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:937:60: warning: unused parameter ‘capsule’ [-Wunused-parameter]
+  937 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, int qp_solver_cond_N)
+      |                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:937:73: warning: unused parameter ‘qp_solver_cond_N’ [-Wunused-parameter]
+  937 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, int qp_solver_cond_N)
+      |                                                                     ~~~~^~~~~~~~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function ‘UR5_acados_reset’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:955:21: warning: unused variable ‘nlp_solver’ [-Wunused-variable]
+  955 |     ocp_nlp_solver* nlp_solver = capsule->nlp_solver;
+      |                     ^~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:954:17: warning: unused variable ‘nlp_in’ [-Wunused-variable]
+  954 |     ocp_nlp_in* nlp_in = capsule->nlp_in;
+      |                 ^~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:945:55: warning: unused parameter ‘reset_qp_solver_mem’ [-Wunused-parameter]
+  945 | int UR5_acados_reset(UR5_solver_capsule* capsule, int reset_qp_solver_mem)
+      |                                                   ~~~~^~~~~~~~~~~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp: In function ‘Eigen::MatrixXf get_cpose(float, float, float, float, float, float)’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:4:83: warning: unused parameter ‘q6’ [-Wunused-parameter]
+    4 | Eigen::MatrixXf get_cpose(float q1, float q2, float q3, float q4, float q5, float q6){
+      |                                                                             ~~~~~~^~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp: In function ‘Eigen::MatrixXf get_velocity(float, float, float, float, float, float, float, float, float, float, float, float)’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:15:86: warning: unused parameter ‘q6’ [-Wunused-parameter]
+   15 | Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, float q6,
+      |                                                                                ~~~~~~^~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:16:91: warning: unused parameter ‘u_6’ [-Wunused-parameter]
+   16 |                              float u_1, float u_2, float u_3, float u_4, float u_5, float u_6){
+      |                                                                                     ~~~~~~^~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp: In member function ‘int my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*, double*)’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:158:12: warning: ISO C++ forbids variable length array ‘xtraj’ [-Wvla]
+  158 |     double xtraj[NX * (N+1)];
+      |            ^~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:159:12: warning: ISO C++ forbids variable length array ‘utraj’ [-Wvla]
+  159 |     double utraj[NU * N];
+      |            ^~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:42: warning: unused parameter ‘tracking_goal’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                   ~~~~~~~^~~~~~~~~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:68: warning: unused parameter ‘cgoal’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                                             ~~~~~~~^~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:105: warning: unused parameter ‘my_weights’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                                                                                  ~~~~~~~^~~~~~~~~~~~~~

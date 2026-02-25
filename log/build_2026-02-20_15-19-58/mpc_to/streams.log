@@ -1,0 +1,50 @@
+[0.017s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to -DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to
+[0.036s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.276s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.299s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.361s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.366s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.377s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.418s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.478s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.480s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.665s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.757s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.814s] -- Target my_node_cpp built successfully
+[0.815s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.949s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.949s] -- Configured cppcheck include dirs: /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/acados;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/acados_c;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/blasfeo/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/hpipm/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/
+[0.950s] -- Configured cppcheck exclude dirs and/or files: 
+[0.957s] -- Added test 'lint_cmake' to check CMake code style
+[0.978s] -- Added test 'uncrustify' to check C / C++ code style
+[0.978s] -- Configured uncrustify additional arguments: 
+[0.981s] -- Added test 'xmllint' to check XML markup files
+[0.982s] -- Configuring done
+[1.075s] -- Generating done
+[1.087s] -- Build files have been written to: /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to
+[1.099s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to -DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to
+[1.103s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[1.172s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[1.223s] [100%] Built target high_solver
+[1.241s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[1.256s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to
+[1.267s] -- Install configuration: ""
+[1.267s] -- Execute custom install script
+[1.268s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/lib/mpc_to/high_solver
+[1.268s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/package_run_dependencies/mpc_to
+[1.269s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/parent_prefix_path/mpc_to
+[1.269s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.sh
+[1.270s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.dsv
+[1.270s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.sh
+[1.270s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.dsv
+[1.271s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.bash
+[1.271s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.sh
+[1.271s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.zsh
+[1.272s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.dsv
+[1.272s] -- Symlinking: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.dsv
+[1.284s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/packages/mpc_to
+[1.285s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig.cmake
+[1.285s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig-version.cmake
+[1.285s] -- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.xml
+[1.288s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to

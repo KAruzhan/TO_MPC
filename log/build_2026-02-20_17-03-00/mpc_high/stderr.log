@@ -1,0 +1,27 @@
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:3:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kmy_NMPC_solver::my_NMPC_solver(int)[m[K’
+    3 | [01;31m[Kmy_NMPC_solver[m[K::my_NMPC_solver(int n) {
+      | [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kconstexpr my_NMPC_solver::my_NMPC_solver(my_NMPC_solver&&)[m[K’
+   54 | class [01;36m[Kmy_NMPC_solver[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kconstexpr my_NMPC_solver::my_NMPC_solver(const my_NMPC_solver&)[m[K’
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:61:5:[m[K [01;36m[Knote: [m[K                ‘[01m[Kmy_NMPC_solver::my_NMPC_solver(int, int)[m[K’
+   61 |     [01;36m[Kmy_NMPC_solver[m[K(int n, int number_of_current_steps_specified);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass my_NMPC_solver[m[K’ defined here
+   54 | class [01;36m[Kmy_NMPC_solver[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:20:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*, double*)[m[K’
+   20 | int [01;31m[Kmy_NMPC_solver[m[K::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:62:9:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’
+   62 |     int [01;36m[Ksolve_my_mpc[m[K(double current_joint_position[6],
+      |         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass my_NMPC_solver[m[K’ defined here
+   54 | class [01;36m[Kmy_NMPC_solver[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:202: CMakeFiles/high_solver.dir/solver_high/acados_solver_holder.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

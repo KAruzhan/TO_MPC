@@ -1,0 +1,22 @@
+[1.243s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[3.132s] [100%] Built target low_solver
+[3.149s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[3.166s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low
+[3.177s] -- Install configuration: ""
+[3.177s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver
+[3.177s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.sh
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.dsv
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.bash
+[3.178s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.sh
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.zsh
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.dsv
+[3.179s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/packages/mpc_low
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake
+[3.179s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.xml
+[3.269s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low

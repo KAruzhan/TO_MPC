@@ -1,0 +1,22 @@
+[1.153s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver -- -j16 -l16
+[1.242s] [100%] Built target ur_driver
+[1.294s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver -- -j16 -l16
+[1.295s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver
+[1.305s] -- Install configuration: ""
+[1.305s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/lib/ur_ros2_driver/ur_driver
+[1.306s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ur_ros2_driver
+[1.306s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ur_ros2_driver
+[1.306s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/environment/ament_prefix_path.sh
+[1.306s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/environment/ament_prefix_path.dsv
+[1.307s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/environment/path.sh
+[1.307s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/environment/path.dsv
+[1.307s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/local_setup.bash
+[1.307s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/local_setup.sh
+[1.308s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/local_setup.zsh
+[1.308s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/local_setup.dsv
+[1.308s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/package.dsv
+[1.308s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ament_index/resource_index/packages/ur_ros2_driver
+[1.309s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/cmake/ur_ros2_driverConfig.cmake
+[1.310s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/cmake/ur_ros2_driverConfig-version.cmake
+[1.311s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver/share/ur_ros2_driver/package.xml
+[1.311s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver

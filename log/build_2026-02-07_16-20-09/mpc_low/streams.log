@@ -1,0 +1,37 @@
+[0.035s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target low_solver[0m
+[0.141s] [  9%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/low_solver.cpp.o[0m
+[4.665s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[4.666s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:232:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.666s]   232 |             double [01;35m[Kmax_linear_vell_current[m[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);
+[4.666s]       |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.666s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:266:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klin_vell_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.666s]   266 |             double [01;35m[Klin_vell_scale[m[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
+[4.667s]       |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.667s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::change_goal_msg(std_msgs::msg::Float64MultiArray)[m[K’:
+[4.667s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:324:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_TIME[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.667s]   324 |         constexpr double [01;35m[KMAX_TIME[m[K = 0.5;   // Maximum trajectory time
+[4.667s]       |                          [01;35m[K^~~~~~~~[m[K
+[17.344s] [ 18%] [32m[1mLinking CXX executable low_solver[0m
+[18.950s] [100%] Built target low_solver
+[18.967s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[18.969s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low
+[18.981s] -- Install configuration: ""
+[19.000s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver
+[19.021s] -- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver" to ""
+[19.021s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low
+[19.022s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low
+[19.022s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh
+[19.022s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv
+[19.022s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.sh
+[19.022s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.dsv
+[19.023s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.bash
+[19.023s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.sh
+[19.023s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.zsh
+[19.023s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.dsv
+[19.023s] -- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv
+[19.030s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/packages/mpc_low
+[19.031s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake
+[19.031s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake
+[19.031s] -- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.xml
+[19.034s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low

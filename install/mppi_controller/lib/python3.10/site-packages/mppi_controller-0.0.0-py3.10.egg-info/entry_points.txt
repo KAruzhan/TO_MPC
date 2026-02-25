@@ -1,0 +1,5 @@
+[console_scripts]
+mppi_controller = mppi_controller.main:main
+mppi_no_human = mppi_controller.main_no_human:main
+mppi_rh = mppi_controller.main_rh:main
+mppi_robot = mppi_controller.main_robot:main

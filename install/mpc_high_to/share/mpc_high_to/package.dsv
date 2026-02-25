@@ -1,0 +1,8 @@
+source;share/mpc_high_to/hook/cmake_prefix_path.ps1
+source;share/mpc_high_to/hook/cmake_prefix_path.dsv
+source;share/mpc_high_to/hook/cmake_prefix_path.sh
+source;share/mpc_high_to/local_setup.bash
+source;share/mpc_high_to/local_setup.dsv
+source;share/mpc_high_to/local_setup.ps1
+source;share/mpc_high_to/local_setup.sh
+source;share/mpc_high_to/local_setup.zsh

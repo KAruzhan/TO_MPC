@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:106 (file):
+  file INSTALL cannot set permissions on
+  "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv":
+  No such file or directory.
+
+[0m

@@ -1,0 +1,10 @@
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/uninstall.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/mpc_high_uninstall.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/high_solver.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/test.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/edit_cache.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/rebuild_cache.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/list_install_components.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/install.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/install/local.dir
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/CMakeFiles/install/strip.dir

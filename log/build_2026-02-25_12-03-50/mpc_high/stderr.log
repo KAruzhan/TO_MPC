@@ -1,0 +1,45 @@
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_4_set_default_parameters[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:367:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  367 | void UR5_acados_create_4_set_default_parameters([01;35m[KUR5_solver_capsule* capsule[m[K) {
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_5_set_nlp_in[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:381:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktmp_int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  381 |     int [01;35m[Ktmp_int[m[K = 0;
+      |         [01;35m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_6_set_opts[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:899:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kext_cost_num_hess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  899 |     int [01;35m[Kext_cost_num_hess[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:847:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KN[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  847 |     const int [01;35m[KN[m[K = capsule->nlp_solver_plan->N;
+      |               [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_update_qp_solver_cond_N[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1013:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1013 | int UR5_acados_update_qp_solver_cond_N([01;35m[KUR5_solver_capsule* capsule[m[K, int qp_solver_cond_N)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1013:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqp_solver_cond_N[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1013 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, [01;35m[Kint qp_solver_cond_N[m[K)
+      |                                                                     [01;35m[K~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_reset[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1031:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_solver[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1031 |     ocp_nlp_solver* [01;35m[Knlp_solver[m[K = capsule->nlp_solver;
+      |                     [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1030:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_in[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+ 1030 |     ocp_nlp_in* [01;35m[Knlp_in[m[K = capsule->nlp_in;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1021:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreset_qp_solver_mem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1021 | int UR5_acados_reset(UR5_solver_capsule* capsule, [01;35m[Kint reset_qp_solver_mem[m[K)
+      |                                                   [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_update_params_sparse[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1106:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1106 | int UR5_acados_update_params_sparse([01;35m[KUR5_solver_capsule * capsule[m[K, int stage, int *idx, double *p, int n_update)
+      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1106:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1106 | int UR5_acados_update_params_sparse(UR5_solver_capsule * capsule, [01;35m[Kint stage[m[K, int *idx, double *p, int n_update)
+      |                                                                   [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1106:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kidx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1106 | int UR5_acados_update_params_sparse(UR5_solver_capsule * capsule, int stage, [01;35m[Kint *idx[m[K, double *p, int n_update)
+      |                                                                              [01;35m[K~~~~~^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.c:1106:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1106 | int UR5_acados_update_params_sparse(UR5_solver_capsule * capsule, int stage, int *idx, [01;35m[Kdouble *p[m[K, int n_update)
+      |                                                                                        [01;35m[K~~~~~~~~^[m[K

@@ -1,0 +1,102 @@
+[35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_high_disc/acados_solver_holder.cpp.o[0m
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12[m[K,
+                 from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kidxsh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   48 | #define UR5_NSH    [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NSH[m[K’
+   33 | #define NSH    [01;36m[KUR5_NSH[m[K
+      |                [01;36m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:34:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNSH[m[K’
+   34 |     int idxsh[[01;36m[KNSH[m[K];
+      |               [01;36m[K^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kzl[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   48 | #define UR5_NSH    [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NSH[m[K’
+   33 | #define NSH    [01;36m[KUR5_NSH[m[K
+      |                [01;36m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:75:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNSH[m[K’
+   75 |     double zl[[01;36m[KNSH[m[K]={0.0};
+      |               [01;36m[K^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:75:24:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kdouble [0][m[K’
+   75 |     double zl[NSH]={0.0[01;31m[K}[m[K;
+      |                        [01;31m[K^[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12[m[K,
+                 from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kzu[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   48 | #define UR5_NSH    [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NSH[m[K’
+   33 | #define NSH    [01;36m[KUR5_NSH[m[K
+      |                [01;36m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:76:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNSH[m[K’
+   76 |     double zu[[01;36m[KNSH[m[K]={0.0};
+      |               [01;36m[K^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:76:24:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kdouble [0][m[K’
+   76 |     double zu[NSH]={0.0[01;31m[K}[m[K;
+      |                        [01;31m[K^[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12[m[K,
+                 from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[KZl[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   48 | #define UR5_NSH    [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NSH[m[K’
+   33 | #define NSH    [01;36m[KUR5_NSH[m[K
+      |                [01;36m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:78:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNSH[m[K’
+   78 |     double Zl[[01;36m[KNSH[m[K] = {0.0};
+      |               [01;36m[K^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:78:26:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kdouble [0][m[K’
+   78 |     double Zl[NSH] = {0.0[01;31m[K}[m[K;
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12[m[K,
+                 from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[KZu[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   48 | #define UR5_NSH    [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NSH[m[K’
+   33 | #define NSH    [01;36m[KUR5_NSH[m[K
+      |                [01;36m[K^~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:79:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNSH[m[K’
+   79 |     double Zu[[01;36m[KNSH[m[K] = {0.0};
+      |               [01;36m[K^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:79:26:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kdouble [0][m[K’
+   79 |     double Zu[NSH] = {0.0[01;31m[K}[m[K;
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12[m[K,
+                 from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1[m[K:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:42:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   42 | #define UR5_NP     [01;35m[K0[m[K
+      |                    [01;35m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:27:16:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KUR5_NP[m[K’
+   27 | #define NP     [01;36m[KUR5_NP[m[K
+      |                [01;36m[K^~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:107:14:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KNP[m[K’
+  107 |     double p[[01;36m[KNP[m[K] = {0.0};
+      |              [01;36m[K^~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:107:24:[m[K [01;31m[Kerror: [m[Ktoo many initializers for ‘[01m[Kdouble [0][m[K’
+  107 |     double p[NP] = {0.0[01;31m[K}[m[K;
+      |                        [01;31m[K^[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:108:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_human_position[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_joint_position[m[K’?
+  108 |     for (int i = 0; i < 56; i++) p[i] = [01;31m[Kcurrent_human_position[m[K[i];
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[Kcurrent_joint_position[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:122:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  122 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:123:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  123 |     double [01;35m[Kutraj[m[K[NU * N];
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:22:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktracking_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   22 |     double current_joint_goal[6], [01;35m[Kdouble tracking_goal[60][m[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                   [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:22:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   22 | t_goal[6], double tracking_goal[60], double cgoal[3], double results[16], [01;35m[Kdouble my_weights[10][m[K, double full_trajectory[140]) {
+      |                                                                           [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:188: CMakeFiles/high_solver.dir/solver_high_disc/acados_solver_holder.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

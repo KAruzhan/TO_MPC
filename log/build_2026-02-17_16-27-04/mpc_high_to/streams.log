@@ -1,0 +1,73 @@
+[0.102s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16
+[1.240s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[1.241s] [ 15%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_vde_adj.c.o[0m
+[1.241s] [ 20%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_vde_forw.c.o[0m
+[1.241s] [ 20%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o[0m
+[1.241s] [ 20%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[1.242s] [ 25%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_constraints/UR5_constr_h_fun.c.o[0m
+[1.242s] [ 30%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun.c.o[0m
+[1.242s] [ 35%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c.o[0m
+[1.242s] [ 40%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c.o[0m
+[1.242s] [ 45%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c.o[0m
+[1.242s] [ 50%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_ode_fun.c.o[0m
+[1.243s] [ 55%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun.c.o[0m
+[1.243s] [ 60%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c.o[0m
+[1.243s] [ 65%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun.c.o[0m
+[1.243s] [ 70%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac.c.o[0m
+[1.243s] [ 75%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c.o[0m
+[1.243s] [ 80%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high_to/acados_solver_UR5.c.o[0m
+[1.243s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_model/UR5_expl_vde_adj.c: No such file or directory
+[1.244s] compilation terminated.
+[1.244s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: No such file or directory
+[1.244s] compilation terminated.
+[1.244s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_model/UR5_expl_vde_forw.c: No such file or directory
+[1.244s] compilation terminated.
+[1.244s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_constraints/UR5_constr_h_fun.c: No such file or directory
+[1.244s] compilation terminated.
+[1.244s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:132: CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_vde_adj.c.o] Error 1
+[1.244s] gmake[2]: *** Waiting for unfinished jobs....
+[1.245s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:118: CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_vde_forw.c.o] Error 1
+[1.245s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:146: CMakeFiles/high_solver.dir/solver_high_to/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o] Error 1
+[1.245s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:160: CMakeFiles/high_solver.dir/solver_high_to/UR5_constraints/UR5_constr_h_fun.c.o] Error 1
+[1.245s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun.c: No such file or directory
+[1.245s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_model/UR5_expl_ode_fun.c: No such file or directory
+[1.245s] compilation terminated.
+[1.245s] compilation terminated.
+[1.245s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: No such file or directory
+[1.245s] compilation terminated.
+[1.246s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: No such file or directory
+[1.246s] compilation terminated.
+[1.246s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:174: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun.c.o] Error 1
+[1.246s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:104: CMakeFiles/high_solver.dir/solver_high_to/UR5_model/UR5_expl_ode_fun.c.o] Error 1
+[1.246s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:188: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c.o] Error 1
+[1.246s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun.c: No such file or directory
+[1.246s] compilation terminated.
+[1.246s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:202: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c.o] Error 1
+[1.246s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: No such file or directory
+[1.246s] compilation terminated.
+[1.247s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: No such file or directory
+[1.247s] compilation terminated.
+[1.247s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:216: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun.c.o] Error 1
+[1.247s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:230: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c.o] Error 1
+[1.247s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun.c: No such file or directory
+[1.247s] compilation terminated.
+[1.247s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:244: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c.o] Error 1
+[1.247s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:258: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun.c.o] Error 1
+[1.247s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac.c: No such file or directory
+[1.247s] compilation terminated.
+[1.248s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:272: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac.c.o] Error 1
+[1.248s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: No such file or directory
+[1.248s] compilation terminated.
+[1.248s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:286: CMakeFiles/high_solver.dir/solver_high_to/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c.o] Error 1
+[1.248s] [01m[Kcc1:[m[K [01;31m[Kfatal error: [m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_UR5.c: No such file or directory
+[1.248s] compilation terminated.
+[1.248s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:300: CMakeFiles/high_solver.dir/solver_high_to/acados_solver_UR5.c.o] Error 1
+[1.248s] In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/high_solver.cpp:10[m[K:
+[1.248s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/include/acados_solver_holder.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kacados_solver_UR5.h: No such file or directory
+[1.249s]    12 | #include [01;31m[K<acados_solver_UR5.h>[m[K
+[1.249s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.249s] compilation terminated.
+[1.249s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:76: CMakeFiles/high_solver.dir/src/high_solver.cpp.o] Error 1
+[1.249s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+[1.249s] gmake: *** [Makefile:146: all] Error 2
+[1.306s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high_to -- -j16 -l16

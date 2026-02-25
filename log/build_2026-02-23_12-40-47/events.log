@@ -1,0 +1,771 @@
+[0.000000] (-) TimerEvent: {}
+[0.000093] (-) JobUnselected: {'identifier': 'mpc_high'}
+[0.000284] (-) JobUnselected: {'identifier': 'mpc_high_to'}
+[0.000571] (-) JobUnselected: {'identifier': 'mpc_low'}
+[0.000736] (-) JobUnselected: {'identifier': 'mppi_controller'}
+[0.000765] (-) JobUnselected: {'identifier': 'pb_ur5_sim'}
+[0.000963] (-) JobUnselected: {'identifier': 'sim_utils'}
+[0.000988] (-) JobUnselected: {'identifier': 'ur_ros2_driver'}
+[0.001049] (mpc_to) JobQueued: {'identifier': 'mpc_to', 'dependencies': OrderedDict()}
+[0.001146] (mpc_to) JobStarted: {'identifier': 'mpc_to'}
+[0.022466] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'cmake'}
+[0.023658] (mpc_to) Command: {'cmd': ['/usr/bin/cmake', '/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/chri/CHRI_2025/Time_optimal_baseline'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-dc379cb2-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4448'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/chri/.local/bin:/home/chri/.codex/tmp/arg0/codex-arg0BuOmM9:/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chri/.vscode/extensions/openai.chatgpt-0.4.76-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4359,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4359'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/981dda44_ba39_4e68_b6a8_14772126a1dc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.681'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019c8929-64f0-7b21-870a-efcb4a5d5df1'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/chri/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '1166087'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.083749] (mpc_to) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099683] (-) TimerEvent: {}
+[0.199905] (-) TimerEvent: {}
+[0.300188] (-) TimerEvent: {}
+[0.307528] (mpc_to) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.328718] (mpc_to) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.395565] (mpc_to) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.399937] (mpc_to) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400192] (-) TimerEvent: {}
+[0.410085] (mpc_to) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.426724] (mpc_to) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.448282] (mpc_to) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500319] (-) TimerEvent: {}
+[0.504605] (mpc_to) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.506907] (mpc_to) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600472] (-) TimerEvent: {}
+[0.676589] (mpc_to) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700612] (-) TimerEvent: {}
+[0.779712] (mpc_to) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.800752] (-) TimerEvent: {}
+[0.835582] (mpc_to) StdoutLine: {'line': b'-- Target my_node_cpp built successfully\n'}
+[0.836353] (mpc_to) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.900841] (-) TimerEvent: {}
+[0.959782] (mpc_to) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.960500] (mpc_to) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/acados;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/acados_c;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/blasfeo/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/include/hpipm/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/\n'}
+[0.960708] (mpc_to) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.967148] (mpc_to) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.984759] (mpc_to) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.985038] (mpc_to) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.986899] (mpc_to) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.988315] (mpc_to) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000956] (-) TimerEvent: {}
+[1.067039] (mpc_to) StdoutLine: {'line': b'-- Generating done\n'}
+[1.077866] (mpc_to) StdoutLine: {'line': b'-- Build files have been written to: /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to\n'}
+[1.087571] (mpc_to) CommandEnded: {'returncode': 0}
+[1.089039] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'build'}
+[1.090794] (mpc_to) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', '--', '-j16', '-l16'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/chri/CHRI_2025/Time_optimal_baseline'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-dc379cb2-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4448'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/chri/.local/bin:/home/chri/.codex/tmp/arg0/codex-arg0BuOmM9:/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chri/.vscode/extensions/openai.chatgpt-0.4.76-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4359,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4359'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/981dda44_ba39_4e68_b6a8_14772126a1dc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.681'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019c8929-64f0-7b21-870a-efcb4a5d5df1'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/chri/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '1166087'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.101062] (-) TimerEvent: {}
+[1.175268] (mpc_to) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target high_solver\n'}
+[1.201209] (-) TimerEvent: {}
+[1.209344] (mpc_to) StdoutLine: {'line': b'[ 15%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c.o\n'}
+[1.209687] (mpc_to) StdoutLine: {'line': b'[ 15%] Building CXX object CMakeFiles/high_solver.dir/src/kinematics_functions.cpp.o\n'}
+[1.209871] (mpc_to) StdoutLine: {'line': b'[ 15%] Building CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o\n'}
+[1.210039] (mpc_to) StdoutLine: {'line': b'[ 20%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c.o\n'}
+[1.210421] (mpc_to) StdoutLine: {'line': b'[ 25%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c.o\n'}
+[1.210619] (mpc_to) StdoutLine: {'line': b'[ 30%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o\n'}
+[1.210812] (mpc_to) StdoutLine: {'line': b'[ 35%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c.o\n'}
+[1.211000] (mpc_to) StdoutLine: {'line': b'[ 40%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c.o\n'}
+[1.211407] (mpc_to) StdoutLine: {'line': b'[ 45%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c.o\n'}
+[1.211925] (mpc_to) StdoutLine: {'line': b'[ 50%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c.o\n'}
+[1.212103] (mpc_to) StdoutLine: {'line': b'[ 60%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c.o\n'}
+[1.212261] (mpc_to) StdoutLine: {'line': b'[ 60%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c.o\n'}
+[1.213018] (mpc_to) StdoutLine: {'line': b'[ 65%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c.o\n'}
+[1.213328] (mpc_to) StdoutLine: {'line': b'[ 70%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c.o\n'}
+[1.213503] (mpc_to) StdoutLine: {'line': b'[ 75%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c.o\n'}
+[1.213802] (mpc_to) StdoutLine: {'line': b'[ 80%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c.o\n'}
+[1.261988] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_hess_f0\xe2\x80\x99:\n'}
+[1.262375] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.262643] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.262876] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.263073] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.263268] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.263485] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.263696] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:59:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.263901] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.264112] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.264322] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_hess_init_mem\xe2\x80\x99:\n'}
+[1.264549] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:158:69: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.264760] (mpc_to) StderrLine: {'line': b'  158 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_jac_hess_init_mem(int mem) {\n'}
+[1.264968] (mpc_to) StderrLine: {'line': b'      |                                                                 ~~~~^~~\n'}
+[1.265181] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_hess_free_mem\xe2\x80\x99:\n'}
+[1.265394] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:162:70: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.267052] (mpc_to) StderrLine: {'line': b'  162 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_hess_free_mem(int mem) {\n'}
+[1.267236] (mpc_to) StderrLine: {'line': b'      |                                                                  ~~~~^~~\n'}
+[1.267403] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_hess_release\xe2\x80\x99:\n'}
+[1.267602] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c:169:69: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.267777] (mpc_to) StderrLine: {'line': b'  169 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_hess_release(int mem) {\n'}
+[1.267952] (mpc_to) StderrLine: {'line': b'      |                                                                 ~~~~^~~\n'}
+[1.271451] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_f0\xe2\x80\x99:\n'}
+[1.271721] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_f0\xe2\x80\x99:\n'}
+[1.275221] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.275503] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.275702] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.275891] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.276076] (mpc_to) StderrLine: {'line': b'   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.276262] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.276477] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.276718] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.276905] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.277101] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.277285] (mpc_to) StderrLine: {'line': b'   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.277491] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.277690] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:59:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.277872] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.278052] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.278229] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:55:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.278423] (mpc_to) StderrLine: {'line': b'   55 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.278625] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.278807] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_init_mem\xe2\x80\x99:\n'}
+[1.278980] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_init_mem\xe2\x80\x99:\n'}
+[1.279154] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:86:61: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.279330] (mpc_to) StderrLine: {'line': b'   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_init_mem(int mem) {\n'}
+[1.279516] (mpc_to) StderrLine: {'line': b'      |                                                         ~~~~^~~\n'}
+[1.279707] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_free_mem\xe2\x80\x99:\n'}
+[1.279885] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:123:60: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.280052] (mpc_to) StderrLine: {'line': b'  123 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_init_mem(int mem) {\n'}
+[1.280196] (mpc_to) StderrLine: {'line': b'      |                                                        ~~~~^~~\n'}
+[1.280351] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:90:62: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.280811] (mpc_to) StderrLine: {'line': b'   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_free_mem(int mem) {\n'}
+[1.280919] (mpc_to) StderrLine: {'line': b'      |                                                          ~~~~^~~\n'}
+[1.281017] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_free_mem\xe2\x80\x99:\n'}
+[1.281104] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:127:61: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.281189] (mpc_to) StderrLine: {'line': b'  127 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_free_mem(int mem) {\n'}
+[1.281274] (mpc_to) StderrLine: {'line': b'      |                                                         ~~~~^~~\n'}
+[1.281359] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_release\xe2\x80\x99:\n'}
+[1.281475] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun.c:97:61: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.281568] (mpc_to) StderrLine: {'line': b'   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_release(int mem) {\n'}
+[1.281653] (mpc_to) StderrLine: {'line': b'      |                                                         ~~~~^~~\n'}
+[1.281736] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_release\xe2\x80\x99:\n'}
+[1.281819] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun.c:134:60: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.281912] (mpc_to) StderrLine: {'line': b'  134 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_release(int mem) {\n'}
+[1.281997] (mpc_to) StderrLine: {'line': b'      |                                                        ~~~~^~~\n'}
+[1.282081] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_f0\xe2\x80\x99:\n'}
+[1.282171] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:42: warning: unused parameter \xe2\x80\x98arg\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.282256] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.282339] (mpc_to) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[1.282533] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.282624] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.282708] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.282792] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.282875] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.282959] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.283042] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:59:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.283136] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.283221] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.283305] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_init_mem\xe2\x80\x99:\n'}
+[1.283389] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:86:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.283492] (mpc_to) StderrLine: {'line': b'   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_init_mem(int mem) {\n'}
+[1.283578] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.283669] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_free_mem\xe2\x80\x99:\n'}
+[1.283755] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:90:68: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.283839] (mpc_to) StderrLine: {'line': b'   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_free_mem(int mem) {\n'}
+[1.283921] (mpc_to) StderrLine: {'line': b'      |                                                                ~~~~^~~\n'}
+[1.284003] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_release\xe2\x80\x99:\n'}
+[1.284087] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:97:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.284170] (mpc_to) StderrLine: {'line': b'   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_release(int mem) {\n'}
+[1.284253] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.284336] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_f0\xe2\x80\x99:\n'}
+[1.284431] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.284528] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.284613] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.284708] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_f0\xe2\x80\x99:\n'}
+[1.284800] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:42: warning: unused parameter \xe2\x80\x98arg\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.284885] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.285004] (mpc_to) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[1.285095] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.285179] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.285262] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.285345] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.285460] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.285555] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.285640] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:59:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.285738] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.285822] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.285906] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_init_mem\xe2\x80\x99:\n'}
+[1.285991] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:74:63: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.286074] (mpc_to) StderrLine: {'line': b'   74 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_init_mem(int mem) {\n'}
+[1.286156] (mpc_to) StderrLine: {'line': b'      |                                                           ~~~~^~~\n'}
+[1.286240] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_free_mem\xe2\x80\x99:\n'}
+[1.286330] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:78:64: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.286438] (mpc_to) StderrLine: {'line': b'   78 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_free_mem(int mem) {\n'}
+[1.286536] (mpc_to) StderrLine: {'line': b'      |                                                            ~~~~^~~\n'}
+[1.286620] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_f0\xe2\x80\x99:\n'}
+[1.286704] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_release\xe2\x80\x99:\n'}
+[1.286801] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.286886] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.286969] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.287051] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun.c:85:63: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.287143] (mpc_to) StderrLine: {'line': b'   85 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_release(int mem) {\n'}
+[1.287226] (mpc_to) StderrLine: {'line': b'      |                                                           ~~~~^~~\n'}
+[1.287310] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.287393] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.287494] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.287597] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:61:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.287681] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.287773] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.287862] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_init_mem\xe2\x80\x99:\n'}
+[1.287957] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:113:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.288041] (mpc_to) StderrLine: {'line': b'  113 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_init_mem(int mem) {\n'}
+[1.288123] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.288206] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_free_mem\xe2\x80\x99:\n'}
+[1.288290] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:117:68: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.288374] (mpc_to) StderrLine: {'line': b'  117 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_free_mem(int mem) {\n'}
+[1.288477] (mpc_to) StderrLine: {'line': b'      |                                                                ~~~~^~~\n'}
+[1.288564] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_release\xe2\x80\x99:\n'}
+[1.288649] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:124:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.288732] (mpc_to) StderrLine: {'line': b'  124 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_release(int mem) {\n'}
+[1.288824] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.288912] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function \xe2\x80\x98UR5_constr_h_fun_f0\xe2\x80\x99:\n'}
+[1.289438] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.289578] (mpc_to) StderrLine: {'line': b'   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.289686] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.289776] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.289864] (mpc_to) StderrLine: {'line': b'   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.289990] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.290149] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:62:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.290317] (mpc_to) StderrLine: {'line': b'   62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.290501] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.290674] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function \xe2\x80\x98UR5_constr_h_fun_init_mem\xe2\x80\x99:\n'}
+[1.290837] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:262:56: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.290985] (mpc_to) StderrLine: {'line': b'  262 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_init_mem(int mem) {\n'}
+[1.291129] (mpc_to) StderrLine: {'line': b'      |                                                    ~~~~^~~\n'}
+[1.291272] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function \xe2\x80\x98UR5_constr_h_fun_free_mem\xe2\x80\x99:\n'}
+[1.291425] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_hess_f0\xe2\x80\x99:\n'}
+[1.291583] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:266:57: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.291727] (mpc_to) StderrLine: {'line': b'  266 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_free_mem(int mem) {\n'}
+[1.291884] (mpc_to) StderrLine: {'line': b'      |                                                     ~~~~^~~\n'}
+[1.292028] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.292183] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.292327] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.296538] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c: In function \xe2\x80\x98UR5_constr_h_fun_release\xe2\x80\x99:\n'}
+[1.296740] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.296916] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.297073] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.297223] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:65:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.297377] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.297551] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.297703] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c:273:56: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.297860] (mpc_to) StderrLine: {'line': b'  273 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_release(int mem) {\n'}
+[1.298009] (mpc_to) StderrLine: {'line': b'      |                                                    ~~~~^~~\n'}
+[1.298156] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_hess_init_mem\xe2\x80\x99:\n'}
+[1.298307] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:117:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.298489] (mpc_to) StderrLine: {'line': b'  117 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_hess_init_mem(int mem) {\n'}
+[1.298678] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.298853] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_hess_free_mem\xe2\x80\x99:\n'}
+[1.299031] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:121:73: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.299211] (mpc_to) StderrLine: {'line': b'  121 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_free_mem(int mem) {\n'}
+[1.299384] (mpc_to) StderrLine: {'line': b'      |                                                                     ~~~~^~~\n'}
+[1.299772] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_jac_hess_release\xe2\x80\x99:\n'}
+[1.299960] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:128:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.300140] (mpc_to) StderrLine: {'line': b'  128 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_release(int mem) {\n'}
+[1.300321] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.300560] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_hess_f0\xe2\x80\x99:\n'}
+[1.300756] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:42: warning: unused parameter \xe2\x80\x98arg\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.300944] (mpc_to) StderrLine: {'line': b'   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.301123] (mpc_to) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[1.301278] (-) TimerEvent: {}
+[1.301324] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.302127] (mpc_to) StderrLine: {'line': b'   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.302315] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.302598] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.302776] (mpc_to) StderrLine: {'line': b'   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.302927] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.303073] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:63:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.303223] (mpc_to) StderrLine: {'line': b'   63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.303375] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.303564] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_hess_init_mem\xe2\x80\x99:\n'}
+[1.303743] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:90:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.303929] (mpc_to) StderrLine: {'line': b'   90 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_hess_init_mem(int mem) {\n'}
+[1.304104] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.304280] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_hess_free_mem\xe2\x80\x99:\n'}
+[1.304472] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:94:73: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.304664] (mpc_to) StderrLine: {'line': b'   94 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_free_mem(int mem) {\n'}
+[1.304843] (mpc_to) StderrLine: {'line': b'      |                                                                     ~~~~^~~\n'}
+[1.305015] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_e_fun_jac_hess_release\xe2\x80\x99:\n'}
+[1.305197] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:101:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.305377] (mpc_to) StderrLine: {'line': b'  101 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_release(int mem) {\n'}
+[1.305592] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.305772] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.305949] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.306116] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.306213] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:59:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.306304] (mpc_to) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.306392] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.306507] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_init_mem\xe2\x80\x99:\n'}
+[1.306599] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:86:63: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.306685] (mpc_to) StderrLine: {'line': b'   86 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_init_mem(int mem) {\n'}
+[1.306771] (mpc_to) StderrLine: {'line': b'      |                                                           ~~~~^~~\n'}
+[1.306873] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_free_mem\xe2\x80\x99:\n'}
+[1.306964] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:90:64: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.307066] (mpc_to) StderrLine: {'line': b'   90 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_free_mem(int mem) {\n'}
+[1.307153] (mpc_to) StderrLine: {'line': b'      |                                                            ~~~~^~~\n'}
+[1.307245] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c: In function \xe2\x80\x98UR5_cost_ext_cost_0_fun_release\xe2\x80\x99:\n'}
+[1.307331] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c:97:63: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.307453] (mpc_to) StderrLine: {'line': b'   97 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_release(int mem) {\n'}
+[1.307548] (mpc_to) StderrLine: {'line': b'      |                                                           ~~~~^~~\n'}
+[1.307665] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_f0\xe2\x80\x99:\n'}
+[1.307754] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.307847] (mpc_to) StderrLine: {'line': b'   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.307940] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.308035] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.308124] (mpc_to) StderrLine: {'line': b'   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.308208] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.308291] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.308376] (mpc_to) StderrLine: {'line': b'   66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.308479] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.308568] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_init_mem\xe2\x80\x99:\n'}
+[1.308653] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:573:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.308737] (mpc_to) StderrLine: {'line': b'  573 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_init_mem(int mem) {\n'}
+[1.308820] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.308903] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_free_mem\xe2\x80\x99:\n'}
+[1.308987] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:577:68: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.309071] (mpc_to) StderrLine: {'line': b'  577 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_free_mem(int mem) {\n'}
+[1.309154] (mpc_to) StderrLine: {'line': b'      |                                                                ~~~~^~~\n'}
+[1.309311] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_release\xe2\x80\x99:\n'}
+[1.309455] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:584:67: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.309556] (mpc_to) StderrLine: {'line': b'  584 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_release(int mem) {\n'}
+[1.309642] (mpc_to) StderrLine: {'line': b'      |                                                               ~~~~^~~\n'}
+[1.309733] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_f0\xe2\x80\x99:\n'}
+[1.309819] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.309905] (mpc_to) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.310007] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.310094] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310221] (mpc_to) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.310343] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.310450] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:57:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310546] (mpc_to) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.310634] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.310745] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_init_mem\xe2\x80\x99:\n'}
+[1.310865] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:156:64: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.310952] (mpc_to) StderrLine: {'line': b'  156 | CASADI_SYMBOL_EXPORT int UR5_dyn_disc_phi_fun_jac_init_mem(int mem) {\n'}
+[1.311059] (mpc_to) StderrLine: {'line': b'      |                                                            ~~~~^~~\n'}
+[1.311209] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_free_mem\xe2\x80\x99:\n'}
+[1.311376] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:160:65: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.311569] (mpc_to) StderrLine: {'line': b'  160 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_free_mem(int mem) {\n'}
+[1.311734] (mpc_to) StderrLine: {'line': b'      |                                                             ~~~~^~~\n'}
+[1.311899] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c: In function \xe2\x80\x98UR5_dyn_disc_phi_fun_jac_release\xe2\x80\x99:\n'}
+[1.312072] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c:167:64: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.312239] (mpc_to) StderrLine: {'line': b'  167 | CASADI_SYMBOL_EXPORT void UR5_dyn_disc_phi_fun_jac_release(int mem) {\n'}
+[1.312392] (mpc_to) StderrLine: {'line': b'      |                                                            ~~~~^~~\n'}
+[1.312564] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_hess_f0\xe2\x80\x99:\n'}
+[1.312721] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.312869] (mpc_to) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.313046] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.313215] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.313382] (mpc_to) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.313582] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.313693] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.313784] (mpc_to) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.313871] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.313957] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_hess_init_mem\xe2\x80\x99:\n'}
+[1.314042] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2077:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.314138] (mpc_to) StderrLine: {'line': b' 2077 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_hess_init_mem(int mem) {\n'}
+[1.314223] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.314316] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_hess_free_mem\xe2\x80\x99:\n'}
+[1.314402] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2081:73: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.314522] (mpc_to) StderrLine: {'line': b' 2081 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_free_mem(int mem) {\n'}
+[1.314611] (mpc_to) StderrLine: {'line': b'      |                                                                     ~~~~^~~\n'}
+[1.314695] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c: In function \xe2\x80\x98UR5_constr_h_fun_jac_uxt_zt_hess_release\xe2\x80\x99:\n'}
+[1.314781] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2088:72: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.314865] (mpc_to) StderrLine: {'line': b' 2088 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_release(int mem) {\n'}
+[1.314948] (mpc_to) StderrLine: {'line': b'      |                                                                    ~~~~^~~\n'}
+[1.315065] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_f0\xe2\x80\x99:\n'}
+[1.315153] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.315241] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.315334] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.315429] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.315527] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.315612] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.315696] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:61:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.315781] (mpc_to) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.315865] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.315948] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_init_mem\xe2\x80\x99:\n'}
+[1.316033] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:113:65: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.316116] (mpc_to) StderrLine: {'line': b'  113 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_init_mem(int mem) {\n'}
+[1.316199] (mpc_to) StderrLine: {'line': b'      |                                                             ~~~~^~~\n'}
+[1.316282] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_free_mem\xe2\x80\x99:\n'}
+[1.316366] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:117:66: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.316463] (mpc_to) StderrLine: {'line': b'  117 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_free_mem(int mem) {\n'}
+[1.316552] (mpc_to) StderrLine: {'line': b'      |                                                              ~~~~^~~\n'}
+[1.316635] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_release\xe2\x80\x99:\n'}
+[1.316733] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac.c:124:65: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.316816] (mpc_to) StderrLine: {'line': b'  124 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_release(int mem) {\n'}
+[1.316899] (mpc_to) StderrLine: {'line': b'      |                                                             ~~~~^~~\n'}
+[1.368174] (mpc_to) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c.o\n'}
+[1.369014] (mpc_to) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/high_solver.dir/solver_to_high_disc/acados_solver_UR5.c.o\n'}
+[1.372330] (mpc_to) StdoutLine: {'line': b'[ 95%] Building CXX object CMakeFiles/high_solver.dir/solver_to_high_disc/acados_solver_holder.cpp.o\n'}
+[1.401424] (-) TimerEvent: {}
+[1.423039] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_hess_f0\xe2\x80\x99:\n'}
+[1.423351] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:78: warning: unused parameter \xe2\x80\x98iw\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.423550] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.423722] (mpc_to) StderrLine: {'line': b'      |                                                                              ^\n'}
+[1.423889] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:95: warning: unused parameter \xe2\x80\x98w\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.424054] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.424218] (mpc_to) StderrLine: {'line': b'      |                                                                                               ^\n'}
+[1.424377] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:65:102: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.424563] (mpc_to) StderrLine: {'line': b'   65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {\n'}
+[1.424748] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~^~~\n'}
+[1.424924] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_hess_init_mem\xe2\x80\x99:\n'}
+[1.425085] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:117:70: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.425234] (mpc_to) StderrLine: {'line': b'  117 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_hess_init_mem(int mem) {\n'}
+[1.425375] (mpc_to) StderrLine: {'line': b'      |                                                                  ~~~~^~~\n'}
+[1.425562] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_hess_free_mem\xe2\x80\x99:\n'}
+[1.425777] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:121:71: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.425942] (mpc_to) StderrLine: {'line': b'  121 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_free_mem(int mem) {\n'}
+[1.426160] (mpc_to) StderrLine: {'line': b'      |                                                                   ~~~~^~~\n'}
+[1.426351] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c: In function \xe2\x80\x98UR5_cost_ext_cost_fun_jac_hess_release\xe2\x80\x99:\n'}
+[1.426526] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:128:70: warning: unused parameter \xe2\x80\x98mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.426668] (mpc_to) StderrLine: {'line': b'  128 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_release(int mem) {\n'}
+[1.426751] (mpc_to) StderrLine: {'line': b'      |                                                                  ~~~~^~~\n'}
+[1.469277] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function \xe2\x80\x98UR5_acados_create_5_set_nlp_in\xe2\x80\x99:\n'}
+[1.469585] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:445:9: warning: unused variable \xe2\x80\x98tmp_int\xe2\x80\x99 [-Wunused-variable]\n'}
+[1.469753] (mpc_to) StderrLine: {'line': b'  445 |     int tmp_int = 0;\n'}
+[1.469915] (mpc_to) StderrLine: {'line': b'      |         ^~~~~~~\n'}
+[1.470856] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function \xe2\x80\x98UR5_acados_update_qp_solver_cond_N\xe2\x80\x99:\n'}
+[1.471052] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:937:60: warning: unused parameter \xe2\x80\x98capsule\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.471209] (mpc_to) StderrLine: {'line': b'  937 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, int qp_solver_cond_N)\n'}
+[1.471363] (mpc_to) StderrLine: {'line': b'      |                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~~\n'}
+[1.471550] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:937:73: warning: unused parameter \xe2\x80\x98qp_solver_cond_N\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.471708] (mpc_to) StderrLine: {'line': b'  937 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, int qp_solver_cond_N)\n'}
+[1.471867] (mpc_to) StderrLine: {'line': b'      |                                                                     ~~~~^~~~~~~~~~~~~~~~\n'}
+[1.472026] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c: In function \xe2\x80\x98UR5_acados_reset\xe2\x80\x99:\n'}
+[1.472177] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:955:21: warning: unused variable \xe2\x80\x98nlp_solver\xe2\x80\x99 [-Wunused-variable]\n'}
+[1.472326] (mpc_to) StderrLine: {'line': b'  955 |     ocp_nlp_solver* nlp_solver = capsule->nlp_solver;\n'}
+[1.472493] (mpc_to) StderrLine: {'line': b'      |                     ^~~~~~~~~~\n'}
+[1.472650] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:954:17: warning: unused variable \xe2\x80\x98nlp_in\xe2\x80\x99 [-Wunused-variable]\n'}
+[1.472799] (mpc_to) StderrLine: {'line': b'  954 |     ocp_nlp_in* nlp_in = capsule->nlp_in;\n'}
+[1.472946] (mpc_to) StderrLine: {'line': b'      |                 ^~~~~~\n'}
+[1.473093] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_UR5.c:945:55: warning: unused parameter \xe2\x80\x98reset_qp_solver_mem\xe2\x80\x99 [-Wunused-parameter]\n'}
+[1.473247] (mpc_to) StderrLine: {'line': b'  945 | int UR5_acados_reset(UR5_solver_capsule* capsule, int reset_qp_solver_mem)\n'}
+[1.473400] (mpc_to) StderrLine: {'line': b'      |                                                   ~~~~^~~~~~~~~~~~~~~~~~~\n'}
+[1.501497] (-) TimerEvent: {}
+[1.601759] (-) TimerEvent: {}
+[1.702046] (-) TimerEvent: {}
+[1.802329] (-) TimerEvent: {}
+[1.902655] (-) TimerEvent: {}
+[2.002968] (-) TimerEvent: {}
+[2.103290] (-) TimerEvent: {}
+[2.203648] (-) TimerEvent: {}
+[2.303986] (-) TimerEvent: {}
+[2.404306] (-) TimerEvent: {}
+[2.504614] (-) TimerEvent: {}
+[2.604899] (-) TimerEvent: {}
+[2.705147] (-) TimerEvent: {}
+[2.805400] (-) TimerEvent: {}
+[2.855539] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp: In function \xe2\x80\x98Eigen::MatrixXf get_cpose(float, float, float, float, float, float)\xe2\x80\x99:\n'}
+[2.856000] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:4:83: warning: unused parameter \xe2\x80\x98q6\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.856281] (mpc_to) StderrLine: {'line': b'    4 | Eigen::MatrixXf get_cpose(float q1, float q2, float q3, float q4, float q5, float q6){\n'}
+[2.856583] (mpc_to) StderrLine: {'line': b'      |                                                                             ~~~~~~^~\n'}
+[2.862270] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp: In function \xe2\x80\x98Eigen::MatrixXf get_velocity(float, float, float, float, float, float, float, float, float, float, float, float)\xe2\x80\x99:\n'}
+[2.862608] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:15:86: warning: unused parameter \xe2\x80\x98q6\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.862794] (mpc_to) StderrLine: {'line': b'   15 | Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, float q6,\n'}
+[2.862945] (mpc_to) StderrLine: {'line': b'      |                                                                                ~~~~~~^~\n'}
+[2.863090] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/kinematics_functions.cpp:16:91: warning: unused parameter \xe2\x80\x98u_6\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.863233] (mpc_to) StderrLine: {'line': b'   16 |                              float u_1, float u_2, float u_3, float u_4, float u_5, float u_6){\n'}
+[2.863386] (mpc_to) StderrLine: {'line': b'      |                                                                                     ~~~~~~^~~\n'}
+[2.863837] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp: In member function \xe2\x80\x98int my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*, double*)\xe2\x80\x99:\n'}
+[2.863991] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:158:12: warning: ISO C++ forbids variable length array \xe2\x80\x98xtraj\xe2\x80\x99 [-Wvla]\n'}
+[2.864134] (mpc_to) StderrLine: {'line': b'  158 |     double xtraj[NX * (N+1)];\n'}
+[2.864277] (mpc_to) StderrLine: {'line': b'      |            ^~~~~\n'}
+[2.864441] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:159:12: warning: ISO C++ forbids variable length array \xe2\x80\x98utraj\xe2\x80\x99 [-Wvla]\n'}
+[2.864875] (mpc_to) StderrLine: {'line': b'  159 |     double utraj[NU * N];\n'}
+[2.865020] (mpc_to) StderrLine: {'line': b'      |            ^~~~~\n'}
+[2.865176] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:42: warning: unused parameter \xe2\x80\x98tracking_goal\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.865438] (mpc_to) StderrLine: {'line': b'   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {\n'}
+[2.865581] (mpc_to) StderrLine: {'line': b'      |                                   ~~~~~~~^~~~~~~~~~~~~~~~~\n'}
+[2.865668] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:68: warning: unused parameter \xe2\x80\x98cgoal\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.865752] (mpc_to) StderrLine: {'line': b'   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {\n'}
+[2.865836] (mpc_to) StderrLine: {'line': b'      |                                                             ~~~~~~~^~~~~~~~\n'}
+[2.865920] (mpc_to) StderrLine: {'line': b'/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:105: warning: unused parameter \xe2\x80\x98my_weights\xe2\x80\x99 [-Wunused-parameter]\n'}
+[2.866022] (mpc_to) StderrLine: {'line': b'   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {\n'}
+[2.866106] (mpc_to) StderrLine: {'line': b'      |                                                                                                  ~~~~~~~^~~~~~~~~~~~~~\n'}
+[2.905582] (-) TimerEvent: {}
+[3.005912] (-) TimerEvent: {}
+[3.106226] (-) TimerEvent: {}
+[3.206536] (-) TimerEvent: {}
+[3.306836] (-) TimerEvent: {}
+[3.407171] (-) TimerEvent: {}
+[3.507538] (-) TimerEvent: {}
+[3.607883] (-) TimerEvent: {}
+[3.708193] (-) TimerEvent: {}
+[3.808585] (-) TimerEvent: {}
+[3.908886] (-) TimerEvent: {}
+[4.009247] (-) TimerEvent: {}
+[4.109509] (-) TimerEvent: {}
+[4.209778] (-) TimerEvent: {}
+[4.310069] (-) TimerEvent: {}
+[4.410349] (-) TimerEvent: {}
+[4.510650] (-) TimerEvent: {}
+[4.610925] (-) TimerEvent: {}
+[4.711172] (-) TimerEvent: {}
+[4.811480] (-) TimerEvent: {}
+[4.911774] (-) TimerEvent: {}
+[5.012111] (-) TimerEvent: {}
+[5.112433] (-) TimerEvent: {}
+[5.212704] (-) TimerEvent: {}
+[5.312974] (-) TimerEvent: {}
+[5.413235] (-) TimerEvent: {}
+[5.513499] (-) TimerEvent: {}
+[5.613776] (-) TimerEvent: {}
+[5.714099] (-) TimerEvent: {}
+[5.814381] (-) TimerEvent: {}
+[5.914736] (-) TimerEvent: {}
+[6.015040] (-) TimerEvent: {}
+[6.115341] (-) TimerEvent: {}
+[6.215687] (-) TimerEvent: {}
+[6.315995] (-) TimerEvent: {}
+[6.416298] (-) TimerEvent: {}
+[6.516631] (-) TimerEvent: {}
+[6.616938] (-) TimerEvent: {}
+[6.717246] (-) TimerEvent: {}
+[6.817577] (-) TimerEvent: {}
+[6.917880] (-) TimerEvent: {}
+[7.018188] (-) TimerEvent: {}
+[7.118507] (-) TimerEvent: {}
+[7.218813] (-) TimerEvent: {}
+[7.319136] (-) TimerEvent: {}
+[7.419476] (-) TimerEvent: {}
+[7.519783] (-) TimerEvent: {}
+[7.620032] (-) TimerEvent: {}
+[7.720308] (-) TimerEvent: {}
+[7.820665] (-) TimerEvent: {}
+[7.920990] (-) TimerEvent: {}
+[8.021301] (-) TimerEvent: {}
+[8.121645] (-) TimerEvent: {}
+[8.221920] (-) TimerEvent: {}
+[8.322242] (-) TimerEvent: {}
+[8.422563] (-) TimerEvent: {}
+[8.522882] (-) TimerEvent: {}
+[8.623193] (-) TimerEvent: {}
+[8.723493] (-) TimerEvent: {}
+[8.823802] (-) TimerEvent: {}
+[8.924106] (-) TimerEvent: {}
+[9.024476] (-) TimerEvent: {}
+[9.124778] (-) TimerEvent: {}
+[9.225077] (-) TimerEvent: {}
+[9.325401] (-) TimerEvent: {}
+[9.425742] (-) TimerEvent: {}
+[9.526075] (-) TimerEvent: {}
+[9.626457] (-) TimerEvent: {}
+[9.726764] (-) TimerEvent: {}
+[9.827076] (-) TimerEvent: {}
+[9.927395] (-) TimerEvent: {}
+[10.027762] (-) TimerEvent: {}
+[10.128066] (-) TimerEvent: {}
+[10.228379] (-) TimerEvent: {}
+[10.328717] (-) TimerEvent: {}
+[10.428971] (-) TimerEvent: {}
+[10.529228] (-) TimerEvent: {}
+[10.629544] (-) TimerEvent: {}
+[10.729861] (-) TimerEvent: {}
+[10.830175] (-) TimerEvent: {}
+[10.930509] (-) TimerEvent: {}
+[11.030833] (-) TimerEvent: {}
+[11.131083] (-) TimerEvent: {}
+[11.231337] (-) TimerEvent: {}
+[11.331668] (-) TimerEvent: {}
+[11.431962] (-) TimerEvent: {}
+[11.532264] (-) TimerEvent: {}
+[11.632558] (-) TimerEvent: {}
+[11.732880] (-) TimerEvent: {}
+[11.833194] (-) TimerEvent: {}
+[11.933501] (-) TimerEvent: {}
+[12.033796] (-) TimerEvent: {}
+[12.134099] (-) TimerEvent: {}
+[12.234400] (-) TimerEvent: {}
+[12.334765] (-) TimerEvent: {}
+[12.435057] (-) TimerEvent: {}
+[12.535335] (-) TimerEvent: {}
+[12.635617] (-) TimerEvent: {}
+[12.735897] (-) TimerEvent: {}
+[12.836188] (-) TimerEvent: {}
+[12.936490] (-) TimerEvent: {}
+[13.036776] (-) TimerEvent: {}
+[13.137028] (-) TimerEvent: {}
+[13.237278] (-) TimerEvent: {}
+[13.337526] (-) TimerEvent: {}
+[13.437798] (-) TimerEvent: {}
+[13.538022] (-) TimerEvent: {}
+[13.638287] (-) TimerEvent: {}
+[13.738601] (-) TimerEvent: {}
+[13.838840] (-) TimerEvent: {}
+[13.939099] (-) TimerEvent: {}
+[14.039365] (-) TimerEvent: {}
+[14.139618] (-) TimerEvent: {}
+[14.239856] (-) TimerEvent: {}
+[14.340090] (-) TimerEvent: {}
+[14.440382] (-) TimerEvent: {}
+[14.540696] (-) TimerEvent: {}
+[14.641006] (-) TimerEvent: {}
+[14.741288] (-) TimerEvent: {}
+[14.841592] (-) TimerEvent: {}
+[14.941834] (-) TimerEvent: {}
+[15.042138] (-) TimerEvent: {}
+[15.142400] (-) TimerEvent: {}
+[15.242644] (-) TimerEvent: {}
+[15.342919] (-) TimerEvent: {}
+[15.443173] (-) TimerEvent: {}
+[15.543466] (-) TimerEvent: {}
+[15.643741] (-) TimerEvent: {}
+[15.744020] (-) TimerEvent: {}
+[15.844343] (-) TimerEvent: {}
+[15.944694] (-) TimerEvent: {}
+[16.045005] (-) TimerEvent: {}
+[16.145339] (-) TimerEvent: {}
+[16.245697] (-) TimerEvent: {}
+[16.345998] (-) TimerEvent: {}
+[16.446283] (-) TimerEvent: {}
+[16.546579] (-) TimerEvent: {}
+[16.646882] (-) TimerEvent: {}
+[16.747150] (-) TimerEvent: {}
+[16.847381] (-) TimerEvent: {}
+[16.947652] (-) TimerEvent: {}
+[17.047904] (-) TimerEvent: {}
+[17.148142] (-) TimerEvent: {}
+[17.248444] (-) TimerEvent: {}
+[17.348717] (-) TimerEvent: {}
+[17.448964] (-) TimerEvent: {}
+[17.549199] (-) TimerEvent: {}
+[17.649457] (-) TimerEvent: {}
+[17.749687] (-) TimerEvent: {}
+[17.849943] (-) TimerEvent: {}
+[17.950184] (-) TimerEvent: {}
+[18.050474] (-) TimerEvent: {}
+[18.150737] (-) TimerEvent: {}
+[18.251035] (-) TimerEvent: {}
+[18.351350] (-) TimerEvent: {}
+[18.451615] (-) TimerEvent: {}
+[18.551868] (-) TimerEvent: {}
+[18.652105] (-) TimerEvent: {}
+[18.752368] (-) TimerEvent: {}
+[18.852645] (-) TimerEvent: {}
+[18.952864] (-) TimerEvent: {}
+[19.053132] (-) TimerEvent: {}
+[19.153438] (-) TimerEvent: {}
+[19.253695] (-) TimerEvent: {}
+[19.353992] (-) TimerEvent: {}
+[19.454292] (-) TimerEvent: {}
+[19.554625] (-) TimerEvent: {}
+[19.654896] (-) TimerEvent: {}
+[19.755154] (-) TimerEvent: {}
+[19.855460] (-) TimerEvent: {}
+[19.955782] (-) TimerEvent: {}
+[20.056110] (-) TimerEvent: {}
+[20.156458] (-) TimerEvent: {}
+[20.256780] (-) TimerEvent: {}
+[20.357072] (-) TimerEvent: {}
+[20.457335] (-) TimerEvent: {}
+[20.557635] (-) TimerEvent: {}
+[20.657964] (-) TimerEvent: {}
+[20.758268] (-) TimerEvent: {}
+[20.858577] (-) TimerEvent: {}
+[20.958853] (-) TimerEvent: {}
+[21.059142] (-) TimerEvent: {}
+[21.159487] (-) TimerEvent: {}
+[21.259734] (-) TimerEvent: {}
+[21.360013] (-) TimerEvent: {}
+[21.460273] (-) TimerEvent: {}
+[21.560582] (-) TimerEvent: {}
+[21.660858] (-) TimerEvent: {}
+[21.761077] (-) TimerEvent: {}
+[21.861311] (-) TimerEvent: {}
+[21.961553] (-) TimerEvent: {}
+[22.061794] (-) TimerEvent: {}
+[22.162034] (-) TimerEvent: {}
+[22.262281] (-) TimerEvent: {}
+[22.362531] (-) TimerEvent: {}
+[22.422020] (mpc_to) StdoutLine: {'line': b'[100%] Linking CXX executable high_solver\n'}
+[22.462698] (-) TimerEvent: {}
+[22.562939] (-) TimerEvent: {}
+[22.663175] (-) TimerEvent: {}
+[22.763380] (-) TimerEvent: {}
+[22.863627] (-) TimerEvent: {}
+[22.963850] (-) TimerEvent: {}
+[22.983772] (mpc_to) StdoutLine: {'line': b'[100%] Built target high_solver\n'}
+[23.000160] (mpc_to) CommandEnded: {'returncode': 0}
+[23.001282] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'install'}
+[23.014792] (mpc_to) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/chri/CHRI_2025/Time_optimal_baseline'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-dc379cb2-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4448'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/chri/.local/bin:/home/chri/.codex/tmp/arg0/codex-arg0BuOmM9:/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chri/.vscode/extensions/openai.chatgpt-0.4.76-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4359,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4359'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/981dda44_ba39_4e68_b6a8_14772126a1dc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.681'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019c8929-64f0-7b21-870a-efcb4a5d5df1'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/chri/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '1166087'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[23.026818] (mpc_to) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[23.027568] (mpc_to) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.028044] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/lib/mpc_to/high_solver\n'}
+[23.028277] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/package_run_dependencies/mpc_to\n'}
+[23.028560] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/parent_prefix_path/mpc_to\n'}
+[23.028824] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.sh\n'}
+[23.029068] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.dsv\n'}
+[23.029318] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.sh\n'}
+[23.029576] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.dsv\n'}
+[23.029821] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.bash\n'}
+[23.030057] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.sh\n'}
+[23.030291] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.zsh\n'}
+[23.030663] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.dsv\n'}
+[23.030840] (mpc_to) StdoutLine: {'line': b'-- Symlinking: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.dsv\n'}
+[23.044120] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/packages/mpc_to\n'}
+[23.044533] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig.cmake\n'}
+[23.044646] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig-version.cmake\n'}
+[23.044827] (mpc_to) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.xml\n'}
+[23.063974] (-) TimerEvent: {}
+[23.164263] (-) TimerEvent: {}
+[23.264570] (-) TimerEvent: {}
+[23.364875] (-) TimerEvent: {}
+[23.465166] (-) TimerEvent: {}
+[23.565516] (-) TimerEvent: {}
+[23.665790] (-) TimerEvent: {}
+[23.766090] (-) TimerEvent: {}
+[23.866373] (-) TimerEvent: {}
+[23.966664] (-) TimerEvent: {}
+[24.066967] (-) TimerEvent: {}
+[24.167286] (-) TimerEvent: {}
+[24.267602] (-) TimerEvent: {}
+[24.367888] (-) TimerEvent: {}
+[24.468190] (-) TimerEvent: {}
+[24.568490] (-) TimerEvent: {}
+[24.668740] (-) TimerEvent: {}
+[24.769022] (-) TimerEvent: {}
+[24.869302] (-) TimerEvent: {}
+[24.969535] (-) TimerEvent: {}
+[25.069775] (-) TimerEvent: {}
+[25.170071] (-) TimerEvent: {}
+[25.270277] (-) TimerEvent: {}
+[25.370524] (-) TimerEvent: {}
+[25.470771] (-) TimerEvent: {}
+[25.571044] (-) TimerEvent: {}
+[25.671333] (-) TimerEvent: {}
+[25.771658] (-) TimerEvent: {}
+[25.871909] (-) TimerEvent: {}
+[25.972111] (-) TimerEvent: {}
+[26.072367] (-) TimerEvent: {}
+[26.172690] (-) TimerEvent: {}
+[26.272974] (-) TimerEvent: {}
+[26.373251] (-) TimerEvent: {}
+[26.473515] (-) TimerEvent: {}
+[26.573783] (-) TimerEvent: {}
+[26.674044] (-) TimerEvent: {}
+[26.774331] (-) TimerEvent: {}
+[26.874589] (-) TimerEvent: {}
+[26.974847] (-) TimerEvent: {}
+[27.075073] (-) TimerEvent: {}
+[27.175312] (-) TimerEvent: {}
+[27.275517] (-) TimerEvent: {}
+[27.375761] (-) TimerEvent: {}
+[27.476011] (-) TimerEvent: {}
+[27.576304] (-) TimerEvent: {}
+[27.676560] (-) TimerEvent: {}
+[27.776803] (-) TimerEvent: {}
+[27.877034] (-) TimerEvent: {}
+[27.977273] (-) TimerEvent: {}
+[28.077525] (-) TimerEvent: {}
+[28.177800] (-) TimerEvent: {}
+[28.278066] (-) TimerEvent: {}
+[28.378327] (-) TimerEvent: {}
+[28.478625] (-) TimerEvent: {}
+[28.578871] (-) TimerEvent: {}
+[28.679123] (-) TimerEvent: {}
+[28.779343] (-) TimerEvent: {}
+[28.879592] (-) TimerEvent: {}
+[28.979887] (-) TimerEvent: {}
+[29.080157] (-) TimerEvent: {}
+[29.180436] (-) TimerEvent: {}
+[29.280715] (-) TimerEvent: {}
+[29.380994] (-) TimerEvent: {}
+[29.481251] (-) TimerEvent: {}
+[29.581537] (-) TimerEvent: {}
+[29.681781] (-) TimerEvent: {}
+[29.782080] (-) TimerEvent: {}
+[29.882362] (-) TimerEvent: {}
+[29.982678] (-) TimerEvent: {}
+[30.008254] (mpc_to) CommandEnded: {'returncode': 0}
+[30.053963] (mpc_to) JobEnded: {'identifier': 'mpc_to', 'rc': 0}
+[30.055816] (-) EventReactorShutdown: {}

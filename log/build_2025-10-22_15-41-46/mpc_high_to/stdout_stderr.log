@@ -1,0 +1,61 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/kinematics_functions.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_high_to/acados_solver_holder.cpp.o[0m
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/kinematics_functions.cpp:[m[K In function ‘[01m[KEigen::MatrixXf get_cpose(float, float, float, float, float, float)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/kinematics_functions.cpp:4:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kq6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    4 | Eigen::MatrixXf get_cpose(float q1, float q2, float q3, float q4, float q5, [01;35m[Kfloat q6[m[K){
+      |                                                                             [01;35m[K~~~~~~^~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/kinematics_functions.cpp:[m[K In function ‘[01m[KEigen::MatrixXf get_velocity(float, float, float, float, float, float, float, float, float, float, float, float)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/kinematics_functions.cpp:15:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kq6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   15 | Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, [01;35m[Kfloat q6[m[K,
+      |                                                                                [01;35m[K~~~~~~^~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/kinematics_functions.cpp:16:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ku_6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 |                              float u_1, float u_2, float u_3, float u_4, float u_5, [01;35m[Kfloat u_6[m[K){
+      |                                                                                     [01;35m[K~~~~~~^~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:[m[K In constructor ‘[01m[Kmy_NMPC_solver::my_NMPC_solver(int, int)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:12:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kstemps_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   12 |     double [01;35m[Kstemps_array[m[K[number_of_current_steps]={0.0}; // create array of maximum length
+      |            [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:133:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  133 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:134:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+  134 |     double [01;35m[Kutraj[m[K[NU * N];
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:26:140:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktracking_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   26 | int my_NMPC_solver::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], [01;35m[Kdouble tracking_goal[60][m[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                                                                                                                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/solver_high_to/acados_solver_holder.cpp:26:203:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   26 | int my_NMPC_solver::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], [01;35m[Kdouble my_weights[10][m[K, double full_trajectory[140]) {
+      |                                                                                                                                                                                                    [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/high_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/high_solver.cpp:236:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  236 |             double [01;35m[Kmax_linear_vell_current[m[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/high_solver.cpp:279:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  279 |             double [01;35m[Kmax_linear_vell[m[K = get_spheres_velocity(current_position, selected_vels, max_vell);
+      |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high_to/src/high_solver.cpp:282:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klin_vell_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  282 |             double [01;35m[Klin_vell_scale[m[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
+      |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[ 20%] [32m[1mLinking CXX executable high_solver[0m
+[100%] Built target high_solver
+-- Install configuration: ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/mpc_high_to/high_solver
+-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/mpc_high_to/high_solver" to ""
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/package_run_dependencies/mpc_high_to
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/parent_prefix_path/mpc_high_to
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.bash
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.zsh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/packages/mpc_high_to
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig-version.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.xml

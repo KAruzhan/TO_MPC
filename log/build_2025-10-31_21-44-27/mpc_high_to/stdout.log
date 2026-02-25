@@ -1,0 +1,20 @@
+[  5%] [32m[1mLinking CXX executable high_solver[0m
+[100%] Built target high_solver
+-- Install configuration: ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/mpc_high_to/high_solver
+-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/lib/mpc_high_to/high_solver" to ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/package_run_dependencies/mpc_high_to
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/parent_prefix_path/mpc_high_to
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/environment/path.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.bash
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.sh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.zsh
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/local_setup.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/ament_index/resource_index/packages/mpc_high_to
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig.cmake
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/cmake/mpc_high_toConfig-version.cmake
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to/share/mpc_high_to/package.xml

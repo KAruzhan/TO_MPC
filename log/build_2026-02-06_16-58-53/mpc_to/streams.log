@@ -1,0 +1,29 @@
+[0.086s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[0.774s] [  9%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[0.774s] [  9%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o[0m
+[0.775s] [ 18%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o[0m
+[0.775s] [ 18%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o[0m
+[1.138s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:35:10:[m[K [01;31m[Kfatal error: [m[Kacados_c/external_function_interface.h: No such file or directory
+[1.139s]    35 | #include [01;31m[K"acados_c/external_function_interface.h"[m[K
+[1.139s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.139s] compilation terminated.
+[1.139s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:37:10:[m[K [01;31m[Kfatal error: [m[Kacados_c/ocp_nlp_interface.h: No such file or directory
+[1.139s]    37 | #include [01;31m[K"acados_c/ocp_nlp_interface.h"[m[K
+[1.139s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.140s] compilation terminated.
+[1.183s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:328: CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o] Error 1
+[1.184s] gmake[2]: *** Waiting for unfinished jobs....
+[1.184s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:342: CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o] Error 1
+[1.428s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kacados_solver_holder.hpp: No such file or directory
+[1.428s]     1 | #include [01;31m[K"acados_solver_holder.hpp"[m[K
+[1.428s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.429s] compilation terminated.
+[1.430s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:356: CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o] Error 1
+[2.971s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kacados_solver_holder.hpp: No such file or directory
+[2.971s]    10 | #include [01;31m[K"acados_solver_holder.hpp"[m[K
+[2.972s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.972s] compilation terminated.
+[2.978s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:76: CMakeFiles/high_solver.dir/src/high_solver.cpp.o] Error 1
+[2.979s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+[2.979s] gmake: *** [Makefile:146: all] Error 2
+[2.984s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16

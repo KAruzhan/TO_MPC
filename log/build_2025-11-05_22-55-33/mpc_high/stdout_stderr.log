@@ -1,0 +1,31 @@
+[  9%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:236:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  236 |             double [01;35m[Kmax_linear_vell_current[m[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:278:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  278 |             double [01;35m[Kmax_linear_vell[m[K = get_spheres_velocity(current_position, selected_vels, max_vell);
+      |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:281:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klin_vell_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  281 |             double [01;35m[Klin_vell_scale[m[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
+      |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[ 18%] [32m[1mLinking CXX executable high_solver[0m
+[100%] Built target high_solver
+-- Install configuration: ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/mpc_high/high_solver
+-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/lib/mpc_high/high_solver" to ""
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/package_run_dependencies/mpc_high
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/parent_prefix_path/mpc_high
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/ament_prefix_path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/environment/path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.bash
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.zsh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/local_setup.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/ament_index/resource_index/packages/mpc_high
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/cmake/mpc_highConfig.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/cmake/mpc_highConfig-version.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high/share/mpc_high/package.xml

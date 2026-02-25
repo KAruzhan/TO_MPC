@@ -1,0 +1,1 @@
+/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to/ament_cmake_environment_hooks/local_setup.sh

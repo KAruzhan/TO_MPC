@@ -1,0 +1,231 @@
+[0.000000] (-) TimerEvent: {}
+[0.000681] (-) JobUnselected: {'identifier': 'mpc_high'}
+[0.000865] (-) JobUnselected: {'identifier': 'mpc_high_to'}
+[0.001214] (-) JobUnselected: {'identifier': 'mpc_low'}
+[0.001344] (-) JobUnselected: {'identifier': 'mppi_controller'}
+[0.001396] (-) JobUnselected: {'identifier': 'pb_ur5_sim'}
+[0.001508] (-) JobUnselected: {'identifier': 'sim_utils'}
+[0.001555] (-) JobUnselected: {'identifier': 'ur_ros2_driver'}
+[0.001626] (mpc_to) JobQueued: {'identifier': 'mpc_to', 'dependencies': OrderedDict()}
+[0.001664] (mpc_to) JobStarted: {'identifier': 'mpc_to'}
+[0.022075] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'cmake'}
+[0.023000] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'build'}
+[0.023929] (mpc_to) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', '--', '-j16', '-l16'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('SYSTEMD_EXEC_PID', '4563'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4472,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4472'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01abeadf_9260_4a01_962f_1061b6ea9aaa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.6689'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099574] (-) TimerEvent: {}
+[0.103151] (mpc_to) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target high_solver\x1b[0m\n'}
+[0.148801] (mpc_to) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o\x1b[0m\n'}
+[0.199741] (-) TimerEvent: {}
+[0.300212] (-) TimerEvent: {}
+[0.400639] (-) TimerEvent: {}
+[0.501097] (-) TimerEvent: {}
+[0.601572] (-) TimerEvent: {}
+[0.702091] (-) TimerEvent: {}
+[0.802481] (-) TimerEvent: {}
+[0.902949] (-) TimerEvent: {}
+[1.003424] (-) TimerEvent: {}
+[1.103897] (-) TimerEvent: {}
+[1.204420] (-) TimerEvent: {}
+[1.304917] (-) TimerEvent: {}
+[1.405450] (-) TimerEvent: {}
+[1.505927] (-) TimerEvent: {}
+[1.606440] (-) TimerEvent: {}
+[1.706943] (-) TimerEvent: {}
+[1.807468] (-) TimerEvent: {}
+[1.907959] (-) TimerEvent: {}
+[2.008458] (-) TimerEvent: {}
+[2.108964] (-) TimerEvent: {}
+[2.209478] (-) TimerEvent: {}
+[2.309989] (-) TimerEvent: {}
+[2.410527] (-) TimerEvent: {}
+[2.511073] (-) TimerEvent: {}
+[2.611549] (-) TimerEvent: {}
+[2.712056] (-) TimerEvent: {}
+[2.812525] (-) TimerEvent: {}
+[2.913098] (-) TimerEvent: {}
+[3.013595] (-) TimerEvent: {}
+[3.114142] (-) TimerEvent: {}
+[3.214650] (-) TimerEvent: {}
+[3.315198] (-) TimerEvent: {}
+[3.415763] (-) TimerEvent: {}
+[3.516376] (-) TimerEvent: {}
+[3.616862] (-) TimerEvent: {}
+[3.717358] (-) TimerEvent: {}
+[3.817841] (-) TimerEvent: {}
+[3.918278] (-) TimerEvent: {}
+[4.018763] (-) TimerEvent: {}
+[4.119217] (-) TimerEvent: {}
+[4.219631] (-) TimerEvent: {}
+[4.320110] (-) TimerEvent: {}
+[4.421131] (-) TimerEvent: {}
+[4.521632] (-) TimerEvent: {}
+[4.622113] (-) TimerEvent: {}
+[4.722482] (-) TimerEvent: {}
+[4.822886] (-) TimerEvent: {}
+[4.923424] (-) TimerEvent: {}
+[5.023924] (-) TimerEvent: {}
+[5.124499] (-) TimerEvent: {}
+[5.225036] (-) TimerEvent: {}
+[5.325450] (-) TimerEvent: {}
+[5.425963] (-) TimerEvent: {}
+[5.526433] (-) TimerEvent: {}
+[5.626855] (-) TimerEvent: {}
+[5.727377] (-) TimerEvent: {}
+[5.827847] (-) TimerEvent: {}
+[5.928376] (-) TimerEvent: {}
+[6.028908] (-) TimerEvent: {}
+[6.129430] (-) TimerEvent: {}
+[6.230001] (-) TimerEvent: {}
+[6.330507] (-) TimerEvent: {}
+[6.431073] (-) TimerEvent: {}
+[6.531567] (-) TimerEvent: {}
+[6.632056] (-) TimerEvent: {}
+[6.732531] (-) TimerEvent: {}
+[6.833084] (-) TimerEvent: {}
+[6.933548] (-) TimerEvent: {}
+[7.033956] (-) TimerEvent: {}
+[7.134438] (-) TimerEvent: {}
+[7.234923] (-) TimerEvent: {}
+[7.335427] (-) TimerEvent: {}
+[7.435948] (-) TimerEvent: {}
+[7.536461] (-) TimerEvent: {}
+[7.636956] (-) TimerEvent: {}
+[7.737458] (-) TimerEvent: {}
+[7.837949] (-) TimerEvent: {}
+[7.938425] (-) TimerEvent: {}
+[8.038928] (-) TimerEvent: {}
+[8.139406] (-) TimerEvent: {}
+[8.239933] (-) TimerEvent: {}
+[8.340466] (-) TimerEvent: {}
+[8.440985] (-) TimerEvent: {}
+[8.541476] (-) TimerEvent: {}
+[8.641958] (-) TimerEvent: {}
+[8.742447] (-) TimerEvent: {}
+[8.842943] (-) TimerEvent: {}
+[8.943456] (-) TimerEvent: {}
+[9.043969] (-) TimerEvent: {}
+[9.144522] (-) TimerEvent: {}
+[9.245045] (-) TimerEvent: {}
+[9.345540] (-) TimerEvent: {}
+[9.446088] (-) TimerEvent: {}
+[9.546599] (-) TimerEvent: {}
+[9.647087] (-) TimerEvent: {}
+[9.747543] (-) TimerEvent: {}
+[9.848103] (-) TimerEvent: {}
+[9.948649] (-) TimerEvent: {}
+[10.049130] (-) TimerEvent: {}
+[10.149634] (-) TimerEvent: {}
+[10.250121] (-) TimerEvent: {}
+[10.350565] (-) TimerEvent: {}
+[10.451073] (-) TimerEvent: {}
+[10.551522] (-) TimerEvent: {}
+[10.651957] (-) TimerEvent: {}
+[10.752432] (-) TimerEvent: {}
+[10.852882] (-) TimerEvent: {}
+[10.953372] (-) TimerEvent: {}
+[11.053850] (-) TimerEvent: {}
+[11.154346] (-) TimerEvent: {}
+[11.254817] (-) TimerEvent: {}
+[11.355264] (-) TimerEvent: {}
+[11.455716] (-) TimerEvent: {}
+[11.556231] (-) TimerEvent: {}
+[11.656649] (-) TimerEvent: {}
+[11.757133] (-) TimerEvent: {}
+[11.857579] (-) TimerEvent: {}
+[11.957993] (-) TimerEvent: {}
+[12.058485] (-) TimerEvent: {}
+[12.158957] (-) TimerEvent: {}
+[12.259441] (-) TimerEvent: {}
+[12.359892] (-) TimerEvent: {}
+[12.460368] (-) TimerEvent: {}
+[12.560828] (-) TimerEvent: {}
+[12.661345] (-) TimerEvent: {}
+[12.761775] (-) TimerEvent: {}
+[12.862252] (-) TimerEvent: {}
+[12.962666] (-) TimerEvent: {}
+[13.063217] (-) TimerEvent: {}
+[13.163665] (-) TimerEvent: {}
+[13.264166] (-) TimerEvent: {}
+[13.364688] (-) TimerEvent: {}
+[13.465236] (-) TimerEvent: {}
+[13.565752] (-) TimerEvent: {}
+[13.666279] (-) TimerEvent: {}
+[13.766784] (-) TimerEvent: {}
+[13.867303] (-) TimerEvent: {}
+[13.967767] (-) TimerEvent: {}
+[14.068276] (-) TimerEvent: {}
+[14.168754] (-) TimerEvent: {}
+[14.269257] (-) TimerEvent: {}
+[14.369769] (-) TimerEvent: {}
+[14.470269] (-) TimerEvent: {}
+[14.570748] (-) TimerEvent: {}
+[14.671227] (-) TimerEvent: {}
+[14.771665] (-) TimerEvent: {}
+[14.872121] (-) TimerEvent: {}
+[14.972596] (-) TimerEvent: {}
+[15.073112] (-) TimerEvent: {}
+[15.173641] (-) TimerEvent: {}
+[15.274145] (-) TimerEvent: {}
+[15.374605] (-) TimerEvent: {}
+[15.475100] (-) TimerEvent: {}
+[15.575546] (-) TimerEvent: {}
+[15.675978] (-) TimerEvent: {}
+[15.776459] (-) TimerEvent: {}
+[15.876952] (-) TimerEvent: {}
+[15.977374] (-) TimerEvent: {}
+[16.077758] (-) TimerEvent: {}
+[16.178270] (-) TimerEvent: {}
+[16.278756] (-) TimerEvent: {}
+[16.379292] (-) TimerEvent: {}
+[16.479814] (-) TimerEvent: {}
+[16.580343] (-) TimerEvent: {}
+[16.680820] (-) TimerEvent: {}
+[16.781337] (-) TimerEvent: {}
+[16.881838] (-) TimerEvent: {}
+[16.982385] (-) TimerEvent: {}
+[17.082875] (-) TimerEvent: {}
+[17.183408] (-) TimerEvent: {}
+[17.283929] (-) TimerEvent: {}
+[17.384425] (-) TimerEvent: {}
+[17.458828] (mpc_to) StdoutLine: {'line': b'[  9%] \x1b[32m\x1b[1mLinking CXX executable high_solver\x1b[0m\n'}
+[17.484572] (-) TimerEvent: {}
+[17.585003] (-) TimerEvent: {}
+[17.685536] (-) TimerEvent: {}
+[17.786043] (-) TimerEvent: {}
+[17.886488] (-) TimerEvent: {}
+[17.986970] (-) TimerEvent: {}
+[18.087466] (-) TimerEvent: {}
+[18.187916] (-) TimerEvent: {}
+[18.288463] (-) TimerEvent: {}
+[18.388931] (-) TimerEvent: {}
+[18.489463] (-) TimerEvent: {}
+[18.590000] (-) TimerEvent: {}
+[18.690525] (-) TimerEvent: {}
+[18.790999] (-) TimerEvent: {}
+[18.891529] (-) TimerEvent: {}
+[18.992043] (-) TimerEvent: {}
+[19.043824] (mpc_to) StdoutLine: {'line': b'[100%] Built target high_solver\n'}
+[19.061025] (mpc_to) CommandEnded: {'returncode': 0}
+[19.061966] (mpc_to) JobProgress: {'identifier': 'mpc_to', 'progress': 'install'}
+[19.074140] (mpc_to) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('SYSTEMD_EXEC_PID', '4563'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4472,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4472'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01abeadf_9260_4a01_962f_1061b6ea9aaa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.6689'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.084850] (mpc_to) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.085245] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/lib/mpc_to/high_solver\n'}
+[19.092094] (mpc_to) StdoutLine: {'line': b'-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/lib/mpc_to/high_solver" to ""\n'}
+[19.092456] (-) TimerEvent: {}
+[19.092730] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/package_run_dependencies/mpc_to\n'}
+[19.093063] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/parent_prefix_path/mpc_to\n'}
+[19.093348] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.sh\n'}
+[19.093576] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/ament_prefix_path.dsv\n'}
+[19.093800] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.sh\n'}
+[19.094040] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/environment/path.dsv\n'}
+[19.094304] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.bash\n'}
+[19.094514] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.sh\n'}
+[19.094685] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.zsh\n'}
+[19.094926] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/local_setup.dsv\n'}
+[19.095190] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.dsv\n'}
+[19.095434] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/ament_index/resource_index/packages/mpc_to\n'}
+[19.095612] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig.cmake\n'}
+[19.095777] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/cmake/mpc_toConfig-version.cmake\n'}
+[19.095962] (mpc_to) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to/share/mpc_to/package.xml\n'}
+[19.098147] (mpc_to) CommandEnded: {'returncode': 0}
+[19.142911] (mpc_to) JobEnded: {'identifier': 'mpc_to', 'rc': 0}
+[19.144364] (-) EventReactorShutdown: {}

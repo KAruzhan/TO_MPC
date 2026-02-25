@@ -1,0 +1,5 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/ur_driver.dir/src/ur_velocity_controller.cpp.o[0m
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/ur_ros2_driver/ur_ros2_driver/src/ur_velocity_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/ur_ros2_driver/ur_ros2_driver/src/ur_velocity_controller.cpp:134:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kuse_sim_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |         bool [01;35m[Kuse_sim_time[m[K = false;
+      |              [01;35m[K^~~~~~~~~~~~[m[K

@@ -1,0 +1,228 @@
+[0.000000] (-) TimerEvent: {}
+[0.000629] (-) JobUnselected: {'identifier': 'mpc_high_to'}
+[0.000842] (-) JobUnselected: {'identifier': 'mpc_low'}
+[0.001028] (-) JobUnselected: {'identifier': 'mpc_to'}
+[0.001093] (-) JobUnselected: {'identifier': 'mppi_controller'}
+[0.001285] (-) JobUnselected: {'identifier': 'pb_ur5_sim'}
+[0.001389] (-) JobUnselected: {'identifier': 'sim_utils'}
+[0.001423] (-) JobUnselected: {'identifier': 'ur_ros2_driver'}
+[0.001478] (mpc_high) JobQueued: {'identifier': 'mpc_high', 'dependencies': OrderedDict()}
+[0.001534] (mpc_high) JobStarted: {'identifier': 'mpc_high'}
+[0.013628] (mpc_high) JobProgress: {'identifier': 'mpc_high', 'progress': 'cmake'}
+[0.014454] (mpc_high) JobProgress: {'identifier': 'mpc_high', 'progress': 'build'}
+[0.015391] (mpc_high) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high', '--', '-j16', '-l16'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('MANAGERPID', '3723'), ('SYSTEMD_EXEC_PID', '4448'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '405189'), ('COLCON_PREFIX_PATH', '/home/chri/CHRI_2025/Time_optimal_baseline/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('JOURNAL_STREAM', '8:31980'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4359,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4359'), ('INVOCATION_ID', 'f8bbcd8abf9747ef905517290f280968'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:31d1a1b4-b79c-4836-93f8-1caa93cd83b1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim/lib/python3.10/site-packages:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_to:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high_to:/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_high:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble')]), 'shell': False}
+[0.057425] (mpc_high) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099673] (-) TimerEvent: {}
+[0.200067] (-) TimerEvent: {}
+[0.260708] (mpc_high) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.285596] (mpc_high) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300209] (-) TimerEvent: {}
+[0.347637] (mpc_high) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.352404] (mpc_high) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.362491] (mpc_high) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.386296] (mpc_high) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400308] (-) TimerEvent: {}
+[0.410735] (mpc_high) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.467842] (mpc_high) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.471285] (mpc_high) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500419] (-) TimerEvent: {}
+[0.600854] (-) TimerEvent: {}
+[0.643775] (mpc_high) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700998] (-) TimerEvent: {}
+[0.728224] (mpc_high) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.781950] (mpc_high) StdoutLine: {'line': b'-- Target my_node_cpp built successfully\n'}
+[0.782675] (mpc_high) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.801136] (-) TimerEvent: {}
+[0.888597] (mpc_high) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.889114] (mpc_high) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_c;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/blasfeo/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/hpipm/include;/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/\n'}
+[0.889338] (mpc_high) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.893555] (mpc_high) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.901277] (-) TimerEvent: {}
+[0.905653] (mpc_high) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.905934] (mpc_high) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.907486] (mpc_high) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.908770] (mpc_high) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.971951] (mpc_high) StdoutLine: {'line': b'-- Generating done\n'}
+[0.981018] (mpc_high) StdoutLine: {'line': b'-- Build files have been written to: /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high\n'}
+[1.001432] (-) TimerEvent: {}
+[1.070162] (mpc_high) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target high_solver\x1b[0m\n'}
+[1.101551] (-) TimerEvent: {}
+[1.109784] (mpc_high) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o\x1b[0m\n'}
+[1.110750] (mpc_high) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/high_solver.dir/solver_high/acados_solver_holder.cpp.o\x1b[0m\n'}
+[1.201665] (-) TimerEvent: {}
+[1.302118] (-) TimerEvent: {}
+[1.402613] (-) TimerEvent: {}
+[1.503105] (-) TimerEvent: {}
+[1.603613] (-) TimerEvent: {}
+[1.704106] (-) TimerEvent: {}
+[1.804621] (-) TimerEvent: {}
+[1.905126] (-) TimerEvent: {}
+[2.005626] (-) TimerEvent: {}
+[2.106143] (-) TimerEvent: {}
+[2.206651] (-) TimerEvent: {}
+[2.307133] (-) TimerEvent: {}
+[2.371246] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:3:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver::my_NMPC_solver(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.371902] (mpc_high) StderrLine: {'line': b'    3 | \x1b[01;31m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K::my_NMPC_solver(int n) {\n'}
+[2.372093] (mpc_high) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.372254] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[2.372410] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_NMPC_solver::my_NMPC_solver(my_NMPC_solver&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.372627] (mpc_high) StderrLine: {'line': b'   54 | class \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K {\n'}
+[2.372795] (mpc_high) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.372960] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_NMPC_solver::my_NMPC_solver(const my_NMPC_solver&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.373114] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:61:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver::my_NMPC_solver(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.373284] (mpc_high) StderrLine: {'line': b'   61 |     \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K(int n, int number_of_current_steps_specified);\n'}
+[2.373439] (mpc_high) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.373624] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass my_NMPC_solver\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.373789] (mpc_high) StderrLine: {'line': b'   54 | class \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K {\n'}
+[2.373937] (mpc_high) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.374086] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:20:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*, double*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.374259] (mpc_high) StderrLine: {'line': b'   20 | int \x1b[01;31m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {\n'}
+[2.374412] (mpc_high) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.374607] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[2.374789] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:62:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.374965] (mpc_high) StderrLine: {'line': b'   62 |     int \x1b[01;36m\x1b[Ksolve_my_mpc\x1b[m\x1b[K(double current_joint_position[6],\n'}
+[2.375123] (mpc_high) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.375269] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass my_NMPC_solver\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.375427] (mpc_high) StderrLine: {'line': b'   54 | class \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K {\n'}
+[2.375603] (mpc_high) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.407300] (-) TimerEvent: {}
+[2.486992] (mpc_high) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:202: CMakeFiles/high_solver.dir/solver_high/acados_solver_holder.cpp.o] Error 1\n'}
+[2.487287] (mpc_high) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.507405] (-) TimerEvent: {}
+[2.607802] (-) TimerEvent: {}
+[2.708302] (-) TimerEvent: {}
+[2.808826] (-) TimerEvent: {}
+[2.909319] (-) TimerEvent: {}
+[3.009871] (-) TimerEvent: {}
+[3.110374] (-) TimerEvent: {}
+[3.210906] (-) TimerEvent: {}
+[3.311359] (-) TimerEvent: {}
+[3.411791] (-) TimerEvent: {}
+[3.512209] (-) TimerEvent: {}
+[3.612630] (-) TimerEvent: {}
+[3.713043] (-) TimerEvent: {}
+[3.813560] (-) TimerEvent: {}
+[3.914001] (-) TimerEvent: {}
+[4.014478] (-) TimerEvent: {}
+[4.115005] (-) TimerEvent: {}
+[4.215491] (-) TimerEvent: {}
+[4.316031] (-) TimerEvent: {}
+[4.416558] (-) TimerEvent: {}
+[4.517057] (-) TimerEvent: {}
+[4.617539] (-) TimerEvent: {}
+[4.718070] (-) TimerEvent: {}
+[4.818613] (-) TimerEvent: {}
+[4.862432] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid RobotCommandPublisher::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.862898] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:270:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver::solve_my_mpc(double [6], double [56], double [6], double [60], double [3], double [16], double [10], double [140])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.863110] (mpc_high) StderrLine: {'line': b'  270 |       \x1b[01;31m\x1b[Knmpc_solver->solve_my_mpc(current_position, human_sphere, goal_position, tracking_goal, cgoal, results, solver_weights, full_trajectory)\x1b[m\x1b[K;\n'}
+[4.863274] (mpc_high) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.863433] (mpc_high) StderrLine: {'line': b'\n'}
+[4.863615] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:10\x1b[m\x1b[K:\n'}
+[4.863817] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:62:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.863986] (mpc_high) StderrLine: {'line': b'   62 |     int \x1b[01;36m\x1b[Ksolve_my_mpc\x1b[m\x1b[K(double current_joint_position[6],\n'}
+[4.864137] (mpc_high) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.864286] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:62:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 7 arguments, 8 provided\n'}
+[4.889864] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:236:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_linear_vell_current\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.890190] (mpc_high) StderrLine: {'line': b'  236 |             double \x1b[01;35m\x1b[Kmax_linear_vell_current\x1b[m\x1b[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);\n'}
+[4.890374] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.890573] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:278:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmax_linear_vell\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.890793] (mpc_high) StderrLine: {'line': b'  278 |             double \x1b[01;35m\x1b[Kmax_linear_vell\x1b[m\x1b[K = get_spheres_velocity(current_position, selected_vels, max_vell);\n'}
+[4.890960] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.891118] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:281:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klin_vell_scale\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.891295] (mpc_high) StderrLine: {'line': b'  281 |             double \x1b[01;35m\x1b[Klin_vell_scale\x1b[m\x1b[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);\n'}
+[4.891449] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.918748] (-) TimerEvent: {}
+[5.019196] (-) TimerEvent: {}
+[5.119631] (-) TimerEvent: {}
+[5.220139] (-) TimerEvent: {}
+[5.320616] (-) TimerEvent: {}
+[5.421114] (-) TimerEvent: {}
+[5.521615] (-) TimerEvent: {}
+[5.622100] (-) TimerEvent: {}
+[5.722584] (-) TimerEvent: {}
+[5.823035] (-) TimerEvent: {}
+[5.923564] (-) TimerEvent: {}
+[6.024040] (-) TimerEvent: {}
+[6.124596] (-) TimerEvent: {}
+[6.225093] (-) TimerEvent: {}
+[6.325618] (-) TimerEvent: {}
+[6.426118] (-) TimerEvent: {}
+[6.526641] (-) TimerEvent: {}
+[6.627128] (-) TimerEvent: {}
+[6.727633] (-) TimerEvent: {}
+[6.828126] (-) TimerEvent: {}
+[6.906694] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[6.907070] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[6.907255] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:40\x1b[m\x1b[K,\n'}
+[6.907415] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[6.907610] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:2\x1b[m\x1b[K:\n'}
+[6.907778] (mpc_high) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = my_NMPC_solver; _Args = {int}; _Tp = my_NMPC_solver]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.907934] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = my_NMPC_solver; _Args = {int}; _Tp = my_NMPC_solver; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<my_NMPC_solver>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908094] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {int}; _Tp = my_NMPC_solver; _Alloc = std::allocator<my_NMPC_solver>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908250] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = my_NMPC_solver; _Alloc = std::allocator<my_NMPC_solver>; _Args = {int}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908434] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_NMPC_solver>; _Args = {int}; _Tp = my_NMPC_solver; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908654] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_NMPC_solver>; _Args = {int}; _Tp = my_NMPC_solver]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908824] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = my_NMPC_solver; _Alloc = std::allocator<my_NMPC_solver>; _Args = {int}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.908981] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = my_NMPC_solver; _Args = {int}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.909142] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:132:55:\x1b[m\x1b[K   required from here\n'}
+[6.909294] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver::my_NMPC_solver(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.909443] (mpc_high) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[6.909612] (mpc_high) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.909769] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/src/high_solver.cpp:10\x1b[m\x1b[K:\n'}
+[6.909916] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:61:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver::my_NMPC_solver(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.910064] (mpc_high) StderrLine: {'line': b'   61 |     \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K(int n, int number_of_current_steps_specified);\n'}
+[6.910210] (mpc_high) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.910354] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:61:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[6.910535] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_NMPC_solver::my_NMPC_solver(const my_NMPC_solver&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.910709] (mpc_high) StderrLine: {'line': b'   54 | class \x1b[01;36m\x1b[Kmy_NMPC_solver\x1b[m\x1b[K {\n'}
+[6.910857] (mpc_high) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.911011] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst my_NMPC_solver&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.911181] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr my_NMPC_solver::my_NMPC_solver(my_NMPC_solver&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.911332] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:54:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kmy_NMPC_solver&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.928262] (-) TimerEvent: {}
+[7.028719] (-) TimerEvent: {}
+[7.129208] (-) TimerEvent: {}
+[7.229720] (-) TimerEvent: {}
+[7.330221] (-) TimerEvent: {}
+[7.430730] (-) TimerEvent: {}
+[7.531227] (-) TimerEvent: {}
+[7.631758] (-) TimerEvent: {}
+[7.732258] (-) TimerEvent: {}
+[7.832797] (-) TimerEvent: {}
+[7.933332] (-) TimerEvent: {}
+[8.033837] (-) TimerEvent: {}
+[8.134356] (-) TimerEvent: {}
+[8.234831] (-) TimerEvent: {}
+[8.335327] (-) TimerEvent: {}
+[8.435832] (-) TimerEvent: {}
+[8.536315] (-) TimerEvent: {}
+[8.636845] (-) TimerEvent: {}
+[8.737325] (-) TimerEvent: {}
+[8.837862] (-) TimerEvent: {}
+[8.938365] (-) TimerEvent: {}
+[9.038850] (-) TimerEvent: {}
+[9.139350] (-) TimerEvent: {}
+[9.239792] (-) TimerEvent: {}
+[9.340257] (-) TimerEvent: {}
+[9.440728] (-) TimerEvent: {}
+[9.541165] (-) TimerEvent: {}
+[9.641632] (-) TimerEvent: {}
+[9.742141] (-) TimerEvent: {}
+[9.842615] (-) TimerEvent: {}
+[9.943055] (-) TimerEvent: {}
+[10.043559] (-) TimerEvent: {}
+[10.144056] (-) TimerEvent: {}
+[10.244593] (-) TimerEvent: {}
+[10.345089] (-) TimerEvent: {}
+[10.445615] (-) TimerEvent: {}
+[10.546104] (-) TimerEvent: {}
+[10.646635] (-) TimerEvent: {}
+[10.747132] (-) TimerEvent: {}
+[10.847642] (-) TimerEvent: {}
+[10.948210] (-) TimerEvent: {}
+[10.982792] (mpc_high) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:76: CMakeFiles/high_solver.dir/src/high_solver.cpp.o] Error 1\n'}
+[10.983358] (mpc_high) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2\n'}
+[10.983817] (mpc_high) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.987460] (mpc_high) CommandEnded: {'returncode': 2}
+[11.005224] (mpc_high) JobEnded: {'identifier': 'mpc_high', 'rc': 2}
+[11.015997] (-) EventReactorShutdown: {}

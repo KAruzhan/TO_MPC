@@ -1,0 +1,460 @@
+[0.120s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[0.824s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[0.918s] [  4%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_model/UR5_expl_ode_hess.c.o[0m
+[0.918s] [  9%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_model/UR5_expl_ode_fun.c.o[0m
+[0.918s] [ 18%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[0.918s] [ 18%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_model/UR5_expl_vde_forw.c.o[0m
+[0.919s] [ 22%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o[0m
+[0.919s] [ 27%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_constraints/UR5_constr_h_fun.c.o[0m
+[0.919s] [ 31%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_model/UR5_expl_vde_adj.c.o[0m
+[0.919s] [ 36%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c.o[0m
+[0.920s] [ 40%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c.o[0m
+[0.920s] [ 45%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c.o[0m
+[0.921s] [ 50%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c.o[0m
+[0.921s] [ 54%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c.o[0m
+[0.924s] [ 59%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c.o[0m
+[0.929s] [ 63%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c.o[0m
+[0.929s] [ 68%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c.o[0m
+[0.933s] [ 72%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c.o[0m
+[1.428s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_f0[m[K’:
+[1.431s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_f0[m[K’:
+[1.432s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_hess_f0[m[K’:
+[1.432s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_hess_f0[m[K’:
+[1.435s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:[m[K In function ‘[01m[KUR5_expl_ode_hess_f0[m[K’:
+[1.449s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_f0[m[K’:
+[1.451s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_f0[m[K’:
+[1.455s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_f0[m[K’:
+[1.457s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_f0[m[K’:
+[1.457s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_f0[m[K’:
+[1.457s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_f0[m[K’:
+[1.458s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_f0[m[K’:
+[1.458s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_f0[m[K’:
+[1.458s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_f0[m[K’:
+[1.467s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_hess_f0[m[K’:
+[1.504s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:61:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.505s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.506s]       |                                                                              [01;35m[K^[m[K
+[1.506s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:57:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.507s]    57 | static int casadi_f0([01;35m[Kconst casadi_real** arg[m[K, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+[1.507s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.508s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:63:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.508s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.508s]       |                                                                              [01;35m[K^[m[K
+[1.510s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:61:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.511s]    61 | static int casadi_f0([01;35m[Kconst casadi_real** arg[m[K, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+[1.511s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.511s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:65:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.512s]    65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.512s]       |                                                                              [01;35m[K^[m[K
+[1.512s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:61:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.513s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.513s]       |                                                                                               [01;35m[K^[m[K
+[1.513s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:62:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.514s]    62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.514s]       |                                                                              [01;35m[K^[m[K
+[1.514s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.514s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.515s]       |                                                                              [01;35m[K^[m[K
+[1.515s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:57:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.515s]    57 | static int casadi_f0([01;35m[Kconst casadi_real** arg[m[K, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
+[1.516s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.516s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.516s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.516s]       |                                                                              [01;35m[K^[m[K
+[1.517s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.517s]    66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.517s]       |                                                                              [01;35m[K^[m[K
+[1.517s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:59:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.518s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.518s]       |                                                                              [01;35m[K^[m[K
+[1.518s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:59:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.518s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.519s]       |                                                                              [01;35m[K^[m[K
+[1.519s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.519s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.519s]       |                                                                              [01;35m[K^[m[K
+[1.519s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:59:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.519s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.519s]       |                                                                              [01;35m[K^[m[K
+[1.520s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.520s]    66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.520s]       |                                                                                               [01;35m[K^[m[K
+[1.520s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:65:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.520s]    65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.520s]       |                                                                                               [01;35m[K^[m[K
+[1.520s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:61:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.521s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.521s]       |                                                                              [01;35m[K^[m[K
+[1.521s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.521s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.521s]       |                                                                              [01;35m[K^[m[K
+[1.521s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:63:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.521s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.522s]       |                                                                                               [01;35m[K^[m[K
+[1.522s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:61:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.522s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.522s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.522s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:62:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.522s]    62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.522s]       |                                                                                               [01;35m[K^[m[K
+[1.523s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.523s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.523s]       |                                                                                               [01;35m[K^[m[K
+[1.523s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.523s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.523s]       |                                                                                               [01;35m[K^[m[K
+[1.523s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.524s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.524s]       |                                                                              [01;35m[K^[m[K
+[1.524s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.524s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.524s]       |                                                                              [01;35m[K^[m[K
+[1.524s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.525s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.525s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.525s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:59:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.525s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.525s]       |                                                                                               [01;35m[K^[m[K
+[1.525s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.525s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.526s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.526s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:59:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.526s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.526s]       |                                                                                               [01;35m[K^[m[K
+[1.526s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.526s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.526s]       |                                                                                               [01;35m[K^[m[K
+[1.527s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.527s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.527s]       |                                                                                               [01;35m[K^[m[K
+[1.527s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.527s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.527s]       |                                                                                               [01;35m[K^[m[K
+[1.527s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:66:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.528s]    66 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.528s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.528s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:59:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.528s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.528s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.528s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:59:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.528s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.529s]       |                                                                                               [01;35m[K^[m[K
+[1.529s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:59:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.529s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.529s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.529s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:65:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.529s]    65 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.529s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.530s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:61:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.530s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.530s]       |                                                                                               [01;35m[K^[m[K
+[1.530s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_init_mem[m[K’:
+[1.530s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.530s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.531s]       |                                                                                               [01;35m[K^[m[K
+[1.531s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:63:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.531s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.531s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.531s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_init_mem[m[K’:
+[1.531s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:111:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.531s]   111 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_init_mem([01;35m[Kint mem[m[K) {
+[1.532s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.532s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:62:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.532s]    62 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.532s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.532s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:61:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.532s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.532s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.533s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:68:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.533s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.533s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.533s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.533s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.533s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.533s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.534s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.534s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.534s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_init_mem[m[K’:
+[1.534s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:59:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.534s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.535s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.535s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_init_mem[m[K’:
+[1.535s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_init_mem[m[K’:
+[1.535s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_hess_init_mem[m[K’:
+[1.535s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:94:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.535s]    94 | CASADI_SYMBOL_EXPORT int UR5_expl_ode_fun_init_mem([01;35m[Kint mem[m[K) {
+[1.536s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.536s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_init_mem[m[K’:
+[1.536s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.536s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.536s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.536s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_free_mem[m[K’:
+[1.536s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_free_mem[m[K’:
+[1.537s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:84:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.537s]    84 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_init_mem([01;35m[Kint mem[m[K) {
+[1.537s]       |                                                         [01;35m[K~~~~^~~[m[K
+[1.537s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_init_mem[m[K’:
+[1.537s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:115:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.537s]   115 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_free_mem([01;35m[Kint mem[m[K) {
+[1.538s]       |                                                                [01;35m[K~~~~^~~[m[K
+[1.538s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_free_mem[m[K’:
+[1.538s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:570:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.538s]   570 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_init_mem([01;35m[Kint mem[m[K) {
+[1.538s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.538s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:98:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.539s]    98 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_free_mem([01;35m[Kint mem[m[K) {
+[1.539s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.539s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:[m[K In function ‘[01m[KUR5_expl_ode_hess_init_mem[m[K’:
+[1.539s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:88:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.539s]    88 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_free_mem([01;35m[Kint mem[m[K) {
+[1.539s]       |                                                          [01;35m[K~~~~^~~[m[K
+[1.540s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_release[m[K’:
+[1.540s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:111:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.540s]   111 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_init_mem([01;35m[Kint mem[m[K) {
+[1.540s]       |                                                             [01;35m[K~~~~^~~[m[K
+[1.540s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_hess_init_mem[m[K’:
+[1.543s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:88:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.543s]    88 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_hess_init_mem([01;35m[Kint mem[m[K) {
+[1.543s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.544s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_init_mem[m[K’:
+[1.544s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_free_mem[m[K’:
+[1.544s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:115:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.544s]   115 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_jac_hess_init_mem([01;35m[Kint mem[m[K) {
+[1.544s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.544s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:260:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.545s]   260 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_init_mem([01;35m[Kint mem[m[K) {
+[1.545s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.545s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_hess_free_mem[m[K’:
+[1.545s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:84:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.545s]    84 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_jac_init_mem([01;35m[Kint mem[m[K) {
+[1.545s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.545s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:424:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.546s]   424 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_forw_init_mem([01;35m[Kint mem[m[K) {
+[1.546s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.546s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_hess_free_mem[m[K’:
+[1.546s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_init_mem[m[K’:
+[1.546s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_init_mem[m[K’:
+[1.546s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac.c:122:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.546s]   122 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_release([01;35m[Kint mem[m[K) {
+[1.547s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.547s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:119:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.547s]   119 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_free_mem([01;35m[Kint mem[m[K) {
+[1.547s]       |                                                                     [01;35m[K~~~~^~~[m[K
+[1.547s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_free_mem[m[K’:
+[1.548s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_release[m[K’:
+[1.548s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:103:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.548s]   103 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_adj_init_mem([01;35m[Kint mem[m[K) {
+[1.548s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.548s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:84:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.548s]    84 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_0_fun_init_mem([01;35m[Kint mem[m[K) {
+[1.549s]       |                                                           [01;35m[K~~~~^~~[m[K
+[1.549s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_release[m[K’:
+[1.549s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_jac_hess_release[m[K’:
+[1.549s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun.c:95:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.549s]    95 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_release([01;35m[Kint mem[m[K) {
+[1.549s]       |                                                         [01;35m[K~~~~^~~[m[K
+[1.550s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_hess_init_mem[m[K’:
+[1.550s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_free_mem[m[K’:
+[1.550s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_fun.c:105:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.550s]   105 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_release([01;35m[Kint mem[m[K) {
+[1.550s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.550s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:280:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.551s]   280 | CASADI_SYMBOL_EXPORT int UR5_expl_ode_hess_init_mem([01;35m[Kint mem[m[K) {
+[1.551s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.551s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_init_mem[m[K’:
+[1.551s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:92:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.551s]    92 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_free_mem([01;35m[Kint mem[m[K) {
+[1.551s]       |                                                                     [01;35m[K~~~~^~~[m[K
+[1.552s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:[m[K In function ‘[01m[KUR5_expl_ode_hess_free_mem[m[K’:
+[1.552s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:72:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.552s]    72 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_e_fun_init_mem([01;35m[Kint mem[m[K) {
+[1.552s]       |                                                           [01;35m[K~~~~^~~[m[K
+[1.552s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:115:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.553s]   115 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_free_mem([01;35m[Kint mem[m[K) {
+[1.553s]       |                                                              [01;35m[K~~~~^~~[m[K
+[1.553s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:284:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.553s]   284 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_hess_free_mem([01;35m[Kint mem[m[K) {
+[1.553s]       |                                                      [01;35m[K~~~~^~~[m[K
+[1.553s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_free_mem[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_hess_release[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_free_mem[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:[m[K In function ‘[01m[KUR5_expl_ode_hess_release[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_free_mem[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_release[m[K’:
+[1.554s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_free_mem[m[K’:
+[1.555s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac_hess.c:99:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.555s]    99 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_hess_release([01;35m[Kint mem[m[K) {
+[1.555s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.555s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:76:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.555s]    76 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_free_mem([01;35m[Kint mem[m[K) {
+[1.555s]       |                                                            [01;35m[K~~~~^~~[m[K
+[1.555s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_free_mem[m[K’:
+[1.556s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:264:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.556s]   264 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_free_mem([01;35m[Kint mem[m[K) {
+[1.556s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.557s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac.c:122:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.557s]   122 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_release([01;35m[Kint mem[m[K) {
+[1.557s]       |                                                             [01;35m[K~~~~^~~[m[K
+[1.557s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:574:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.558s]   574 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_free_mem([01;35m[Kint mem[m[K) {
+[1.558s]       |                                                                [01;35m[K~~~~^~~[m[K
+[1.558s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_ode_hess.c:291:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.558s]   291 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_hess_release([01;35m[Kint mem[m[K) {
+[1.558s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.559s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun_jac_hess.c:126:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.559s]   126 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_jac_hess_release([01;35m[Kint mem[m[K) {
+[1.559s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.559s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:107:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.559s]   107 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_free_mem([01;35m[Kint mem[m[K) {
+[1.559s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.560s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2074:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.560s]  2074 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_hess_init_mem([01;35m[Kint mem[m[K) {
+[1.560s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.560s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:88:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.560s]    88 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_free_mem([01;35m[Kint mem[m[K) {
+[1.560s]       |                                                                [01;35m[K~~~~^~~[m[K
+[1.560s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_release[m[K’:
+[1.561s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_hess_free_mem[m[K’:
+[1.561s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_release[m[K’:
+[1.561s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:88:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.561s]    88 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_free_mem([01;35m[Kint mem[m[K) {
+[1.561s]       |                                                            [01;35m[K~~~~^~~[m[K
+[1.561s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun.c:83:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.562s]    83 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_release([01;35m[Kint mem[m[K) {
+[1.562s]       |                                                           [01;35m[K~~~~^~~[m[K
+[1.562s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_adj.c:114:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.562s]   114 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_release([01;35m[Kint mem[m[K) {
+[1.562s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.562s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_e_fun_jac_release[m[K’:
+[1.562s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_0_fun_release[m[K’:
+[1.563s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:428:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.563s]   428 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_free_mem([01;35m[Kint mem[m[K) {
+[1.563s]       |                                                      [01;35m[K~~~~^~~[m[K
+[1.563s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_0_fun.c:95:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.563s]    95 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_0_fun_release([01;35m[Kint mem[m[K) {
+[1.563s]       |                                                           [01;35m[K~~~~^~~[m[K
+[1.564s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_release[m[K’:
+[1.564s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_release[m[K’:
+[1.564s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun.c:271:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.564s]   271 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_release([01;35m[Kint mem[m[K) {
+[1.564s]       |                                                    [01;35m[K~~~~^~~[m[K
+[1.564s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_model/UR5_expl_vde_forw.c:435:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.564s]   435 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_release([01;35m[Kint mem[m[K) {
+[1.565s]       |                                                     [01;35m[K~~~~^~~[m[K
+[1.565s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_release[m[K’:
+[1.565s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_e_fun_jac.c:95:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.565s]    95 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_e_fun_jac_release([01;35m[Kint mem[m[K) {
+[1.565s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.565s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:581:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.565s]   581 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_release([01;35m[Kint mem[m[K) {
+[1.566s]       |                                                               [01;35m[K~~~~^~~[m[K
+[1.566s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2078:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.566s]  2078 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_free_mem([01;35m[Kint mem[m[K) {
+[1.566s]       |                                                                     [01;35m[K~~~~^~~[m[K
+[1.566s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_hess_release[m[K’:
+[1.566s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c:2085:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.566s]  2085 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_hess_release([01;35m[Kint mem[m[K) {
+[1.567s]       |                                                                    [01;35m[K~~~~^~~[m[K
+[1.609s] [ 86%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o[0m
+[1.609s] [ 86%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c.o[0m
+[1.609s] [ 86%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o[0m
+[1.610s] [ 90%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o[0m
+[1.644s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_hess_f0[m[K’:
+[1.644s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:63:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.644s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[1.644s]       |                                                                              [01;35m[K^[m[K
+[1.644s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:63:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.645s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[1.645s]       |                                                                                               [01;35m[K^[m[K
+[1.645s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:63:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.645s]    63 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[1.645s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[1.645s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_hess_init_mem[m[K’:
+[1.645s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:115:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.645s]   115 | CASADI_SYMBOL_EXPORT int UR5_cost_ext_cost_fun_jac_hess_init_mem([01;35m[Kint mem[m[K) {
+[1.645s]       |                                                                  [01;35m[K~~~~^~~[m[K
+[1.646s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_hess_free_mem[m[K’:
+[1.646s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:119:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.646s]   119 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_free_mem([01;35m[Kint mem[m[K) {
+[1.646s]       |                                                                   [01;35m[K~~~~^~~[m[K
+[1.646s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:[m[K In function ‘[01m[KUR5_cost_ext_cost_fun_jac_hess_release[m[K’:
+[1.646s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/UR5_cost/UR5_cost_ext_cost_fun_jac_hess.c:126:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.646s]   126 | CASADI_SYMBOL_EXPORT void UR5_cost_ext_cost_fun_jac_hess_release([01;35m[Kint mem[m[K) {
+[1.646s]       |                                                                  [01;35m[K~~~~^~~[m[K
+[2.342s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_sim_create[m[K’:
+[2.342s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:83:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDISCRETE[m[K’ undeclared (first use in this function)
+[2.342s]    83 |     plan.sim_solver = [01;31m[KDISCRETE[m[K;
+[2.342s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.342s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:83:23:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[2.344s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_sim_update_params[m[K’:
+[2.344s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:218:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.344s]   218 | int UR5_acados_sim_update_params([01;35m[KUR5_sim_solver_capsule *capsule[m[K, double *p, int np)
+[2.345s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[2.345s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:218:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.345s]   218 | int UR5_acados_sim_update_params(UR5_sim_solver_capsule *capsule, [01;35m[Kdouble *p[m[K, int np)
+[2.345s]       |                                                                   [01;35m[K~~~~~~~~^[m[K
+[2.346s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K At top level:
+[2.346s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:236:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.346s]   236 | }[01;35m[K;[m[K
+[2.346s]       |  [01;35m[K^[m[K
+[2.346s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:241:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.346s]   241 | }[01;35m[K;[m[K
+[2.347s]       |  [01;35m[K^[m[K
+[2.347s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:246:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.347s]   246 | }[01;35m[K;[m[K
+[2.347s]       |  [01;35m[K^[m[K
+[2.347s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:251:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.347s]   251 | }[01;35m[K;[m[K
+[2.347s]       |  [01;35m[K^[m[K
+[2.348s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:256:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.348s]   256 | }[01;35m[K;[m[K
+[2.348s]       |  [01;35m[K^[m[K
+[2.348s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:261:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.348s]   261 | }[01;35m[K;[m[K
+[2.348s]       |  [01;35m[K^[m[K
+[2.383s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:342: CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o] Error 1
+[2.383s] gmake[2]: *** Waiting for unfinished jobs....
+[2.384s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_5_set_nlp_in[m[K’:
+[2.384s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:439:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktmp_int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.384s]   439 |     int [01;35m[Ktmp_int[m[K = 0;
+[2.385s]       |         [01;35m[K^~~~~~~[m[K
+[2.386s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_update_qp_solver_cond_N[m[K’:
+[2.386s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:931:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.386s]   931 | int UR5_acados_update_qp_solver_cond_N([01;35m[KUR5_solver_capsule* capsule[m[K, int qp_solver_cond_N)
+[2.387s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[2.387s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:931:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqp_solver_cond_N[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.387s]   931 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, [01;35m[Kint qp_solver_cond_N[m[K)
+[2.387s]       |                                                                     [01;35m[K~~~~^~~~~~~~~~~~~~~~[m[K
+[2.387s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_reset[m[K’:
+[2.388s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:949:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_solver[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.388s]   949 |     ocp_nlp_solver* [01;35m[Knlp_solver[m[K = capsule->nlp_solver;
+[2.388s]       |                     [01;35m[K^~~~~~~~~~[m[K
+[2.388s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:948:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_in[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.388s]   948 |     ocp_nlp_in* [01;35m[Knlp_in[m[K = capsule->nlp_in;
+[2.388s]       |                 [01;35m[K^~~~~~[m[K
+[2.389s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:939:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreset_qp_solver_mem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.389s]   939 | int UR5_acados_reset(UR5_solver_capsule* capsule, [01;35m[Kint reset_qp_solver_mem[m[K)
+[2.389s]       |                                                   [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[5.961s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:[m[K In constructor ‘[01m[Kmy_NMPC_solver::my_NMPC_solver(int, int)[m[K’:
+[5.961s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:12:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kstemps_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[5.961s]    12 |     double [01;35m[Kstemps_array[m[K[number_of_current_steps]={0.0}; // create array of maximum length
+[5.962s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[5.963s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[5.963s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:143:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[5.964s]   143 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+[5.964s]       |            [01;35m[K^~~~~[m[K
+[5.964s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:144:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[5.964s]   144 |     double [01;35m[Kutraj[m[K[NU * N];
+[5.964s]       |            [01;35m[K^~~~~[m[K
+[5.965s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:28:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktracking_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.965s]    28 |     double current_joint_goal[6], [01;35m[Kdouble tracking_goal[60][m[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+[5.965s]       |                                   [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[5.965s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:28:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcgoal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.965s]    28 |     double current_joint_goal[6], double tracking_goal[60], [01;35m[Kdouble cgoal[3][m[K, double results[16], double my_weights[10], double full_trajectory[140]) {
+[5.965s]       |                                                             [01;35m[K~~~~~~~^~~~~~~~[m[K
+[5.966s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:28:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.966s]    28 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], [01;35m[Kdouble my_weights[10][m[K, double full_trajectory[140]) {
+[5.966s]       |                                                                                                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[23.445s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+[23.445s] gmake: *** [Makefile:146: all] Error 2
+[23.450s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16

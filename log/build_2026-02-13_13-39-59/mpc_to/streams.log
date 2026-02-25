@@ -1,0 +1,49 @@
+[0.043s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[0.307s] [  4%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o[0m
+[1.793s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:[m[K In constructor ‘[01m[Kmy_NMPC_solver::my_NMPC_solver(int, int)[m[K’:
+[1.794s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:12:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kstemps_array[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[1.794s]    12 |     double [01;35m[Kstemps_array[m[K[number_of_current_steps]={0.0};
+[1.794s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[1.795s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:13:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+[1.795s]    13 | efore segmentation")[01;31m[K [m[K// create array of maximum length;
+[1.795s]       |                     [01;31m[K^[m[K
+[1.795s]       |                     [32m[K;[m[K
+[1.795s]    14 | i=0;i<number_of_current_steps;i++) stemps_array[i] = 1.0;
+[1.795s]       |                      
+[1.796s] 
+[1.836s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:14:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[1.836s]    14 |     for (int i=0;[01;31m[Ki[m[K<number_of_current_steps;i++) stemps_array[i] = 1.0;
+[1.836s]       |                  [01;31m[K^[m[K
+[1.837s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:19:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+[1.837s]    19 |     printf("After segmentation")
+[1.837s]       |                                 [01;31m[K^[m[K
+[1.837s]       |                                 [32m[K;[m[K
+[1.837s]    20 |     [32m[Kif[m[K (status)
+[1.837s]       |     [32m[K~~[m[K                           
+[1.837s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:18:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.838s]    18 |     int [01;35m[Kstatus[m[K = UR5_acados_create_with_discretization(acados_ocp_capsule, N, new_time_steps);
+[1.838s]       |         [01;35m[K^~~~~~[m[K
+[1.838s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[1.838s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:144:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[1.838s]   144 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+[1.839s]       |            [01;35m[K^~~~~[m[K
+[1.839s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:145:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[1.839s]   145 |     double [01;35m[Kutraj[m[K[NU * N];
+[1.839s]       |            [01;35m[K^~~~~[m[K
+[1.839s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:29:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktracking_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.839s]    29 | int_goal[6], [01;35m[Kdouble tracking_goal[60][m[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+[1.840s]       |              [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[1.840s] 
+[1.840s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:29:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcgoal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.840s]    29 | ng_goal[60], [01;35m[Kdouble cgoal[3][m[K, double results[16], double my_weights[10], double full_trajectory[140]) {
+[1.840s]       |              [01;35m[K~~~~~~~^~~~~~~~[m[K
+[1.840s] 
+[1.841s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:29:105:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.841s]    29 | results[16], [01;35m[Kdouble my_weights[10][m[K, double full_trajectory[140]) {
+[1.841s]       |              [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.841s] 
+[1.977s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:342: CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o] Error 1
+[1.977s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+[1.978s] gmake: *** [Makefile:146: all] Error 2
+[1.981s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16

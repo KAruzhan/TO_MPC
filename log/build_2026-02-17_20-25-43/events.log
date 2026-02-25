@@ -1,0 +1,133 @@
+[0.000000] (-) TimerEvent: {}
+[0.000590] (-) JobUnselected: {'identifier': 'mpc_high_to'}
+[0.000726] (-) JobUnselected: {'identifier': 'mpc_low'}
+[0.000850] (-) JobUnselected: {'identifier': 'mpc_to'}
+[0.000904] (-) JobUnselected: {'identifier': 'mppi_controller'}
+[0.000935] (-) JobUnselected: {'identifier': 'pb_ur5_sim'}
+[0.000966] (-) JobUnselected: {'identifier': 'sim_utils'}
+[0.001081] (-) JobUnselected: {'identifier': 'ur_ros2_driver'}
+[0.001125] (mpc_high) JobQueued: {'identifier': 'mpc_high', 'dependencies': OrderedDict()}
+[0.001164] (mpc_high) JobStarted: {'identifier': 'mpc_high'}
+[0.018785] (mpc_high) JobProgress: {'identifier': 'mpc_high', 'progress': 'cmake'}
+[0.019646] (mpc_high) JobProgress: {'identifier': 'mpc_high', 'progress': 'build'}
+[0.020840] (mpc_high) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high', '--', '-j16', '-l16'], 'cwd': '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('MANAGERPID', '3723'), ('SYSTEMD_EXEC_PID', '4448'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3494693'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('JOURNAL_STREAM', '8:31980'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/4359,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/4359'), ('INVOCATION_ID', 'f8bbcd8abf9747ef905517290f280968'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:61709613-c7f7-499a-8b89-988e7c57c748'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.091607] (mpc_high) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target high_solver\x1b[0m\n'}
+[0.099212] (-) TimerEvent: {}
+[0.129979] (mpc_high) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/high_solver.dir/solver_high_disc/acados_solver_holder.cpp.o\x1b[0m\n'}
+[0.199380] (-) TimerEvent: {}
+[0.299858] (-) TimerEvent: {}
+[0.400313] (-) TimerEvent: {}
+[0.500822] (-) TimerEvent: {}
+[0.601303] (-) TimerEvent: {}
+[0.701802] (-) TimerEvent: {}
+[0.802307] (-) TimerEvent: {}
+[0.902771] (-) TimerEvent: {}
+[1.003270] (-) TimerEvent: {}
+[1.103775] (-) TimerEvent: {}
+[1.204218] (-) TimerEvent: {}
+[1.304751] (-) TimerEvent: {}
+[1.378956] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12\x1b[m\x1b[K,\n'}
+[1.379514] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[1.379975] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.380292] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kidxsh\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.380470] (mpc_high) StderrLine: {'line': b'   48 | #define UR5_NSH    \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.380630] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.380817] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.380976] (mpc_high) StderrLine: {'line': b'   33 | #define NSH    \x1b[01;36m\x1b[KUR5_NSH\x1b[m\x1b[K\n'}
+[1.381147] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.381294] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.381441] (mpc_high) StderrLine: {'line': b'   34 |     int idxsh[\x1b[01;36m\x1b[KNSH\x1b[m\x1b[K];\n'}
+[1.381586] (mpc_high) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.381740] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kzl\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.381911] (mpc_high) StderrLine: {'line': b'   48 | #define UR5_NSH    \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.382055] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.382198] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.382344] (mpc_high) StderrLine: {'line': b'   33 | #define NSH    \x1b[01;36m\x1b[KUR5_NSH\x1b[m\x1b[K\n'}
+[1.382489] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.382634] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:75:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.382820] (mpc_high) StderrLine: {'line': b'   75 |     double zl[\x1b[01;36m\x1b[KNSH\x1b[m\x1b[K]={0.0};\n'}
+[1.382968] (mpc_high) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.383110] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:75:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kdouble [0]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.383257] (mpc_high) StderrLine: {'line': b'   75 |     double zl[NSH]={0.0\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.383399] (mpc_high) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.383541] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12\x1b[m\x1b[K,\n'}
+[1.383687] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[1.383865] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kzu\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.384019] (mpc_high) StderrLine: {'line': b'   48 | #define UR5_NSH    \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.384163] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.384306] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.384500] (mpc_high) StderrLine: {'line': b'   33 | #define NSH    \x1b[01;36m\x1b[KUR5_NSH\x1b[m\x1b[K\n'}
+[1.384650] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.384825] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:76:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.384977] (mpc_high) StderrLine: {'line': b'   76 |     double zu[\x1b[01;36m\x1b[KNSH\x1b[m\x1b[K]={0.0};\n'}
+[1.385137] (mpc_high) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.385283] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:76:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kdouble [0]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.385453] (mpc_high) StderrLine: {'line': b'   76 |     double zu[NSH]={0.0\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.385600] (mpc_high) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.385765] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12\x1b[m\x1b[K,\n'}
+[1.385924] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[1.386075] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[KZl\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.386229] (mpc_high) StderrLine: {'line': b'   48 | #define UR5_NSH    \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.386374] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.386601] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.386790] (mpc_high) StderrLine: {'line': b'   33 | #define NSH    \x1b[01;36m\x1b[KUR5_NSH\x1b[m\x1b[K\n'}
+[1.386903] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.386990] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:78:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.387078] (mpc_high) StderrLine: {'line': b'   78 |     double Zl[\x1b[01;36m\x1b[KNSH\x1b[m\x1b[K] = {0.0};\n'}
+[1.387165] (mpc_high) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.387250] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:78:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kdouble [0]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.387340] (mpc_high) StderrLine: {'line': b'   78 |     double Zl[NSH] = {0.0\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.387426] (mpc_high) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.387511] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12\x1b[m\x1b[K,\n'}
+[1.387599] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[1.387703] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:48:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[KZu\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.387806] (mpc_high) StderrLine: {'line': b'   48 | #define UR5_NSH    \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.387892] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.387978] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:33:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.388064] (mpc_high) StderrLine: {'line': b'   33 | #define NSH    \x1b[01;36m\x1b[KUR5_NSH\x1b[m\x1b[K\n'}
+[1.388149] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.388233] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:79:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNSH\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.388320] (mpc_high) StderrLine: {'line': b'   79 |     double Zu[\x1b[01;36m\x1b[KNSH\x1b[m\x1b[K] = {0.0};\n'}
+[1.388411] (mpc_high) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.388497] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:79:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kdouble [0]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.388591] (mpc_high) StderrLine: {'line': b'   79 |     double Zu[NSH] = {0.0\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.388680] (mpc_high) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.388782] (mpc_high) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:12\x1b[m\x1b[K,\n'}
+[1.388872] (mpc_high) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:1\x1b[m\x1b[K:\n'}
+[1.388960] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_UR5.h:42:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Kp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.389050] (mpc_high) StderrLine: {'line': b'   42 | #define UR5_NP     \x1b[01;35m\x1b[K0\x1b[m\x1b[K\n'}
+[1.389136] (mpc_high) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.389222] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/include/acados_solver_holder.hpp:27:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KUR5_NP\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.389318] (mpc_high) StderrLine: {'line': b'   27 | #define NP     \x1b[01;36m\x1b[KUR5_NP\x1b[m\x1b[K\n'}
+[1.389412] (mpc_high) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.389499] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:107:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KNP\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.389595] (mpc_high) StderrLine: {'line': b'  107 |     double p[\x1b[01;36m\x1b[KNP\x1b[m\x1b[K] = {0.0};\n'}
+[1.389682] (mpc_high) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.389783] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:107:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many initializers for \xe2\x80\x98\x1b[01m\x1b[Kdouble [0]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.389875] (mpc_high) StderrLine: {'line': b'  107 |     double p[NP] = {0.0\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[1.389969] (mpc_high) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.391292] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:108:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_human_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcurrent_joint_position\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.391422] (mpc_high) StderrLine: {'line': b'  108 |     for (int i = 0; i < 56; i++) p[i] = \x1b[01;31m\x1b[Kcurrent_human_position\x1b[m\x1b[K[i];\n'}
+[1.391523] (mpc_high) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.391627] (mpc_high) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[Kcurrent_joint_position\x1b[m\x1b[K\n'}
+[1.391814] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:122:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kxtraj\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.391930] (mpc_high) StderrLine: {'line': b'  122 |     double \x1b[01;35m\x1b[Kxtraj\x1b[m\x1b[K[NX * (N+1)];\n'}
+[1.392029] (mpc_high) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.392193] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:123:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kutraj\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.392290] (mpc_high) StderrLine: {'line': b'  123 |     double \x1b[01;35m\x1b[Kutraj\x1b[m\x1b[K[NU * N];\n'}
+[1.392377] (mpc_high) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.392568] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:22:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktracking_goal\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.392676] (mpc_high) StderrLine: {'line': b'   22 |     double current_joint_goal[6], \x1b[01;35m\x1b[Kdouble tracking_goal[60]\x1b[m\x1b[K, double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {\n'}
+[1.392797] (mpc_high) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.392890] (mpc_high) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_high/solver_high_disc/acados_solver_holder.cpp:22:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmy_weights\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.393015] (mpc_high) StderrLine: {'line': b'   22 | t_goal[6], double tracking_goal[60], double cgoal[3], double results[16], \x1b[01;35m\x1b[Kdouble my_weights[10]\x1b[m\x1b[K, double full_trajectory[140]) {\n'}
+[1.393109] (mpc_high) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.393199] (mpc_high) StderrLine: {'line': b'\n'}
+[1.404852] (-) TimerEvent: {}
+[1.505213] (-) TimerEvent: {}
+[1.505908] (mpc_high) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:188: CMakeFiles/high_solver.dir/solver_high_disc/acados_solver_holder.cpp.o] Error 1\n'}
+[1.506325] (mpc_high) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2\n'}
+[1.506724] (mpc_high) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.509860] (mpc_high) CommandEnded: {'returncode': 2}
+[1.527142] (mpc_high) JobEnded: {'identifier': 'mpc_high', 'rc': 2}
+[1.537672] (-) EventReactorShutdown: {}

@@ -1,0 +1,241 @@
+[0.483s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.483s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7489e5e70d00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7489e5e707f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7489e5e707f0>>, mixin_verb=('build',))
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.972s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.972s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extensions ['ignore', 'ignore_ament_install']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extension 'ignore'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extension 'ignore_ament_install'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extensions ['colcon_pkg']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extension 'colcon_pkg'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extensions ['colcon_meta']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extension 'colcon_meta'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extensions ['ros']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mpc_low) by extension 'ros'
+[1.051s] DEBUG:colcon.colcon_core.package_identification:Package 'mpc_low' with type 'ros.ament_cmake' and name 'mpc_low'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extensions ['ignore', 'ignore_ament_install']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extension 'ignore'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extension 'ignore_ament_install'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extensions ['colcon_pkg']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extension 'colcon_pkg'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extensions ['colcon_meta']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extension 'colcon_meta'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extensions ['ros']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(my_package) by extension 'ros'
+[1.063s] DEBUG:colcon.colcon_core.package_identification:Package 'my_package' with type 'ros.ament_python' and name 'my_package'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extension 'ignore'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extension 'ignore_ament_install'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extensions ['colcon_pkg']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extension 'colcon_pkg'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extensions ['colcon_meta']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extension 'colcon_meta'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extensions ['ros']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(velocity_controller) by extension 'ros'
+[1.080s] DEBUG:colcon.colcon_core.package_identification:Package 'velocity_controller' with type 'ros.ament_cmake' and name 'velocity_controller'
+[1.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.214s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/chri/CHRI_2025/UR5_pyBullet+acados/install
+[1.217s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 412 installed packages in /opt/ros/humble
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_target' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_clean_cache' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_clean_first' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'cmake_force_configure' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'ament_cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'catkin_cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'mpc_low' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.333s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_low' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low', 'merge_install': False, 'path': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low', 'symlink_install': False, 'test_result_base': None}
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_args' from command line to 'None'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target' from command line to 'None'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_cache' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_first' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_force_configure' from command line to 'False'
+[1.335s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'ament_cmake_args' from command line to 'None'
+[1.335s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_cmake_args' from command line to 'None'
+[1.335s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.335s] DEBUG:colcon.colcon_core.verb:Building package 'my_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package', 'merge_install': False, 'path': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package', 'symlink_install': False, 'test_result_base': None}
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_args' from command line to 'None'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_target' from command line to 'None'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.336s] Level 5:colcon.colcon_core.verb:set package 'velocity_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.336s] DEBUG:colcon.colcon_core.verb:Building package 'velocity_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller', 'merge_install': False, 'path': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/velocity_controller', 'symlink_install': False, 'test_result_base': None}
+[1.337s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.338s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.339s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low' with build type 'ament_cmake'
+[1.339s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low'
+[1.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.358s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.358s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.372s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package' with build type 'ament_python'
+[1.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'ament_prefix_path')
+[1.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/ament_prefix_path.ps1'
+[1.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/ament_prefix_path.dsv'
+[1.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/ament_prefix_path.sh'
+[1.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.392s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/velocity_controller' with build type 'ament_cmake'
+[1.392s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/velocity_controller'
+[1.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low -- -j16 -l16
+[1.999s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package'
+[2.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.051s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller -- -j16 -l16
+[2.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low -- -j16 -l16
+[2.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low
+[2.227s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_low)
+[2.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low' for CMake module files
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low' for CMake config files
+[2.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_low', 'cmake_prefix_path')
+[2.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.ps1'
+[2.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.dsv'
+[2.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.sh'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/bin'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/pkgconfig/mpc_low.pc'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/python3.10/site-packages'
+[2.261s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/bin'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.ps1'
+[2.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.dsv'
+[2.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.sh'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.bash'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.zsh'
+[2.275s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/colcon-core/packages/mpc_low)
+[2.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_low)
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low' for CMake module files
+[2.278s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low' for CMake config files
+[2.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_low', 'cmake_prefix_path')
+[2.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.ps1'
+[2.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.dsv'
+[2.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/hook/cmake_prefix_path.sh'
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib'
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/bin'
+[2.283s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/pkgconfig/mpc_low.pc'
+[2.284s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/python3.10/site-packages'
+[2.285s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/bin'
+[2.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.ps1'
+[2.287s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.dsv'
+[2.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.sh'
+[2.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.bash'
+[2.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.zsh'
+[2.292s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/colcon-core/packages/mpc_low)
+[2.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller -- -j16 -l16
+[2.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller
+[2.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_controller)
+[2.353s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller' for CMake module files
+[2.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/UR5_pyBullet+acados/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/velocity_controller
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller' for CMake config files
+[2.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_controller', 'cmake_prefix_path')
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.ps1'
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.dsv'
+[2.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.sh'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/bin'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib/pkgconfig/velocity_controller.pc'
+[2.358s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib/python3.10/site-packages'
+[2.359s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/bin'
+[2.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.ps1'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.dsv'
+[2.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.sh'
+[2.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.bash'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.zsh'
+[2.364s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/colcon-core/packages/velocity_controller)
+[2.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_controller)
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller' for CMake module files
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller' for CMake config files
+[2.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_controller', 'cmake_prefix_path')
+[2.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.ps1'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/hook/cmake_prefix_path.sh'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/bin'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib/pkgconfig/velocity_controller.pc'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/lib/python3.10/site-packages'
+[2.370s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/bin'
+[2.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.ps1'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.dsv'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.sh'
+[2.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.bash'
+[2.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/velocity_controller/package.zsh'
+[2.374s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/velocity_controller/share/colcon-core/packages/velocity_controller)
+[7.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package': PYTHONPATH=/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_package build --build-base /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build install --record /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/install.log --single-version-externally-managed install_data
+[8.686s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package' for CMake module files
+[8.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package' returned '0': PYTHONPATH=/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_package build --build-base /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build install --record /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/install.log --single-version-externally-managed install_data
+[8.689s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package' for CMake config files
+[8.691s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib'
+[8.692s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/bin'
+[8.692s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/pkgconfig/my_package.pc'
+[8.693s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages'
+[8.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'pythonpath')
+[8.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/pythonpath.ps1'
+[8.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/pythonpath.dsv'
+[8.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/hook/pythonpath.sh'
+[8.700s] Level 1:colcon.colcon_core.environment:checking '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/bin'
+[8.700s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_package)
+[8.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/package.ps1'
+[8.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/package.dsv'
+[8.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/package.sh'
+[8.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/package.bash'
+[8.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package/package.zsh'
+[8.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/colcon-core/packages/my_package)
+[8.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.708s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.807s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.808s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.808s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.844s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.845s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/local_setup.ps1'
+[8.851s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/_local_setup_util_ps1.py'
+[8.865s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/setup.ps1'
+[8.868s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/local_setup.sh'
+[8.876s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/_local_setup_util_sh.py'
+[8.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/setup.sh'
+[8.881s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/local_setup.bash'
+[8.882s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/setup.bash'
+[8.885s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/local_setup.zsh'
+[8.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/setup.zsh'

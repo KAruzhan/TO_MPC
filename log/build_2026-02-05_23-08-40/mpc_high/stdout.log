@@ -1,0 +1,12 @@
+[  9%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/UR5_model/UR5_expl_ode_fun.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/UR5_model/UR5_expl_vde_forw.c.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/kinematics_functions.cpp.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/UR5_model/UR5_expl_vde_adj.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/UR5_constraints/UR5_constr_h_fun.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o[0m
+[ 72%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/acados_sim_solver_UR5.c.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_high/acados_solver_holder.cpp.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_high/acados_solver_UR5.c.o[0m
+[100%] [32m[1mLinking CXX executable high_solver[0m
+[100%] Built target high_solver

@@ -1,0 +1,256 @@
+[0.021s] Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low -DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low
+[0.104s] -- The C compiler identification is GNU 11.4.0
+[0.192s] -- The CXX compiler identification is GNU 11.4.0
+[0.206s] -- Detecting C compiler ABI info
+[0.312s] -- Detecting C compiler ABI info - done
+[0.323s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.324s] -- Detecting C compile features
+[0.324s] -- Detecting C compile features - done
+[0.328s] -- Detecting CXX compiler ABI info
+[0.467s] -- Detecting CXX compiler ABI info - done
+[0.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.485s] -- Detecting CXX compile features
+[0.485s] -- Detecting CXX compile features - done
+[0.489s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.024s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.163s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.241s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.244s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.258s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.279s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.308s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.384s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.388s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.518s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.562s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.629s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.644s] -- Looking for pthread.h
+[1.757s] -- Looking for pthread.h - found
+[1.757s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.872s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.874s] -- Found Threads: TRUE  
+[1.981s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.037s] -- Target my_node_cpp built successfully
+[2.039s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.176s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.176s] -- Configured cppcheck include dirs: 
+[2.176s] -- Configured cppcheck exclude dirs and/or files: 
+[2.182s] -- Added test 'lint_cmake' to check CMake code style
+[2.198s] -- Added test 'uncrustify' to check C / C++ code style
+[2.198s] -- Configured uncrustify additional arguments: 
+[2.200s] -- Added test 'xmllint' to check XML markup files
+[2.202s] -- Configuring done
+[2.288s] -- Generating done
+[2.299s] -- Build files have been written to: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low
+[2.313s] Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low -DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low
+[2.317s] Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low -- -j16 -l16
+[2.394s] [  9%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/low_solver.cpp.o[0m
+[2.395s] [ 18%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_forw.c.o[0m
+[2.396s] [ 27%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o[0m
+[2.396s] [ 45%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_adj.c.o[0m
+[2.396s] [ 45%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun.c.o[0m
+[2.397s] [ 54%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_sim_solver_UR5.c.o[0m
+[2.397s] [ 72%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_ode_fun.c.o[0m
+[2.398s] [ 72%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/kinematics_functions.cpp.o[0m
+[2.401s] [ 81%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_solver_UR5.c.o[0m
+[2.402s] [ 90%] [32mBuilding CXX object CMakeFiles/low_solver.dir/solver_low/acados_solver_holder.cpp.o[0m
+[2.432s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_f0[m[K’:
+[2.432s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.432s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[2.432s]       |                                                                              [01;35m[K^[m[K
+[2.432s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.432s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[2.433s]       |                                                                                               [01;35m[K^[m[K
+[2.433s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.433s]    59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[2.433s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[2.433s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_init_mem[m[K’:
+[2.433s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:103:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.433s]   103 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_adj_init_mem([01;35m[Kint mem[m[K) {
+[2.434s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.434s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_free_mem[m[K’:
+[2.434s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:107:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.434s]   107 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_free_mem([01;35m[Kint mem[m[K) {
+[2.434s]       |                                                     [01;35m[K~~~~^~~[m[K
+[2.434s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:[m[K In function ‘[01m[KUR5_expl_vde_adj_release[m[K’:
+[2.435s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:114:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.435s]   114 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_release([01;35m[Kint mem[m[K) {
+[2.435s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.446s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_f0[m[K’:
+[2.446s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.447s]    64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[2.447s]       |                                                                              [01;35m[K^[m[K
+[2.447s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.447s]    64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[2.447s]       |                                                                                               [01;35m[K^[m[K
+[2.448s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.448s]    64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[2.448s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[2.448s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_init_mem[m[K’:
+[2.448s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2006:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.448s]  2006 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_init_mem([01;35m[Kint mem[m[K) {
+[2.448s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.449s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_free_mem[m[K’:
+[2.449s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2010:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.449s]  2010 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_free_mem([01;35m[Kint mem[m[K) {
+[2.449s]       |                                                     [01;35m[K~~~~^~~[m[K
+[2.449s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:[m[K In function ‘[01m[KUR5_constr_h_fun_release[m[K’:
+[2.449s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2017:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.450s]  2017 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_release([01;35m[Kint mem[m[K) {
+[2.450s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.450s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_f0[m[K’:
+[2.451s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.451s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[2.451s]       |                                                                              [01;35m[K^[m[K
+[2.451s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.452s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[2.452s]       |                                                                                               [01;35m[K^[m[K
+[2.452s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.452s]    57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[2.452s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[2.452s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_init_mem[m[K’:
+[2.452s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:94:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.453s]    94 | CASADI_SYMBOL_EXPORT int UR5_expl_ode_fun_init_mem([01;35m[Kint mem[m[K) {
+[2.453s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.453s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_free_mem[m[K’:
+[2.453s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:98:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.453s]    98 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_free_mem([01;35m[Kint mem[m[K) {
+[2.453s]       |                                                     [01;35m[K~~~~^~~[m[K
+[2.454s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:[m[K In function ‘[01m[KUR5_expl_ode_fun_release[m[K’:
+[2.454s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:105:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.454s]   105 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_release([01;35m[Kint mem[m[K) {
+[2.454s]       |                                                    [01;35m[K~~~~^~~[m[K
+[2.458s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:339:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.459s]   339 | }[01;35m[K;[m[K
+[2.459s]       |  [01;35m[K^[m[K
+[2.459s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:344:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.459s]   344 | }[01;35m[K;[m[K
+[2.459s]       |  [01;35m[K^[m[K
+[2.459s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:349:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.460s]   349 | }[01;35m[K;[m[K
+[2.460s]       |  [01;35m[K^[m[K
+[2.460s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:354:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.460s]   354 | }[01;35m[K;[m[K
+[2.460s]       |  [01;35m[K^[m[K
+[2.461s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:359:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.461s]   359 | }[01;35m[K;[m[K
+[2.461s]       |  [01;35m[K^[m[K
+[2.461s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:364:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.461s]   364 | }[01;35m[K;[m[K
+[2.462s]       |  [01;35m[K^[m[K
+[2.462s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_f0[m[K’:
+[2.462s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.462s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[2.462s]       |                                                                              [01;35m[K^[m[K
+[2.462s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.462s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[2.463s]       |                                                                                               [01;35m[K^[m[K
+[2.463s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.463s]    61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[2.463s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[2.463s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_init_mem[m[K’:
+[2.463s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:424:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.463s]   424 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_forw_init_mem([01;35m[Kint mem[m[K) {
+[2.464s]       |                                                     [01;35m[K~~~~^~~[m[K
+[2.464s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_free_mem[m[K’:
+[2.464s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:428:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.464s]   428 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_free_mem([01;35m[Kint mem[m[K) {
+[2.464s]       |                                                      [01;35m[K~~~~^~~[m[K
+[2.464s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:[m[K In function ‘[01m[KUR5_expl_vde_forw_release[m[K’:
+[2.464s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:435:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.465s]   435 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_release([01;35m[Kint mem[m[K) {
+[2.465s]       |                                                     [01;35m[K~~~~^~~[m[K
+[2.465s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_5_set_nlp_in[m[K’:
+[2.466s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:442:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktmp_int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.466s]   442 |     int [01;35m[Ktmp_int[m[K = 0;
+[2.466s]       |         [01;35m[K^~~~~~~[m[K
+[2.466s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_create_6_set_opts[m[K’:
+[2.466s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1107:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kext_cost_num_hess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.467s]  1107 |     int [01;35m[Kext_cost_num_hess[m[K = 0;
+[2.467s]       |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[2.467s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_update_qp_solver_cond_N[m[K’:
+[2.467s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1221:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.467s]  1221 | int UR5_acados_update_qp_solver_cond_N([01;35m[KUR5_solver_capsule* capsule[m[K, int qp_solver_cond_N)
+[2.468s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[2.468s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1221:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqp_solver_cond_N[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.468s]  1221 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, [01;35m[Kint qp_solver_cond_N[m[K)
+[2.468s]       |                                                                     [01;35m[K~~~~^~~~~~~~~~~~~~~~[m[K
+[2.468s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_reset[m[K’:
+[2.468s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1239:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_solver[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.469s]  1239 |     ocp_nlp_solver* [01;35m[Knlp_solver[m[K = capsule->nlp_solver;
+[2.469s]       |                     [01;35m[K^~~~~~~~~~[m[K
+[2.469s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1238:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knlp_in[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.469s]  1238 |     ocp_nlp_in* [01;35m[Knlp_in[m[K = capsule->nlp_in;
+[2.469s]       |                 [01;35m[K^~~~~~[m[K
+[2.469s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1229:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreset_qp_solver_mem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.470s]  1229 | int UR5_acados_reset(UR5_solver_capsule* capsule, [01;35m[Kint reset_qp_solver_mem[m[K)
+[2.470s]       |                                                   [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.542s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_f0[m[K’:
+[2.543s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kiw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.543s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* [01;35m[Ki[m[Kw, casadi_real* w, int mem) {
+[2.543s]       |                                                                              [01;35m[K^[m[K
+[2.543s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.543s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* [01;35m[Kw[m[K, int mem) {
+[2.544s]       |                                                                                               [01;35m[K^[m[K
+[2.544s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:102:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.544s]    68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, [01;35m[Kint mem[m[K) {
+[2.544s]       |                                                                                                  [01;35m[K~~~~^~~[m[K
+[2.544s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_init_mem[m[K’:
+[2.545s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6289:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.545s]  6289 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_init_mem([01;35m[Kint mem[m[K) {
+[2.545s]       |                                                               [01;35m[K~~~~^~~[m[K
+[2.545s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_free_mem[m[K’:
+[2.545s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6293:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.546s]  6293 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_free_mem([01;35m[Kint mem[m[K) {
+[2.546s]       |                                                                [01;35m[K~~~~^~~[m[K
+[2.546s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:[m[K In function ‘[01m[KUR5_constr_h_fun_jac_uxt_zt_release[m[K’:
+[2.546s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6300:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.546s]  6300 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_release([01;35m[Kint mem[m[K) {
+[2.546s]       |                                                               [01;35m[K~~~~^~~[m[K
+[3.786s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:[m[K In function ‘[01m[KEigen::MatrixXf get_cpose(float, float, float, float, float, float)[m[K’:
+[3.787s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:4:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kq6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.787s]     4 | Eigen::MatrixXf get_cpose(float q1, float q2, float q3, float q4, float q5, [01;35m[Kfloat q6[m[K){
+[3.787s]       |                                                                             [01;35m[K~~~~~~^~[m[K
+[3.792s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:[m[K In function ‘[01m[KEigen::MatrixXf get_velocity(float, float, float, float, float, float, float, float, float, float, float, float)[m[K’:
+[3.792s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:15:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kq6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.792s]    15 | Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, [01;35m[Kfloat q6[m[K,
+[3.792s]       |                                                                                [01;35m[K~~~~~~^~[m[K
+[3.792s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:16:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ku_6[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.793s]    16 |                              float u_1, float u_2, float u_3, float u_4, float u_5, [01;35m[Kfloat u_6[m[K){
+[3.793s]       |                                                                                     [01;35m[K~~~~~~^~~[m[K
+[3.841s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:[m[K In member function ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’:
+[3.842s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:87:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kxtraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[3.842s]    87 |     double [01;35m[Kxtraj[m[K[NX * (N+1)];
+[3.842s]       |            [01;35m[K^~~~~[m[K
+[3.842s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:88:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kutraj[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[3.842s]    88 |     double [01;35m[Kutraj[m[K[NU * N];
+[3.842s]       |            [01;35m[K^~~~~[m[K
+[3.842s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:49:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KWN[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.842s]    49 |     double [01;35m[KWN[m[K[(NX)*(NX)] = {0.0};
+[3.843s]       |            [01;35m[K^~[m[K
+[3.843s] [01m[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:21:203:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmy_weights[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.843s]    21 | int my_NMPC_solver::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], [01;35m[Kdouble my_weights[10][m[K) {
+[3.843s]       |                                                                                                                                                                                                    [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[13.728s] [100%] [32m[1mLinking CXX executable low_solver[0m
+[14.605s] [100%] Built target low_solver
+[14.621s] Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low -- -j16 -l16
+[14.634s] Invoking command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low
+[14.644s] -- Install configuration: ""
+[14.644s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/mpc_low/low_solver
+[14.649s] -- Set runtime path of "/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/mpc_low/low_solver" to ""
+[14.649s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low
+[14.649s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low
+[14.650s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh
+[14.650s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv
+[14.650s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/path.sh
+[14.650s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/path.dsv
+[14.650s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.bash
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.sh
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.zsh
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.dsv
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.dsv
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/packages/mpc_low
+[14.651s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake
+[14.652s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake
+[14.652s] -- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.xml
+[14.655s] Invoked command in '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low

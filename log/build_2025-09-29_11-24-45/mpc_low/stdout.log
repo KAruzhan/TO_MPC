@@ -1,0 +1,30 @@
+[  9%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_ode_fun.c.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/kinematics_functions.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/low_solver.cpp.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_forw.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_adj.c.o[0m
+[ 54%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_solver_UR5.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o[0m
+[ 72%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_sim_solver_UR5.c.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/low_solver.dir/solver_low/acados_solver_holder.cpp.o[0m
+[100%] [32m[1mLinking CXX executable low_solver[0m
+[100%] Built target low_solver
+-- Install configuration: ""
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver
+-- Set runtime path of "/home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/lib/mpc_low/low_solver" to ""
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/environment/path.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.bash
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.sh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.zsh
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/local_setup.dsv
+-- Installing: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.dsv
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/ament_index/resource_index/packages/mpc_low
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake
+-- Up-to-date: /home/chri/CHRI_2025/Time_optimal_baseline/install/mpc_low/share/mpc_low/package.xml

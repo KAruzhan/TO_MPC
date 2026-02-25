@@ -1,0 +1,30 @@
+[2.157s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mppi_controller build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/install.log --single-version-externally-managed install_data
+[2.413s] /home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.413s]   warnings.warn(msg)
+[2.639s] running egg_info
+[2.673s] writing ../../build/mppi_controller/mppi_controller.egg-info/PKG-INFO
+[2.673s] writing dependency_links to ../../build/mppi_controller/mppi_controller.egg-info/dependency_links.txt
+[2.674s] writing entry points to ../../build/mppi_controller/mppi_controller.egg-info/entry_points.txt
+[2.674s] writing requirements to ../../build/mppi_controller/mppi_controller.egg-info/requires.txt
+[2.674s] writing top-level names to ../../build/mppi_controller/mppi_controller.egg-info/top_level.txt
+[2.746s] reading manifest file '../../build/mppi_controller/mppi_controller.egg-info/SOURCES.txt'
+[2.747s] adding license file 'LICENSE'
+[2.749s] writing manifest file '../../build/mppi_controller/mppi_controller.egg-info/SOURCES.txt'
+[2.749s] running build
+[2.749s] running build_py
+[2.750s] copying mppi_controller/main.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.750s] copying mppi_controller/old_main.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.750s] copying mppi_controller/c_func_w_vels.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.751s] copying mppi_controller/mppi_utils.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.751s] copying mppi_controller/mppi.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.751s] copying mppi_controller/main_no_human.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build/lib/mppi_controller
+[2.752s] running install
+[2.758s] running install_lib
+[2.795s] running install_data
+[2.795s] running install_egg_info
+[2.832s] removing '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages/mppi_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[2.832s] Copying ../../build/mppi_controller/mppi_controller.egg-info to /home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages/mppi_controller-0.0.0-py3.10.egg-info
+[2.834s] running install_scripts
+[3.091s] Installing mppi_controller script to /home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/mppi_controller
+[3.092s] writing list of installed files to '/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/install.log'
+[3.124s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/mppi_controller' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mppi_controller build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/mppi_controller/install.log --single-version-externally-managed install_data

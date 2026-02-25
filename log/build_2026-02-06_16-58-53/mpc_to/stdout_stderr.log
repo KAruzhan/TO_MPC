@@ -1,0 +1,27 @@
+[  9%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
+[  9%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o[0m
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:35:10:[m[K [01;31m[Kfatal error: [m[Kacados_c/external_function_interface.h: No such file or directory
+   35 | #include [01;31m[K"acados_c/external_function_interface.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_UR5.c:37:10:[m[K [01;31m[Kfatal error: [m[Kacados_c/ocp_nlp_interface.h: No such file or directory
+   37 | #include [01;31m[K"acados_c/ocp_nlp_interface.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:328: CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:342: CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o] Error 1
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_solver_holder.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kacados_solver_holder.hpp: No such file or directory
+    1 | #include [01;31m[K"acados_solver_holder.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:356: CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o] Error 1
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/src/high_solver.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kacados_solver_holder.hpp: No such file or directory
+   10 | #include [01;31m[K"acados_solver_holder.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:76: CMakeFiles/high_solver.dir/src/high_solver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

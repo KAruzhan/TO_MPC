@@ -1,0 +1,16 @@
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp: In member function ‘int my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)’:
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:157:12: warning: ISO C++ forbids variable length array ‘xtraj’ [-Wvla]
+  157 |     double xtraj[NX * (N+1)];
+      |            ^~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:158:12: warning: ISO C++ forbids variable length array ‘utraj’ [-Wvla]
+  158 |     double utraj[NU * N];
+      |            ^~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:42: warning: unused parameter ‘tracking_goal’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                   ~~~~~~~^~~~~~~~~~~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:68: warning: unused parameter ‘cgoal’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                                             ~~~~~~~^~~~~~~~
+/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high_disc/acados_solver_holder.cpp:29:105: warning: unused parameter ‘my_weights’ [-Wunused-parameter]
+   29 |     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+      |                                                                                                  ~~~~~~~^~~~~~~~~~~~~~

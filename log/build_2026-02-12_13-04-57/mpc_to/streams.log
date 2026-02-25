@@ -1,0 +1,40 @@
+[0.025s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
+[0.146s] [  4%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o[0m
+[0.209s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_sim_create[m[K’:
+[0.209s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:83:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDISCRETE[m[K’ undeclared (first use in this function)
+[0.210s]    83 |     plan.sim_solver = [01;31m[KDISCRETE[m[K;
+[0.210s]       |                       [01;31m[K^~~~~~~~[m[K
+[0.211s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:83:23:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0.211s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K In function ‘[01m[KUR5_acados_sim_update_params[m[K’:
+[0.211s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:218:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcapsule[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.211s]   218 | rams([01;35m[KUR5_sim_solver_capsule *capsule[m[K, double *p, int np)
+[0.211s]       |      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[0.212s] 
+[0.212s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:218:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.212s]   218 | ver_capsule *capsule, [01;35m[Kdouble *p[m[K, int np)
+[0.212s]       |                       [01;35m[K~~~~~~~~^[m[K
+[0.212s] 
+[0.212s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:[m[K At top level:
+[0.213s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:236:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.213s]   236 | }[01;35m[K;[m[K
+[0.213s]       |  [01;35m[K^[m[K
+[0.213s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:241:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.213s]   241 | }[01;35m[K;[m[K
+[0.213s]       |  [01;35m[K^[m[K
+[0.214s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:246:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.214s]   246 | }[01;35m[K;[m[K
+[0.214s]       |  [01;35m[K^[m[K
+[0.215s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:251:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.215s]   251 | }[01;35m[K;[m[K
+[0.215s]       |  [01;35m[K^[m[K
+[0.215s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:256:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.216s]   256 | }[01;35m[K;[m[K
+[0.216s]       |  [01;35m[K^[m[K
+[0.216s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_to/solver_to_high/acados_sim_solver_UR5.c:261:2:[m[K [01;35m[Kwarning: [m[KISO C does not allow extra ‘[01m[K;[m[K’ outside of a function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[0.216s]   261 | }[01;35m[K;[m[K
+[0.216s]       |  [01;35m[K^[m[K
+[0.216s] gmake[2]: *** [CMakeFiles/high_solver.dir/build.make:342: CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o] Error 1
+[0.217s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/high_solver.dir/all] Error 2
+[0.217s] gmake: *** [Makefile:146: all] Error 2
+[0.399s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_to -- -j16 -l16

@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = my_package.my_node:main
+my_subscriber = my_package.demo_subscryber:main

@@ -1,0 +1,11 @@
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:232:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_linear_vell_current[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  232 |             double [01;35m[Kmax_linear_vell_current[m[K = get_spheres_velocity(current_position, current_velocity, max_vell_current);
+      |                    [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:266:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klin_vell_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  266 |             double [01;35m[Klin_vell_scale[m[K = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
+      |                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::change_goal_msg(std_msgs::msg::Float64MultiArray)[m[K’:
+[01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:324:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_TIME[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  324 |         constexpr double [01;35m[KMAX_TIME[m[K = 0.5;   // Maximum trajectory time
+      |                          [01;35m[K^~~~~~~~[m[K

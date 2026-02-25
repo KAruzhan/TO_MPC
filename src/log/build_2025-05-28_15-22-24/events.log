@@ -1,0 +1,462 @@
+[0.000000] (-) TimerEvent: {}
+[0.000365] (mpc_low) JobQueued: {'identifier': 'mpc_low', 'dependencies': OrderedDict()}
+[0.000725] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000762] (mpc_low) JobStarted: {'identifier': 'mpc_low'}
+[0.008211] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.016773] (mpc_low) JobProgress: {'identifier': 'mpc_low', 'progress': 'cmake'}
+[0.017574] (mpc_low) Command: {'cmd': ['/usr/bin/cmake', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low', '-DCMAKE_INSTALL_PREFIX=/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low'], 'cwd': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('SYSTEMD_EXEC_PID', '5316'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/5227,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/5227'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2361551b_c355_4828_a8a0_243f43ea6000'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.333'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099754] (-) TimerEvent: {}
+[0.104360] (mpc_low) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.192433] (mpc_low) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199877] (-) TimerEvent: {}
+[0.206742] (mpc_low) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300041] (-) TimerEvent: {}
+[0.312174] (mpc_low) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.323739] (mpc_low) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.324170] (mpc_low) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.324772] (mpc_low) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.328975] (mpc_low) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400158] (-) TimerEvent: {}
+[0.467223] (mpc_low) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.484713] (mpc_low) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.485271] (mpc_low) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.486003] (mpc_low) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.489879] (mpc_low) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500253] (-) TimerEvent: {}
+[0.600657] (-) TimerEvent: {}
+[0.701019] (-) TimerEvent: {}
+[0.801371] (-) TimerEvent: {}
+[0.901745] (-) TimerEvent: {}
+[1.002092] (-) TimerEvent: {}
+[1.024980] (mpc_low) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102202] (-) TimerEvent: {}
+[1.163814] (mpc_low) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.202346] (-) TimerEvent: {}
+[1.237612] (my_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/my_package', 'build', '--build-base', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build', 'install', '--record', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/my_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chri', 'LC_TIME': 'kk_KZ.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib', 'ACADOS_SOURCE_DIR': '/home/chri/Documents/acados', 'HOME': '/home/chri', 'OLDPWD': '/home/chri/CHRI_2025/UR5_pyBullet+acados', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'kk_KZ.UTF-8', 'SYSTEMD_EXEC_PID': '5316', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'chri', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chri', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/5227,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/5227', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'kk_KZ.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2361551b_c355_4828_a8a0_243f43ea6000', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'kk_KZ.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.333', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'kk_KZ.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'kk_KZ.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'kk_KZ.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'kk_KZ.UTF-8', 'LC_PAPER': 'kk_KZ.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.241192] (mpc_low) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.245111] (mpc_low) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.259000] (mpc_low) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.280055] (mpc_low) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.302415] (-) TimerEvent: {}
+[1.308351] (mpc_low) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.384072] (mpc_low) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.388456] (mpc_low) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402519] (-) TimerEvent: {}
+[1.473055] (my_package) StderrLine: {'line': b"/home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[1.473441] (my_package) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.502656] (-) TimerEvent: {}
+[1.518635] (mpc_low) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.562733] (mpc_low) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.602807] (-) TimerEvent: {}
+[1.629921] (mpc_low) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.644294] (mpc_low) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.658639] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.689462] (my_package) StdoutLine: {'line': b'creating ../build/my_package/my_package.egg-info\n'}
+[1.689794] (my_package) StdoutLine: {'line': b'writing ../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.690391] (my_package) StdoutLine: {'line': b'writing dependency_links to ../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.690684] (my_package) StdoutLine: {'line': b'writing entry points to ../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.690862] (my_package) StdoutLine: {'line': b'writing requirements to ../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.691018] (my_package) StdoutLine: {'line': b'writing top-level names to ../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.691174] (my_package) StdoutLine: {'line': b"writing manifest file '../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.702896] (-) TimerEvent: {}
+[1.756287] (my_package) StdoutLine: {'line': b"reading manifest file '../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.756592] (my_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.757142] (mpc_low) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.758033] (mpc_low) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.758332] (my_package) StdoutLine: {'line': b"writing manifest file '../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.758572] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.758786] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.758941] (my_package) StdoutLine: {'line': b'creating /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.759119] (my_package) StdoutLine: {'line': b'copying my_package/my_node_with_human.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.759346] (my_package) StdoutLine: {'line': b'copying my_package/my_node.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.759617] (my_package) StdoutLine: {'line': b'copying my_package/internet_example.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.759875] (my_package) StdoutLine: {'line': b'copying my_package/my_node (copy).py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.760042] (my_package) StdoutLine: {'line': b'copying my_package/demo_subscryber.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.760228] (my_package) StdoutLine: {'line': b'copying my_package/__init__.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package\n'}
+[1.760778] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.767132] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.796903] (my_package) StdoutLine: {'line': b'creating /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797111] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/my_node_with_human.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797256] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/my_node.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797423] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/internet_example.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797580] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/my_node (copy).py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797798] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/demo_subscryber.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.797967] (my_package) StdoutLine: {'line': b'copying /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/build/lib/my_package/__init__.py -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.798830] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/my_node_with_human.py to my_node_with_human.cpython-310.pyc\n'}
+[1.802324] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/my_node.py to my_node.cpython-310.pyc\n'}
+[1.802972] (-) TimerEvent: {}
+[1.805079] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/internet_example.py to internet_example.cpython-310.pyc\n'}
+[1.805873] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/my_node (copy).py to my_node (copy).cpython-310.pyc\n'}
+[1.806480] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/demo_subscryber.py to demo_subscryber.cpython-310.pyc\n'}
+[1.807025] (my_package) StdoutLine: {'line': b'byte-compiling /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package/__init__.py to __init__.cpython-310.pyc\n'}
+[1.807236] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.807557] (my_package) StdoutLine: {'line': b'creating /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.807847] (my_package) StdoutLine: {'line': b'copying resource/my_package -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.808185] (my_package) StdoutLine: {'line': b'copying package.xml -> /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/share/my_package\n'}
+[1.808374] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.840386] (my_package) StdoutLine: {'line': b'Copying ../build/my_package/my_package.egg-info to /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/python3.10/site-packages/my_package-0.0.0-py3.10.egg-info\n'}
+[1.841570] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.872357] (mpc_low) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.875138] (mpc_low) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.903106] (-) TimerEvent: {}
+[1.981382] (mpc_low) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.003240] (-) TimerEvent: {}
+[2.037409] (mpc_low) StdoutLine: {'line': b'-- Target my_node_cpp built successfully\n'}
+[2.039780] (mpc_low) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.064424] (my_package) StdoutLine: {'line': b'Installing my_node script to /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/my_package\n'}
+[2.064754] (my_package) StdoutLine: {'line': b'Installing my_subscriber script to /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/my_package/lib/my_package\n'}
+[2.065152] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/my_package/install.log'\n"}
+[2.093262] (my_package) CommandEnded: {'returncode': 0}
+[2.112112] (-) TimerEvent: {}
+[2.124839] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[2.176284] (mpc_low) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.176687] (mpc_low) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.176873] (mpc_low) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.182453] (mpc_low) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.198597] (mpc_low) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.198848] (mpc_low) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.201049] (mpc_low) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.202892] (mpc_low) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.212257] (-) TimerEvent: {}
+[2.288799] (mpc_low) StdoutLine: {'line': b'-- Generating done\n'}
+[2.299994] (mpc_low) StdoutLine: {'line': b'-- Build files have been written to: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low\n'}
+[2.312499] (-) TimerEvent: {}
+[2.313443] (mpc_low) CommandEnded: {'returncode': 0}
+[2.314651] (mpc_low) JobProgress: {'identifier': 'mpc_low', 'progress': 'build'}
+[2.316513] (mpc_low) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low', '--', '-j16', '-l16'], 'cwd': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('SYSTEMD_EXEC_PID', '5316'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/5227,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/5227'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2361551b_c355_4828_a8a0_243f43ea6000'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.333'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.394910] (mpc_low) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/low_solver.dir/src/low_solver.cpp.o\x1b[0m\n'}
+[2.395968] (mpc_low) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_forw.c.o\x1b[0m\n'}
+[2.396261] (mpc_low) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c.o\x1b[0m\n'}
+[2.396469] (mpc_low) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_vde_adj.c.o\x1b[0m\n'}
+[2.396648] (mpc_low) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_constraints/UR5_constr_h_fun.c.o\x1b[0m\n'}
+[2.397661] (mpc_low) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_sim_solver_UR5.c.o\x1b[0m\n'}
+[2.398118] (mpc_low) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/UR5_model/UR5_expl_ode_fun.c.o\x1b[0m\n'}
+[2.398716] (mpc_low) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/low_solver.dir/src/kinematics_functions.cpp.o\x1b[0m\n'}
+[2.401152] (mpc_low) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/low_solver.dir/solver_low/acados_solver_UR5.c.o\x1b[0m\n'}
+[2.402330] (mpc_low) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/low_solver.dir/solver_low/acados_solver_holder.cpp.o\x1b[0m\n'}
+[2.412625] (-) TimerEvent: {}
+[2.431777] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_adj_f0\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.432387] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.432582] (mpc_low) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* \x1b[01;35m\x1b[Ki\x1b[m\x1b[Kw, casadi_real* w, int mem) {\n'}
+[2.432742] (mpc_low) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.432913] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:95:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.433073] (mpc_low) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* \x1b[01;35m\x1b[Kw\x1b[m\x1b[K, int mem) {\n'}
+[2.433228] (mpc_low) StderrLine: {'line': b'      |                                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.433398] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:59:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.433559] (mpc_low) StderrLine: {'line': b'   59 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, \x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.433709] (mpc_low) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.433864] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_adj_init_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.434013] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:103:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.434165] (mpc_low) StderrLine: {'line': b'  103 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_adj_init_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.434320] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.434501] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_adj_free_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.434653] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:107:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.434804] (mpc_low) StderrLine: {'line': b'  107 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_free_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.434949] (mpc_low) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.435098] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_adj_release\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.435254] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_adj.c:114:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.435453] (mpc_low) StderrLine: {'line': b'  114 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_adj_release(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.435619] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.446537] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_f0\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.446936] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.447201] (mpc_low) StderrLine: {'line': b'   64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* \x1b[01;35m\x1b[Ki\x1b[m\x1b[Kw, casadi_real* w, int mem) {\n'}
+[2.447478] (mpc_low) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.447690] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:95:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.447876] (mpc_low) StderrLine: {'line': b'   64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* \x1b[01;35m\x1b[Kw\x1b[m\x1b[K, int mem) {\n'}
+[2.448036] (mpc_low) StderrLine: {'line': b'      |                                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.448190] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:64:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.448372] (mpc_low) StderrLine: {'line': b'   64 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, \x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.448536] (mpc_low) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.448687] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_init_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.448840] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2006:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.449005] (mpc_low) StderrLine: {'line': b' 2006 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_init_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.449159] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.449326] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_free_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.449494] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2010:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.449649] (mpc_low) StderrLine: {'line': b' 2010 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_free_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.449798] (mpc_low) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.449945] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_release\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.450093] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun.c:2017:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.450257] (mpc_low) StderrLine: {'line': b' 2017 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_release(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.450428] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.451054] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_ode_fun_f0\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.451313] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.451704] (mpc_low) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* \x1b[01;35m\x1b[Ki\x1b[m\x1b[Kw, casadi_real* w, int mem) {\n'}
+[2.451885] (mpc_low) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.452032] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:95:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.452187] (mpc_low) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* \x1b[01;35m\x1b[Kw\x1b[m\x1b[K, int mem) {\n'}
+[2.452355] (mpc_low) StderrLine: {'line': b'      |                                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.452530] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:57:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.452692] (mpc_low) StderrLine: {'line': b'   57 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, \x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.452844] (mpc_low) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.452994] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_ode_fun_init_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.453140] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:94:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.453310] (mpc_low) StderrLine: {'line': b'   94 | CASADI_SYMBOL_EXPORT int UR5_expl_ode_fun_init_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.453479] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.453627] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_ode_fun_free_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.453778] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:98:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.453927] (mpc_low) StderrLine: {'line': b'   98 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_free_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.454067] (mpc_low) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.454224] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_ode_fun_release\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.454393] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_ode_fun.c:105:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.454562] (mpc_low) StderrLine: {'line': b'  105 | CASADI_SYMBOL_EXPORT void UR5_expl_ode_fun_release(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.454715] (mpc_low) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.458808] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:339:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.459241] (mpc_low) StderrLine: {'line': b'  339 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.459434] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.459601] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:344:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.459765] (mpc_low) StderrLine: {'line': b'  344 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.459912] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.460065] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:349:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.460247] (mpc_low) StderrLine: {'line': b'  349 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.460438] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.460604] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:354:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.460783] (mpc_low) StderrLine: {'line': b'  354 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.460958] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.461130] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:359:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.461613] (mpc_low) StderrLine: {'line': b'  359 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.461806] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.461980] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_sim_solver_UR5.c:364:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C does not allow extra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 outside of a function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.462139] (mpc_low) StderrLine: {'line': b'  364 | }\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.462295] (mpc_low) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.462477] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_forw_f0\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.462627] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.462770] (mpc_low) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* \x1b[01;35m\x1b[Ki\x1b[m\x1b[Kw, casadi_real* w, int mem) {\n'}
+[2.462903] (mpc_low) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.463032] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:95:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.463167] (mpc_low) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* \x1b[01;35m\x1b[Kw\x1b[m\x1b[K, int mem) {\n'}
+[2.463296] (mpc_low) StderrLine: {'line': b'      |                                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.463448] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:61:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.463605] (mpc_low) StderrLine: {'line': b'   61 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, \x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.463740] (mpc_low) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.463869] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_forw_init_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.464000] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:424:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.464134] (mpc_low) StderrLine: {'line': b'  424 | CASADI_SYMBOL_EXPORT int UR5_expl_vde_forw_init_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.464272] (mpc_low) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.464424] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_forw_free_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.464565] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:428:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.464715] (mpc_low) StderrLine: {'line': b'  428 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_free_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.464860] (mpc_low) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.464997] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_expl_vde_forw_release\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.465134] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_model/UR5_expl_vde_forw.c:435:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.465288] (mpc_low) StderrLine: {'line': b'  435 | CASADI_SYMBOL_EXPORT void UR5_expl_vde_forw_release(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.465442] (mpc_low) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.466103] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_acados_create_5_set_nlp_in\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.466365] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:442:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktmp_int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.466536] (mpc_low) StderrLine: {'line': b'  442 |     int \x1b[01;35m\x1b[Ktmp_int\x1b[m\x1b[K = 0;\n'}
+[2.466684] (mpc_low) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.466878] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_acados_create_6_set_opts\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.467096] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1107:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kext_cost_num_hess\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.467246] (mpc_low) StderrLine: {'line': b' 1107 |     int \x1b[01;35m\x1b[Kext_cost_num_hess\x1b[m\x1b[K = 0;\n'}
+[2.467410] (mpc_low) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.467612] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_acados_update_qp_solver_cond_N\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.467826] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1221:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcapsule\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.468053] (mpc_low) StderrLine: {'line': b' 1221 | int UR5_acados_update_qp_solver_cond_N(\x1b[01;35m\x1b[KUR5_solver_capsule* capsule\x1b[m\x1b[K, int qp_solver_cond_N)\n'}
+[2.468209] (mpc_low) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[2.468493] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1221:73:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kqp_solver_cond_N\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.468656] (mpc_low) StderrLine: {'line': b' 1221 | int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, \x1b[01;35m\x1b[Kint qp_solver_cond_N\x1b[m\x1b[K)\n'}
+[2.468797] (mpc_low) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.468947] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_acados_reset\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.469105] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1239:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knlp_solver\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.469265] (mpc_low) StderrLine: {'line': b' 1239 |     ocp_nlp_solver* \x1b[01;35m\x1b[Knlp_solver\x1b[m\x1b[K = capsule->nlp_solver;\n'}
+[2.469428] (mpc_low) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.469566] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1238:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knlp_in\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.469719] (mpc_low) StderrLine: {'line': b' 1238 |     ocp_nlp_in* \x1b[01;35m\x1b[Knlp_in\x1b[m\x1b[K = capsule->nlp_in;\n'}
+[2.469849] (mpc_low) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.469995] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_UR5.c:1229:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreset_qp_solver_mem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.470167] (mpc_low) StderrLine: {'line': b' 1229 | int UR5_acados_reset(UR5_solver_capsule* capsule, \x1b[01;35m\x1b[Kint reset_qp_solver_mem\x1b[m\x1b[K)\n'}
+[2.470337] (mpc_low) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.512756] (-) TimerEvent: {}
+[2.543018] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_jac_uxt_zt_f0\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.543359] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kiw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.543551] (mpc_low) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* \x1b[01;35m\x1b[Ki\x1b[m\x1b[Kw, casadi_real* w, int mem) {\n'}
+[2.543716] (mpc_low) StderrLine: {'line': b'      |                                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.543871] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:95:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.544031] (mpc_low) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* \x1b[01;35m\x1b[Kw\x1b[m\x1b[K, int mem) {\n'}
+[2.544183] (mpc_low) StderrLine: {'line': b'      |                                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.544475] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:68:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.544686] (mpc_low) StderrLine: {'line': b'   68 | static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, \x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.544871] (mpc_low) StderrLine: {'line': b'      |                                                                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.545041] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_jac_uxt_zt_init_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.545190] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6289:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.545480] (mpc_low) StderrLine: {'line': b' 6289 | CASADI_SYMBOL_EXPORT int UR5_constr_h_fun_jac_uxt_zt_init_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.545770] (mpc_low) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.545945] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_jac_uxt_zt_free_mem\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.546115] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6293:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.546274] (mpc_low) StderrLine: {'line': b' 6293 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_free_mem(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.546524] (mpc_low) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.546675] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KUR5_constr_h_fun_jac_uxt_zt_release\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.546816] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c:6300:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmem\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.546974] (mpc_low) StderrLine: {'line': b' 6300 | CASADI_SYMBOL_EXPORT void UR5_constr_h_fun_jac_uxt_zt_release(\x1b[01;35m\x1b[Kint mem\x1b[m\x1b[K) {\n'}
+[2.547112] (mpc_low) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.612886] (-) TimerEvent: {}
+[2.713273] (-) TimerEvent: {}
+[2.813794] (-) TimerEvent: {}
+[2.914371] (-) TimerEvent: {}
+[3.014849] (-) TimerEvent: {}
+[3.115336] (-) TimerEvent: {}
+[3.215770] (-) TimerEvent: {}
+[3.316233] (-) TimerEvent: {}
+[3.416736] (-) TimerEvent: {}
+[3.517203] (-) TimerEvent: {}
+[3.617677] (-) TimerEvent: {}
+[3.718136] (-) TimerEvent: {}
+[3.786869] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXf get_cpose(float, float, float, float, float, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.787206] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:4:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kq6\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.787404] (mpc_low) StderrLine: {'line': b'    4 | Eigen::MatrixXf get_cpose(float q1, float q2, float q3, float q4, float q5, \x1b[01;35m\x1b[Kfloat q6\x1b[m\x1b[K){\n'}
+[3.787562] (mpc_low) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[3.792244] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXf get_velocity(float, float, float, float, float, float, float, float, float, float, float, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.792517] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:15:86:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kq6\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.792724] (mpc_low) StderrLine: {'line': b'   15 | Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, \x1b[01;35m\x1b[Kfloat q6\x1b[m\x1b[K,\n'}
+[3.792887] (mpc_low) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[3.793029] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/src/kinematics_functions.cpp:16:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ku_6\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.793177] (mpc_low) StderrLine: {'line': b'   16 |                              float u_1, float u_2, float u_3, float u_4, float u_5, \x1b[01;35m\x1b[Kfloat u_6\x1b[m\x1b[K){\n'}
+[3.793336] (mpc_low) StderrLine: {'line': b'      |                                                                                     \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.818296] (-) TimerEvent: {}
+[3.841795] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.842167] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:87:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kxtraj\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.842392] (mpc_low) StderrLine: {'line': b'   87 |     double \x1b[01;35m\x1b[Kxtraj\x1b[m\x1b[K[NX * (N+1)];\n'}
+[3.842612] (mpc_low) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.842710] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:88:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kutraj\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.842806] (mpc_low) StderrLine: {'line': b'   88 |     double \x1b[01;35m\x1b[Kutraj\x1b[m\x1b[K[NU * N];\n'}
+[3.842897] (mpc_low) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.842986] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:49:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KWN\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.843146] (mpc_low) StderrLine: {'line': b'   49 |     double \x1b[01;35m\x1b[KWN\x1b[m\x1b[K[(NX)*(NX)] = {0.0};\n'}
+[3.843233] (mpc_low) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.843339] (mpc_low) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chri/CHRI_2025/UR5_pyBullet+acados/src/mpc_low/solver_low/acados_solver_holder.cpp:21:203:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmy_weights\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.843440] (mpc_low) StderrLine: {'line': b'   21 | int my_NMPC_solver::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], \x1b[01;35m\x1b[Kdouble my_weights[10]\x1b[m\x1b[K) {\n'}
+[3.843535] (mpc_low) StderrLine: {'line': b'      |                                                                                                                                                                                                    \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.918455] (-) TimerEvent: {}
+[4.018845] (-) TimerEvent: {}
+[4.119293] (-) TimerEvent: {}
+[4.219786] (-) TimerEvent: {}
+[4.320250] (-) TimerEvent: {}
+[4.420731] (-) TimerEvent: {}
+[4.521198] (-) TimerEvent: {}
+[4.621697] (-) TimerEvent: {}
+[4.722158] (-) TimerEvent: {}
+[4.822666] (-) TimerEvent: {}
+[4.923136] (-) TimerEvent: {}
+[5.023622] (-) TimerEvent: {}
+[5.124152] (-) TimerEvent: {}
+[5.224693] (-) TimerEvent: {}
+[5.325182] (-) TimerEvent: {}
+[5.425702] (-) TimerEvent: {}
+[5.526177] (-) TimerEvent: {}
+[5.626632] (-) TimerEvent: {}
+[5.727133] (-) TimerEvent: {}
+[5.827629] (-) TimerEvent: {}
+[5.928105] (-) TimerEvent: {}
+[6.028597] (-) TimerEvent: {}
+[6.129066] (-) TimerEvent: {}
+[6.229556] (-) TimerEvent: {}
+[6.330033] (-) TimerEvent: {}
+[6.430532] (-) TimerEvent: {}
+[6.530999] (-) TimerEvent: {}
+[6.631512] (-) TimerEvent: {}
+[6.732003] (-) TimerEvent: {}
+[6.832463] (-) TimerEvent: {}
+[6.932942] (-) TimerEvent: {}
+[7.033410] (-) TimerEvent: {}
+[7.133877] (-) TimerEvent: {}
+[7.234384] (-) TimerEvent: {}
+[7.334881] (-) TimerEvent: {}
+[7.435392] (-) TimerEvent: {}
+[7.535868] (-) TimerEvent: {}
+[7.636371] (-) TimerEvent: {}
+[7.736836] (-) TimerEvent: {}
+[7.837352] (-) TimerEvent: {}
+[7.937829] (-) TimerEvent: {}
+[8.038295] (-) TimerEvent: {}
+[8.138794] (-) TimerEvent: {}
+[8.239265] (-) TimerEvent: {}
+[8.339746] (-) TimerEvent: {}
+[8.440215] (-) TimerEvent: {}
+[8.540736] (-) TimerEvent: {}
+[8.641202] (-) TimerEvent: {}
+[8.741699] (-) TimerEvent: {}
+[8.842166] (-) TimerEvent: {}
+[8.942656] (-) TimerEvent: {}
+[9.043115] (-) TimerEvent: {}
+[9.143611] (-) TimerEvent: {}
+[9.244096] (-) TimerEvent: {}
+[9.344616] (-) TimerEvent: {}
+[9.445106] (-) TimerEvent: {}
+[9.545597] (-) TimerEvent: {}
+[9.646014] (-) TimerEvent: {}
+[9.746413] (-) TimerEvent: {}
+[9.846818] (-) TimerEvent: {}
+[9.947238] (-) TimerEvent: {}
+[10.047673] (-) TimerEvent: {}
+[10.148100] (-) TimerEvent: {}
+[10.248523] (-) TimerEvent: {}
+[10.348870] (-) TimerEvent: {}
+[10.449277] (-) TimerEvent: {}
+[10.549754] (-) TimerEvent: {}
+[10.650183] (-) TimerEvent: {}
+[10.750624] (-) TimerEvent: {}
+[10.851016] (-) TimerEvent: {}
+[10.951409] (-) TimerEvent: {}
+[11.051758] (-) TimerEvent: {}
+[11.152079] (-) TimerEvent: {}
+[11.252404] (-) TimerEvent: {}
+[11.352807] (-) TimerEvent: {}
+[11.453207] (-) TimerEvent: {}
+[11.553602] (-) TimerEvent: {}
+[11.653989] (-) TimerEvent: {}
+[11.754414] (-) TimerEvent: {}
+[11.854763] (-) TimerEvent: {}
+[11.955148] (-) TimerEvent: {}
+[12.055565] (-) TimerEvent: {}
+[12.155941] (-) TimerEvent: {}
+[12.256274] (-) TimerEvent: {}
+[12.356618] (-) TimerEvent: {}
+[12.457000] (-) TimerEvent: {}
+[12.557381] (-) TimerEvent: {}
+[12.657803] (-) TimerEvent: {}
+[12.758233] (-) TimerEvent: {}
+[12.858679] (-) TimerEvent: {}
+[12.959089] (-) TimerEvent: {}
+[13.059515] (-) TimerEvent: {}
+[13.159949] (-) TimerEvent: {}
+[13.260415] (-) TimerEvent: {}
+[13.360940] (-) TimerEvent: {}
+[13.461419] (-) TimerEvent: {}
+[13.561897] (-) TimerEvent: {}
+[13.662391] (-) TimerEvent: {}
+[13.728829] (mpc_low) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable low_solver\x1b[0m\n'}
+[13.762497] (-) TimerEvent: {}
+[13.862881] (-) TimerEvent: {}
+[13.963369] (-) TimerEvent: {}
+[14.063809] (-) TimerEvent: {}
+[14.164271] (-) TimerEvent: {}
+[14.264748] (-) TimerEvent: {}
+[14.365198] (-) TimerEvent: {}
+[14.465707] (-) TimerEvent: {}
+[14.566148] (-) TimerEvent: {}
+[14.605426] (mpc_low) StdoutLine: {'line': b'[100%] Built target low_solver\n'}
+[14.621108] (mpc_low) CommandEnded: {'returncode': 0}
+[14.622335] (mpc_low) JobProgress: {'identifier': 'mpc_low', 'progress': 'install'}
+[14.634513] (mpc_low) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low'], 'cwd': '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'chri'), ('LC_TIME', 'kk_KZ.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/chri/Documents/acados/lib:/home/chri/Documents/acados/lib'), ('ACADOS_SOURCE_DIR', '/home/chri/Documents/acados'), ('HOME', '/home/chri'), ('OLDPWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'kk_KZ.UTF-8'), ('SYSTEMD_EXEC_PID', '5316'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'chri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/chri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chri-HP-Z640-Workstation:@/tmp/.ICE-unix/5227,unix/chri-HP-Z640-Workstation:/tmp/.ICE-unix/5227'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'kk_KZ.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2361551b_c355_4828_a8a0_243f43ea6000'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'kk_KZ.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.333'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'kk_KZ.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'kk_KZ.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'kk_KZ.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chri/CHRI_2025/UR5_pyBullet+acados/src/build/mpc_low'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'kk_KZ.UTF-8'), ('LC_PAPER', 'kk_KZ.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.644122] (mpc_low) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.644451] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/mpc_low/low_solver\n'}
+[14.649320] (mpc_low) StdoutLine: {'line': b'-- Set runtime path of "/home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/lib/mpc_low/low_solver" to ""\n'}
+[14.649637] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/package_run_dependencies/mpc_low\n'}
+[14.649920] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/parent_prefix_path/mpc_low\n'}
+[14.650190] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/ament_prefix_path.sh\n'}
+[14.650423] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/ament_prefix_path.dsv\n'}
+[14.650591] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/path.sh\n'}
+[14.650822] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/environment/path.dsv\n'}
+[14.650987] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.bash\n'}
+[14.651188] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.sh\n'}
+[14.651417] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.zsh\n'}
+[14.651628] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/local_setup.dsv\n'}
+[14.651778] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.dsv\n'}
+[14.651998] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/ament_index/resource_index/packages/mpc_low\n'}
+[14.652155] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig.cmake\n'}
+[14.652381] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/cmake/mpc_lowConfig-version.cmake\n'}
+[14.652548] (mpc_low) StdoutLine: {'line': b'-- Installing: /home/chri/CHRI_2025/UR5_pyBullet+acados/src/install/mpc_low/share/mpc_low/package.xml\n'}
+[14.654261] (mpc_low) CommandEnded: {'returncode': 0}
+[14.667504] (-) TimerEvent: {}
+[14.673813] (mpc_low) JobEnded: {'identifier': 'mpc_low', 'rc': 0}
+[14.675786] (-) EventReactorShutdown: {}

@@ -1,0 +1,24 @@
+[2.243s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_utils build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/install.log --single-version-externally-managed install_data
+[2.540s] /home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.540s]   warnings.warn(msg)
+[2.749s] running egg_info
+[2.785s] writing ../../build/sim_utils/sim_utils.egg-info/PKG-INFO
+[2.786s] writing dependency_links to ../../build/sim_utils/sim_utils.egg-info/dependency_links.txt
+[2.786s] writing entry points to ../../build/sim_utils/sim_utils.egg-info/entry_points.txt
+[2.786s] writing requirements to ../../build/sim_utils/sim_utils.egg-info/requires.txt
+[2.787s] writing top-level names to ../../build/sim_utils/sim_utils.egg-info/top_level.txt
+[2.861s] reading manifest file '../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'
+[2.864s] writing manifest file '../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'
+[2.864s] running build
+[2.865s] running build_py
+[2.865s] copying sim_utils/human_motion_player.py -> /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/build/lib/sim_utils
+[2.865s] running install
+[2.873s] running install_lib
+[2.904s] running install_data
+[2.905s] running install_egg_info
+[2.936s] removing '/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages/sim_utils-0.0.0-py3.10.egg-info' (and everything under it)
+[2.936s] Copying ../../build/sim_utils/sim_utils.egg-info to /home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages/sim_utils-0.0.0-py3.10.egg-info
+[2.938s] running install_scripts
+[3.192s] Installing human_motion_player script to /home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/sim_utils
+[3.192s] writing list of installed files to '/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/install.log'
+[3.226s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/src/sim_utils' returned '0': PYTHONPATH=/home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim_utils build --build-base /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/build install --record /home/chri/CHRI_2025/Time_optimal_baseline/build/sim_utils/install.log --single-version-externally-managed install_data

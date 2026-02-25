@@ -1,0 +1,32 @@
+[0.033s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target low_solver[0m
+[0.170s] [  9%] [32mBuilding CXX object CMakeFiles/low_solver.dir/src/low_solver.cpp.o[0m
+[4.473s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In constructor ‘[01m[KRobotCommandPublisher::RobotCommandPublisher()[m[K’:
+[4.473s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:137:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber_of_current_steps[m[K’ was not declared in this scope
+[4.473s]   137 | ke_shared<my_NMPC_solver>(1, [01;31m[Knumber_of_current_steps[m[K);
+[4.473s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.473s] 
+[4.475s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::timer_callback()[m[K’:
+[4.475s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:255:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmy_NMPC_solver::solve_my_mpc(double [6], double [6], double [60], double [3], double [16], double [10])[m[K’
+[4.475s]   255 |     [01;31m[Knmpc_solver->solve_my_mpc(current_position,[m[K
+[4.475s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.475s] 
+[4.475s]   256 | [01;31m[K       // human_sphere,[m[K
+[4.476s]       |        [01;31m[K~~~~~~~~~~~~~~~~[m[K       
+[4.476s] 
+[4.476s]   257 | [01;31m[K       goal_position, tracking_goal, cgoal, results, solver_weights)[m[K;
+[4.476s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.476s] 
+[4.476s] In file included from [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:10[m[K:
+[4.476s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/include/acados_solver_holder.hpp:61:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint my_NMPC_solver::solve_my_mpc(double*, double*, double*, double*, double*, double*, double*)[m[K’
+[4.476s]    61 |     int [01;36m[Ksolve_my_mpc[m[K(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10]);
+[4.476s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[4.477s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/include/acados_solver_holder.hpp:61:9:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 6 provided
+[4.487s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:[m[K In member function ‘[01m[Kvoid RobotCommandPublisher::change_goal_msg(std_msgs::msg::Float64MultiArray)[m[K’:
+[4.487s] [01m[K/home/chri/CHRI_2025/Time_optimal_baseline/src/mpc_low/src/low_solver.cpp:327:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KMAX_TIME[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.487s]   327 |         constexpr double [01;35m[KMAX_TIME[m[K = 0.5;   // Maximum trajectory time
+[4.487s]       |                          [01;35m[K^~~~~~~~[m[K
+[9.036s] gmake[2]: *** [CMakeFiles/low_solver.dir/build.make:76: CMakeFiles/low_solver.dir/src/low_solver.cpp.o] Error 1
+[9.037s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/low_solver.dir/all] Error 2
+[9.037s] gmake: *** [Makefile:146: all] Error 2
+[9.040s] Invoked command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/ur_ros2_driver:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_low -- -j16 -l16

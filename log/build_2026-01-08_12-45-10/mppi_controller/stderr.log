@@ -1,0 +1,7 @@
+/home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+  File "/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages/mppi_controller/main_rh.py", line 155
+    if j_error < 0.05 #and np.linalg.norm(position_reading[6:12]) < 0.05:  
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expected ':'
+
