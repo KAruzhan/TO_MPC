@@ -1,3 +1,0 @@
-/home/chri/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
-  warnings.warn(msg)
-error: could not delete '/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller/lib/python3.10/site-packages/mppi_controller/main.py': No such file or directory

@@ -12,7 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 add_executable(high_solver 
-  src/high_solver.cpp
+  src/high_solver.cpp #src/low_solver1.cpp
   src/kinematics_functions.cpp
   solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c # discrete dynamics
   solver_to_high_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c # discrete dynamics
@@ -21,10 +21,10 @@ add_executable(high_solver
   # solver_to_high/UR5_model/UR5_expl_ode_hess.c # explicit dynamics
   # solver_to_high/UR5_model/UR5_expl_vde_forw.c # explicit dynamics
   # solver_to_high/UR5_model/UR5_expl_vde_adj.c # explicit dynamics
-  solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c
+  # solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt_hess.c # no human
   solver_to_high_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c
   solver_to_high_disc/UR5_constraints/UR5_constr_h_fun.c
-  solver_to_high_disc/UR5_constraints/UR5_constr_h_0_fun_jac_uxt_zt_hess.c
+  # solver_to_high_disc/UR5_constraints/UR5_constr_h_0_fun_jac_uxt_zt_hess.c # no human
   solver_to_high_disc/UR5_constraints/UR5_constr_h_0_fun_jac_uxt_zt.c
   solver_to_high_disc/UR5_constraints/UR5_constr_h_0_fun.c
   solver_to_high_disc/UR5_cost/UR5_cost_ext_cost_0_fun.c

@@ -1,1 +1,0 @@
-Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/ur_ros2_driver -- -j16 -l16

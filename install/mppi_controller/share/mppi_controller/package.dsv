@@ -1,6 +1,0 @@
-source;share/mppi_controller/hook/pythonpath.ps1
-source;share/mppi_controller/hook/pythonpath.dsv
-source;share/mppi_controller/hook/pythonpath.sh
-source;share/mppi_controller/hook/ament_prefix_path.ps1
-source;share/mppi_controller/hook/ament_prefix_path.dsv
-source;share/mppi_controller/hook/ament_prefix_path.sh

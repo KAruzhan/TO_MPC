@@ -12,7 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 add_executable(high_solver 
-  src/high_solver1.cpp #  src/high_solver.cpp
+  src/high_solver1.cpp #  src/high_solver1.cpp
   src/kinematics_functions.cpp
   # solver_high/UR5_model/UR5_expl_ode_fun.c #explicit dynamics
   # solver_high/UR5_model/UR5_expl_vde_forw.c #explicit dynamics

@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 #include <eigen3/Eigen/Dense>
 #include <math.h>
@@ -117,6 +118,7 @@ public:
     RobotCommandPublisher() : Node("robot_command_publisher"), count_(0)
     {
         trajectory_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/mpc_high_positions", 1);
+        direct_velocity_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/my_UR5/velocity_command", 1); //run without low solver
 
         subscription_ = this->create_subscription<sensor_msgs::msg::JointState>(
         "/joint_states", 1, std::bind(&RobotCommandPublisher::topic_callback, this, _1));
@@ -127,9 +129,9 @@ public:
         
         
         MyFile.open("solver_stats_high.csv"); //, std::ofstream::out | std::ofstream::app);
-        MyPerformanceFile.open("solver_perf.csv");
+        MyPerformanceFile.open("solver_perf_high.csv");
 
-        nmpc_solver = std::make_shared<my_NMPC_solver>(1); // Number of SQP steps       
+        nmpc_solver = std::make_shared<my_NMPC_solver>(1, number_of_current_steps); // Number of SQP steps
 
         // Created timer with 500ms
         // 1) we send as a goal fixed position
@@ -165,6 +167,7 @@ public:
         {
             // Get current time in seconds
             start_time = this->get_clock()->now();
+            wall_start_time = std::chrono::steady_clock::now();
             RCLCPP_INFO(this->get_logger(), "Start received. Time: %f seconds", start_time.seconds());
         }
         else
@@ -180,7 +183,9 @@ public:
     }
 
 private:
-    double experiment_duration = 1816.29167; //600.0;
+    double experiment_duration = 60.0; //600.0; 1816.29167;
+    const bool bypass_low_solver = false;
+    int number_of_current_steps = 10;
     double current_position[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     double current_velocity[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     double goal_position[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -202,6 +207,7 @@ private:
                   10.2106,   0.4602,   0.6915,   0.2500};
     rclcpp::Time now;
     rclcpp::Time start_time;
+    std::chrono::steady_clock::time_point wall_start_time;
     int task_counter = 0;
 
     void timer_callback()
@@ -215,7 +221,7 @@ private:
             //θf = [0.0 −2.3 −1.1 −1.2 −1.2 0.5]′ 
             //θf = [3.0 −1.6 −1.7 −1.7 −1.7 1.0]′ 
             double read_goal[2][6] = {0.0, -2.3, -1.1, -1.2, -1.2, 0.5, 
-                                      3.0, -1.6, -1.7, -1.7, -1.7, 1.0};
+                                      2.0, -1.6, -1.7, -1.7, -1.7, 1.0};
             //double read_goal[2][6] = {0.0, -1.57, 1.57, 0.0, 1.57, 0.0, 
             //1.57, -1.57, 0.0, 0.0, 0.0, 0.0};
                             
@@ -238,13 +244,13 @@ private:
 
             // check distance to goal
             double j_error = abs(goal_position[0]-current_position[0]);
-            std::cout << "pose_error:";
+            std::cout << "pose_error1:";
             for (int i=1;i<6;i++) {
-                if (abs(goal_position[i]-current_position[i])>j_error) j_error = abs(goal_position[i]-current_position[i]);
+                if (abs(goal_position[i]-current_position[i]) > j_error) 
+                    j_error = abs(goal_position[i]-current_position[i]);
                 std::cout << abs(goal_position[i]-current_position[i]) << " ";
             }
             std::cout << std::endl;
-
             std::cout << goal_position[0] << " " << goal_position[1] << " " << goal_position[2] << " "<< goal_position[3] << " " << goal_position[4] << " " << goal_position[5] << std::endl;
             std::cout << current_position[0] << " " << current_position[1] << " " << current_position[2] << " "<< current_position[3] << " " << current_position[4] << " " << current_position[5] << std::endl;
             if (j_error<0.05) {
@@ -264,19 +270,23 @@ private:
                 for (int j=0;j<7;j++) tracking_goal[i*7+j]=this->goal_queue[i*7+j];
             }*/
             double cgoal[3] = {0};
-            double results[16];
-            double full_trajectory[140]={0.0};
+            double results[22];
+            std::vector<double> full_trajectory(19 * number_of_current_steps, 0.0);
             
-            nmpc_solver->solve_my_mpc(current_position, human_sphere, goal_position, tracking_goal, cgoal, results, solver_weights, full_trajectory);
+            nmpc_solver->solve_my_mpc(current_position,
+                current_velocity, // removed in the 1st version
+                human_sphere, 
+                goal_position, tracking_goal, cgoal, results, solver_weights, full_trajectory.data());
             
             //std::cout << "Selected_goal" << currently_selected_goal << std::endl;
             //******************* get_min_velocity **********************
             double max_vell[7] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
             double selected_vels[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-            //std::cout << "Result:" << results[0] << std::endl;
-            for (int i=0;i<6;i++) selected_vels[i] = results[i];
+            // Use the first predicted velocity state x_1[6:12], not x_0[6:12].
+            // x_0 is constrained to the measured current velocity and will stay near zero at rest.
+            for (int i=0;i<6;i++) selected_vels[i] = results[i + 6];
             double max_linear_vell = get_spheres_velocity(current_position, selected_vels, max_vell);
-            //std::cout << "S1:" << max_vell[0] << " " << max_linear_vell << std::endl;
+            // std::cout << "S1:" << max_vell[0] << " " << max_linear_vell << std::endl;
             //*********************************************************
             double lin_vell_scale = rescale_velocities(min_dist, spheres_dist, max_vell, selected_vels);
             //std::cout << "S2:" << lin_vell_scale << std::endl;
@@ -287,11 +297,21 @@ private:
                 message.data.push_back(selected_vels[i]);
             }
             
-            RCLCPP_INFO(this->get_logger(), "calc time [%.2f], j_error [%.4f], cost [%.4f]", results[13], j_error, results[14]);
+            RCLCPP_INFO(this->get_logger(), "calc time [%.2f ms], j_error [%.4f], ocp_cost [%.6f]",
+                        results[13], j_error, results[14]);
             now = this->get_clock()->now();
             
-            MyFile << now.seconds() << "," << now.nanoseconds() << "," << results[12] << "," << results[13] << "," << results[14] << "," << results[15] << ","
-            << smallest_dist << "," << currently_selected_goal << "," 
+            // solver_stats_high.csv column order:
+            //  1 sec, 2 nsec, 3 sqp_iter, 4 exec_time_ms, 5 ocp_cost, 6 nan_marker, 7 goal_id,
+            //  8..13 q1..q6 (current_position),
+            // 14..19 qd1..qd6 (current_velocity),
+            // 20..25 q_goal1..q_goal6,
+            // 26..31 vel_cmd1..vel_cmd6 (selected_vels = predicted x_1[6:12]),
+            // 32..37 u1..u6 (solver control input utraj[0:6], joint accelerations).
+            MyFile << now.seconds() << "," << now.nanoseconds() << "," << results[12] << "," << results[13] << ","
+            << results[14] << "," << results[15] << ","
+            << smallest_dist << "," 
+            << currently_selected_goal << "," 
             << current_position[0] << "," << current_position[1] << "," << current_position[2] << "," 
             << current_position[3] << "," << current_position[4] << "," << current_position[5] << "," 
             << current_velocity[0] << "," << current_velocity[1] << "," << current_velocity[2] << "," 
@@ -300,6 +320,8 @@ private:
             << goal_position[3] << "," << goal_position[4] << "," << goal_position[5] << ","
             << selected_vels[0] << "," << selected_vels[1] << "," << selected_vels[2] << "," 
             << selected_vels[3] << "," << selected_vels[4] << "," << selected_vels[5] << ","
+            << results[16] << "," << results[17] << "," << results[18] << ","
+            << results[19] << "," << results[20] << "," << results[21] << ","
             << human_sphere[0] << "," << human_sphere[1] << "," << human_sphere[2] << "," 
             << human_sphere[3] << "," << human_sphere[4] << "," << human_sphere[5] << "," 
             << human_sphere[6] << "," << human_sphere[7] << "," << human_sphere[8] << "," 
@@ -321,15 +343,21 @@ private:
             << human_sphere[54] << "," << human_sphere[55] << ","
             << std::endl;
             
-            std_msgs::msg::Float64MultiArray joint_vel_values;
-            joint_vel_values.data.clear();
-            joint_vel_values.data.push_back(20.0); // fixed step length [N_steps, q_0[7], dt, q_1[7], dt... q_N[7], dt]
-            for (int i = 0; i < 140; i++) joint_vel_values.data.push_back(full_trajectory[i]);
-            trajectory_publisher_->publish(joint_vel_values);
-            auto elapsed_time = now.seconds() - start_time.seconds();
-            if (elapsed_time > experiment_duration)
+            if (bypass_low_solver) {
+                direct_velocity_publisher_->publish(message);
+            } else {
+                std_msgs::msg::Float64MultiArray joint_vel_values;
+                joint_vel_values.data.clear();
+                joint_vel_values.data.push_back(number_of_current_steps);
+                for (int i = 0; i < 7 * number_of_current_steps; i++) joint_vel_values.data.push_back(full_trajectory[i]);
+                trajectory_publisher_->publish(joint_vel_values);
+            }
+            const double elapsed_wall_time =
+                std::chrono::duration<double>(std::chrono::steady_clock::now() - wall_start_time).count();
+            if (elapsed_wall_time > experiment_duration)
             {
-                RCLCPP_INFO(this->get_logger(), "End of experiment");
+                RCLCPP_INFO(this->get_logger(), "End of experiment (wall time %.2f s / %.2f s)",
+                            elapsed_wall_time, experiment_duration);
                 rclcpp::shutdown();
                 return;
             }
@@ -369,6 +397,7 @@ private:
     }
 
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr trajectory_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr direct_velocity_publisher_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscription_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_human_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr joint_goal_;

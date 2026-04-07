@@ -54,11 +54,18 @@ Eigen::MatrixXf get_velocity(float q1, float q2, float q3, float q4, float q5, f
 class my_NMPC_solver {
 private:
     int num_steps;
+    int number_of_current_steps;
     UR5_solver_capsule *acados_ocp_capsule;
+    bool has_prev_solution;
+    double *prev_xtraj;
+    double *prev_utraj;
 
 public:
-    my_NMPC_solver(int n);
-    int solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10]);
+    my_NMPC_solver(int n, int number_of_current_steps_specified);
+    int solve_my_mpc(double current_joint_position[6],
+        double current_joint_velocity[6],
+        // double current_human_position[56],
+        double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10]);
     int reset_solver();
 };
 

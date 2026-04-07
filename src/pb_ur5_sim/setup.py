@@ -23,6 +23,7 @@ setup(
             'my_node = pb_ur5_sim.my_node:main',
             'my_node_with_human = pb_ur5_sim.my_node_with_human:main',
             'my_node_robot = pb_ur5_sim.my_node_robot:main',
+            'my_node_ursim_display = pb_ur5_sim.my_node_ursim_display:main',
             'my_subscriber = pb_ur5_sim.demo_subscryber:main'
         ],
     },

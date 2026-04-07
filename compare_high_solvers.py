@@ -20,7 +20,8 @@ def _safe_genfromtxt(path, usecols):
 
 
 def _pick_goal_column(data):
-    # mpc_high writes goal_id at col 6, mpc_to writes it at col 7.
+    # Current mpc_high/mpc_to logs write goal_id at col 6 (0-based index).
+    # Keep col 7 as a legacy fallback in case of older files.
     candidates = [6, 7]
     stats = []
     for c in candidates:
@@ -34,21 +35,19 @@ def _pick_goal_column(data):
         switches = int(np.sum(gi[1:] != gi[:-1]))
         in01 = np.mean((gi == 0) | (gi == 1))
         repeats = np.mean(gi[1:] == gi[:-1])
-        score = 0.7 * in01 + 0.3 * repeats
-        stats.append((c, switches, score))
+        score = 0.8 * in01 + 0.2 * repeats
+        stats.append((c, switches, score, in01))
 
     if not stats:
         raise RuntimeError("Could not detect goal_id column.")
 
-    # First prefer a column that actually switches (needed for lap-time metric).
-    positive_switch = [x for x in stats if x[1] > 0]
-    if positive_switch:
-        # Max switches first, then quality score.
-        positive_switch.sort(key=lambda x: (x[1], x[2]), reverse=True)
-        return positive_switch[0][0]
+    # Prefer canonical column 6 when it behaves like binary goal_id and switches.
+    for c, switches, _, in01 in stats:
+        if c == 6 and switches > 0 and in01 >= 0.90:
+            return 6
 
-    # Fallback: best heuristic score.
-    stats.sort(key=lambda x: x[2], reverse=True)
+    # Otherwise choose best "looks-like-goal" score, then switches.
+    stats.sort(key=lambda x: (x[2], x[1], x[3]), reverse=True)
     return stats[0][0]
 
 
@@ -82,17 +81,17 @@ def load_stats_metrics(path):
         for tr in by_dir:
             by_dir[tr] = np.array(by_dir[tr], dtype=float)
 
-    # Full cycle metric: duration between a 0->1 switch and the next 1->0 switch.
-    full_010_cycles = []
-    pending_start = None
-    for k, tr in enumerate(switch_types):
-        t_sw = switch_times[k]
-        if tr == (0, 1):
-            pending_start = t_sw
-        elif tr == (1, 0) and pending_start is not None:
-            full_010_cycles.append(t_sw - pending_start)
-            pending_start = None
-    full_010_cycles = np.array(full_010_cycles, dtype=float)
+    # Full round-trip cycle metric: same-direction switch to same-direction switch.
+    # 0->1 to next 0->1 captures one full 0->1->0 cycle in alternating runs.
+    t_01 = np.array([switch_times[k] for k, tr in enumerate(switch_types) if tr == (0, 1)], dtype=float)
+    t_10 = np.array([switch_times[k] for k, tr in enumerate(switch_types) if tr == (1, 0)], dtype=float)
+    full_010_cycles = np.diff(t_01) if t_01.size > 1 else np.array([])
+    full_101_cycles = np.diff(t_10) if t_10.size > 1 else np.array([])
+    full_cycles = (
+        np.concatenate((full_010_cycles, full_101_cycles))
+        if (full_010_cycles.size or full_101_cycles.size)
+        else np.array([])
+    )
 
     return {
         "rows": len(t_rel),
@@ -102,6 +101,8 @@ def load_stats_metrics(path):
         "switch_durations": switch_durations,
         "by_dir": by_dir,
         "full_010_cycles": full_010_cycles,
+        "full_101_cycles": full_101_cycles,
+        "full_cycles": full_cycles,
         "goal_col": goal_col,
     }
 
@@ -142,6 +143,14 @@ def print_summary(label, stats_m, perf_m):
         f"{stat_triplet(stats_m['full_010_cycles'])} (cycles={stats_m['full_010_cycles'].size})"
     )
     print(
+        "full 1->0->1 cycle_s mean/median/max: "
+        f"{stat_triplet(stats_m['full_101_cycles'])} (cycles={stats_m['full_101_cycles'].size})"
+    )
+    print(
+        "full cycle (both dirs) time_s mean/median/max: "
+        f"{stat_triplet(stats_m['full_cycles'])} (cycles={stats_m['full_cycles'].size})"
+    )
+    print(
         f"lap events (solver_perf): {perf_m['events']}, "
         f"lap time_s mean/median/max: {stat_triplet(perf_m['lap_durations'])}"
     )
@@ -165,9 +174,9 @@ def main():
     print_summary(args.a_label, a_stats, a_perf)
     print_summary(args.b_label, b_stats, b_perf)
 
-    # Primary time-optimal criterion: lower mean full 0->1->0 cycle duration.
-    a_cyc = a_stats["full_010_cycles"]
-    b_cyc = b_stats["full_010_cycles"]
+    # Primary time-optimal criterion: lower mean full cycle duration.
+    a_cyc = a_stats["full_cycles"]
+    b_cyc = b_stats["full_cycles"]
     if a_cyc.size and b_cyc.size:
         a_mean = np.mean(a_cyc)
         b_mean = np.mean(b_cyc)
@@ -178,11 +187,11 @@ def main():
             winner = args.b_label
             ratio = a_mean / b_mean
         print(
-            f"\nWinner on mean full 0->1->0 cycle time: {winner} "
+            f"\nWinner on mean full cycle time: {winner} "
             f"(speedup x{ratio:.3f})"
         )
     else:
-        print("\nNot enough complete 0->1->0 cycles in one or both runs to declare a winner.")
+        print("\nNot enough complete cycles in one or both runs to declare a winner.")
 
 
 if __name__ == "__main__":

@@ -134,12 +134,12 @@ public:
         
         MyFile.open("solver_stats.csv"); //, std::ofstream::out | std::ofstream::app);
 
-        nmpc_solver = std::make_shared<my_NMPC_solver>(1);
+        nmpc_solver = std::make_shared<my_NMPC_solver>(1, 10);
 
     }
 
 private:
-    double experiment_duration = 120.0;
+    double experiment_duration = 60.0;
     double current_position[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     double current_velocity[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     double goal_position[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -235,7 +235,8 @@ private:
             // check distance to goal
             double j_error = abs(goal_position[0]-current_position[0]);
             for (int i=1;i<6;i++) {
-                if (abs(goal_position[i]-current_position[i])>j_error) j_error = abs(goal_position[i]-current_position[i]);
+                if (abs(goal_position[i]-current_position[i]) > j_error) 
+                j_error = abs(goal_position[i]-current_position[i]);
             }
             //
             for (int i=0;i<6;i++) goal_position[i] = this->goal_position[i];
@@ -252,14 +253,14 @@ private:
             RCLCPP_INFO(this->get_logger(), "pose: %.5f, %.5f, %.5f, %.5f, %.5f, %.5f", current_position[0], current_position[1],
              current_position[2], current_position[3], current_position[4], current_position[5]);
             
-             nmpc_solver->solve_my_mpc(current_position, human_sphere, goal_position, tracking_goal, cgoal, results, solver_weights);
+             nmpc_solver->solve_my_mpc(current_position, current_velocity, human_sphere, goal_position, tracking_goal, cgoal, results, solver_weights);
             
             
             //******************* get_min_velocity **********************
             double max_vell[7] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
             double selected_vels[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
             std::cout << "Result:" << results[0] << std::endl;
-            for (int i=0;i<6;i++) selected_vels[i] = results[i];
+            for (int i=0;i<6;i++) selected_vels[i] = results[i + 6]; // Use x_1[6:12], not x_0[6:12]. x_0 is constrained to current velocity (≈0 at rest).
             double max_linear_vell = get_spheres_velocity(current_position, selected_vels, max_vell);
             //std::cout << "S1:" << max_vell[0] << " " << max_linear_vell << std::endl;
             //*********************************************************

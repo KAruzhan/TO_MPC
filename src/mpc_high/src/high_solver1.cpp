@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 #include <eigen3/Eigen/Dense>
 #include <math.h>
@@ -127,8 +128,8 @@ public:
 
         
         
-        MyFile.open("solver_stats_high.csv"); //, std::ofstream::out | std::ofstream::app);
-        MyPerformanceFile.open("solver_perf_high.csv");
+        MyFile.open("solver_stats_high1.csv"); //, std::ofstream::out | std::ofstream::app);
+        MyPerformanceFile.open("solver_perf_high1.csv");
 
         nmpc_solver = std::make_shared<my_NMPC_solver>(1, number_of_current_steps); // Number of SQP steps
 
@@ -183,7 +184,7 @@ public:
 
 private:
     double experiment_duration = 60.0; //600.0; 1816.29167;
-    const bool bypass_low_solver = true;
+    const bool bypass_low_solver = false;
     int number_of_current_steps = 10;
     double current_position[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     double current_velocity[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -270,18 +271,20 @@ private:
             }*/
             double cgoal[3] = {0};
             double results[22];
-            double full_trajectory[140]={0.0};
+            std::vector<double> full_trajectory(19 * number_of_current_steps, 0.0);
             
             nmpc_solver->solve_my_mpc(current_position,
+                current_velocity, // removed in the 1st version
                 // human_sphere, 
-                goal_position, tracking_goal, cgoal, results, solver_weights, full_trajectory);
+                goal_position, tracking_goal, cgoal, results, solver_weights, full_trajectory.data());
             
             //std::cout << "Selected_goal" << currently_selected_goal << std::endl;
             //******************* get_min_velocity **********************
             // double max_vell[7] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
             double selected_vels[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-            //std::cout << "Result:" << results[0] << std::endl;
-            for (int i=0;i<6;i++) selected_vels[i] = results[i];
+            // Use the first predicted velocity state x_1[6:12], not x_0[6:12].
+            // x_0 is constrained to the measured current velocity and will stay near zero at rest.
+            for (int i=0;i<6;i++) selected_vels[i] = results[i + 6];
             // double max_linear_vell = get_spheres_velocity(current_position, selected_vels, max_vell);
             //std::cout << "S1:" << max_vell[0] << " " << max_linear_vell << std::endl;
             //*********************************************************
@@ -303,7 +306,7 @@ private:
             //  8..13 q1..q6 (current_position),
             // 14..19 qd1..qd6 (current_velocity),
             // 20..25 q_goal1..q_goal6,
-            // 26..31 vel_cmd1..vel_cmd6 (selected_vels = predicted x[6:12] at stage 0),
+            // 26..31 vel_cmd1..vel_cmd6 (selected_vels = predicted x_1[6:12]),
             // 32..37 u1..u6 (solver control input utraj[0:6], joint accelerations).
             MyFile << now.seconds() << "," << now.nanoseconds() << "," << results[12] << "," << results[13] << ","
             << results[14] << "," << results[15] << ","

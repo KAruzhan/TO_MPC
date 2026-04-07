@@ -15,7 +15,7 @@ from std_msgs.msg import Float64MultiArray
 from math import copysign
 
 goal_data = [0,0,0,0,0,0]
-acceleration_limit = 4.6 # from URsim
+acceleration_limit = 4.6 # from URsim  4.6
 single_step = acceleration_limit*1.0/240.0 # limit acceleration per step
 current_mode = 'vels'
 
@@ -146,8 +146,7 @@ class RobotNode(Node):
         #maxForce = [25.0, 25.0, 25.0, 13.0, 13.0, 13.0] # from urdf
         self.maxForce = [40.0, 40.0, 40.0, 13.0, 13.0, 13.0] # from urdf
         self.maxSpeed = [3.15, 3.15, 3.15, 3.15, 3.15, 3.20] # from urdf
-        #start_pose = [0.00104, -2.29971, -1.10022, -1.20020, -1.20016, 0.50019]
-        start_pose = [0.0, -1.5708, 0.0, -1.5708, 0, 0]
+        start_pose = [0.0, -2.3, -1.1, -1.2, -1.2, 0.5]
         p.resetJointStateMultiDof(self.boxId, 1, targetValue=[start_pose[0]], targetVelocity=[0.0])
         p.resetJointStateMultiDof(self.boxId, 2, targetValue=[start_pose[1]], targetVelocity=[0.0])
         p.resetJointStateMultiDof(self.boxId, 3, targetValue=[start_pose[2]], targetVelocity=[0.0])

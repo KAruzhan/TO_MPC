@@ -28,7 +28,7 @@ class RobotNode(Node):
         self.subscription = self.create_subscription(Float64MultiArray,"/my_UR5/velocity_command", self.vels_goal_callback,1)
         self.subscription = self.create_subscription(Float64MultiArray, "/my_UR5/position_command", self.pose_goal_callback, 1)
         self.subscription_human = self.create_subscription(Float64MultiArray, '/Sphere_poses_plotter', self.human_data_callback, 1)
-        timer_period = 1.0/210.0  # seconds
+        timer_period = 1.0/240.0  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
         ## Load gui and URDF

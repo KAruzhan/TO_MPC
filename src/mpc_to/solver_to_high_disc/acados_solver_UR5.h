@@ -38,14 +38,14 @@
 
 #define UR5_NX     12
 #define UR5_NZ     0
-#define UR5_NU     12
-#define UR5_NP     7
+#define UR5_NU     18
+#define UR5_NP     66
 #define UR5_NBX    12
-#define UR5_NBX0   6
-#define UR5_NBU    12
+#define UR5_NBX0   12
+#define UR5_NBU    18
 #define UR5_NSBX   0
 #define UR5_NSBU   0
-#define UR5_NSH    0
+#define UR5_NSH    84
 #define UR5_NSH0   0
 #define UR5_NSG    0
 #define UR5_NSPHI  0
@@ -54,19 +54,19 @@
 #define UR5_NSPHIN 0
 #define UR5_NSPHI0 0
 #define UR5_NSBXN  0
-#define UR5_NS     0
+#define UR5_NS     84
 #define UR5_NS0    0
 #define UR5_NSN    0
 #define UR5_NG     0
-#define UR5_NBXN   6
+#define UR5_NBXN   12
 #define UR5_NGN    0
 #define UR5_NY0    0
 #define UR5_NY     0
 #define UR5_NYN    0
-#define UR5_N      20
-#define UR5_NH     19
+#define UR5_N      10
+#define UR5_NH     125
 #define UR5_NHN    0
-#define UR5_NH0    19
+#define UR5_NH0    125
 #define UR5_NPHI0  0
 #define UR5_NPHI   0
 #define UR5_NPHIN  0
@@ -100,7 +100,6 @@ typedef struct UR5_solver_capsule
     external_function_param_casadi *discr_dyn_phi_fun_jac_ut_xt;
 
 
-    external_function_param_casadi *discr_dyn_phi_fun_jac_ut_xt_hess;
 
 
     // cost
@@ -129,13 +128,11 @@ typedef struct UR5_solver_capsule
     // constraints
     external_function_param_casadi *nl_constr_h_fun_jac;
     external_function_param_casadi *nl_constr_h_fun;
-    external_function_param_casadi *nl_constr_h_fun_jac_hess;
 
 
 
     external_function_param_casadi nl_constr_h_0_fun_jac;
     external_function_param_casadi nl_constr_h_0_fun;
-    external_function_param_casadi nl_constr_h_0_fun_jac_hess;
 
 
 

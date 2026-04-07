@@ -3,4 +3,9 @@ install/sim_utils/share/sim_utils/data/Participant_541.csv
 install/sim_utils/share/sim_utils/data/Participant_541.csv
 result_mppi/Participant_541.csv
 **/Participant_541.csv
-**/Participant_541.csv
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

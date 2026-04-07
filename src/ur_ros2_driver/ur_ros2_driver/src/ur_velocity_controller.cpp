@@ -132,7 +132,7 @@ class Ros2Wrapper : public rclcpp::Node
 int main(int argc, char * argv[])
 {
 	bool use_sim_time = false;
-	std::string host = "192.168.1.2";
+	std::string host = "172.17.0.2";
 	std::condition_variable rt_msg_cond_;
 	std::condition_variable msg_cond_;
 	UrRealtimeCommunication* rt_interface_;

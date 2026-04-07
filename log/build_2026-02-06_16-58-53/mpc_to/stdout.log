@@ -1,4 +1,0 @@
-[  9%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver.cpp.o[0m
-[  9%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_UR5.c.o[0m
-[ 18%] [32mBuilding C object CMakeFiles/high_solver.dir/solver_to_high/acados_sim_solver_UR5.c.o[0m
-[ 18%] [32mBuilding CXX object CMakeFiles/high_solver.dir/solver_to_high/acados_solver_holder.cpp.o[0m

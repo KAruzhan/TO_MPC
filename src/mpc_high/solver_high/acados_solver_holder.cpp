@@ -17,9 +17,7 @@ my_NMPC_solver::my_NMPC_solver(int n) {
     }
 }
 
-int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
-    //  double current_human_position[56], 
-     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
+int my_NMPC_solver::solve_my_mpc(double current_joint_position[6], double current_human_position[56], double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]) {
     int status = -1;
     int N = UR5_N;
 

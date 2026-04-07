@@ -1,8 +1,27 @@
 #include "acados_solver_holder.hpp"
 
+namespace {
+
+double wrap_to_pi(double angle)
+{
+    double wrapped = std::fmod(angle + M_PI, 2.0 * M_PI);
+    if (wrapped < 0.0) {
+        wrapped += 2.0 * M_PI;
+    }
+    return wrapped - M_PI;
+}
+
+double nearest_equivalent_angle(double target, double reference)
+{
+    return reference + wrap_to_pi(target - reference);
+}
+
+}
+
 my_NMPC_solver::my_NMPC_solver(int n, int number_of_current_steps_specified) {
     number_of_current_steps = number_of_current_steps_specified;
     num_steps = n; // set number of real-time iterations
+    has_prev_solution = false;
     UR5_solver_capsule * my_acados_ocp_capsule = UR5_acados_create_capsule();
     acados_ocp_capsule = my_acados_ocp_capsule;
     // there is an opportunity to change the number of shooting intervals in C without new code generation
@@ -11,7 +30,7 @@ my_NMPC_solver::my_NMPC_solver(int n, int number_of_current_steps_specified) {
     // allocate the array and fill it accordingly
     double* stemps_array = (double*) malloc(number_of_current_steps * sizeof(double)); // create array of maximum length
     for (int i=0; i<number_of_current_steps; i++) 
-        stemps_array[i] = 0.5;
+        stemps_array[i] = 0.25;
     
     //double* new_time_steps = NULL; need to set array if N steps is changed
     int status = UR5_acados_create_with_discretization(acados_ocp_capsule, N, stemps_array);
@@ -22,11 +41,15 @@ my_NMPC_solver::my_NMPC_solver(int n, int number_of_current_steps_specified) {
         printf("UR5_acados_create() returned status %d. Exiting.\n", status);
         exit(1);
     }
+
+    prev_xtraj = new double[(N + 1) * NX]();
+    prev_utraj = new double[N * NU]();
   }
 
 int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
-    //  double current_joint_velocity[6],
-     double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[22], double my_weights[10], double full_trajectory[140]) {
+    double current_joint_velocity[6],
+    double current_human_position[56],
+    double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[22], double my_weights[10], double *full_trajectory) {
     int status = -1;
     int N = number_of_current_steps;
 
@@ -40,13 +63,14 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
     // initial condition
     int idxbx0[NBX0];
     for (int i = 0; i < NBX0; i++) idxbx0[i] = i;
-    // Set constraints for initial state
+    // Set constraints for initial state (positions and velocities, NBX0=12)
     double lbx0[NBX0] = {0.0};
     double ubx0[NBX0] = {0.0};
-    // NBX0 is 6 in this generated solver: constrain only joint positions at stage 0.
-    for (int i = 0; i < NBX0 && i < 6; i++) {
+    for (int i = 0; i < 6; i++) {
         lbx0[i] = current_joint_position[i];
         ubx0[i] = current_joint_position[i];
+        lbx0[6 + i] = current_joint_velocity[i];
+        ubx0[6 + i] = current_joint_velocity[i];
     }
 
 
@@ -56,20 +80,23 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
     double lbxN[NBXN] = {0.0};
     double ubxN[NBXN] = {0.0};
     for (int i = 0; i < NBXN && i < 6; i++) {
-        lbxN[i] = current_joint_goal[i];
-        ubxN[i] = current_joint_goal[i];
+        const double nearest_goal = nearest_equivalent_angle(
+            current_joint_goal[i], current_joint_position[i]);
+        lbxN[i] = nearest_goal;
+        ubxN[i] = nearest_goal;
     }
 
 
-    // Slacks - no slack variables for pure time optimal cost
-    /*int my_NSH = NH-3;
-    int idxsh[my_NSH];
-    for (int i=0;i<my_NSH;i++) idxsh[i]=i+3; // skiped first 3 constrains and set all other as slack
+    // Human avoidance h-constraints
+    int idxsh[NSH];
+    for (int i=0;i<NSH;i++) idxsh[i]=i+3; // skip first 3 constraints and set all other as slack
     double lh[NH];
     double uh[NH];
     for (int i=0;i<NH;i++) lh[i]=-10e6;
     for (int i=0;i<NH;i++) uh[i]=0.0;
-    printf("*********\n\n %i %i %i\n*********\n\n", NSH, my_NSH, NH);*/
+
+    double Zl[NSH], Zu[NSH], zl[NSH], zu[NSH];
+    for (int i=0;i<NSH;i++) { Zl[i]=0.0; Zu[i]=10000.0; zl[i]=0.0; zu[i]=0.0; }
 
 
     int idxbx_step[NBX];
@@ -86,19 +113,33 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
 
 
     int idxbu[NBU];
-    for (int i=0;i<NBU;i++) idxbu[i] = i; // Fix only omega from 1 to 6 and ddt and slack
-    double lbu[NBU] = {-2.0,-2.0,-2.0,-2.0,-2.0,-2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-    double ubu[NBU] = { 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8};
+    for (int i=0;i<NBU;i++) idxbu[i] = i; 
+    double lbu[NBU] = {-2.0,-2.0,-2.0,-2.0,-2.0,-2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    double ubu[NBU] = { 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8, 10e8};
     
 
-    for (int ii = 0; ii < N; ii++)
+    // Stage 0: NSH0=0, no soft constraints allowed
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "idxbu", idxbu);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "lbu", lbu);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "ubu", ubu);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "lh", lh);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "uh", uh);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "idxbx", idxbx_step);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "lbx", lbx_step);
+    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "ubx", ubx_step);
+
+    for (int ii = 1; ii < N; ii++)
     {
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "idxbu", idxbu);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "lbu", lbu);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "ubu", ubu);
-        //ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "lh", lh);
-        //ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "uh", uh);
-        //ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "idxsh", idxsh);
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "lh", lh);
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "uh", uh);
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "idxsh", idxsh);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, ii, "zl", zl);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, ii, "zu", zu);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, ii, "Zl", Zl);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, ii, "Zu", Zu);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "idxbx", idxbx_step);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "lbx", lbx_step);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, ii, "ubx", ubx_step);
@@ -118,32 +159,26 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
     double x_init[NX]={0.0}; // set all to 0.0, then change the position
     for (int i=0;i<6;i++)  {
         x_init[i] = current_joint_position[i];
-        // x_init[6+i] = current_joint_velocity[i];
+        x_init[6+i] = current_joint_velocity[i];
     }
 
     // initial value for control input
-    double u0[NU] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}; // 6 vels 6 slack
+    double u0[NU] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}; // 6 accel + 6 pos slacks + 6 vel slacks
 
-    // Set parameters
-    // double p[NP] = {0.0};
-    // for (int i = 0; i < 56; i++) p[i] = current_human_position[i];
-    // p[56] = cgoal[0]; p[57] = cgoal[1]; p[58] = cgoal[2];
-    // for (int ii = 0; ii <= N; ii++)
-    // {
-    //     UR5_acados_update_params(acados_ocp_capsule, ii, p, NP);
-    // }
-
-    double gamma = 3.0; //1.6
+    // Set parameters: p[0]=gamma^ii, p[1..6]=joint_goal, p[7..62]=human_spheres, p[63..65]=cgoal
+    double gamma = 3.0;
 
     for (int ii = 0; ii < N; ii++)
     {
-        double w = pow(gamma, ii);
-        double p_stage[NP] = {0.0};
-        p_stage[0] = w;
-        if (NP >= 7)
-        {
-            for (int j = 0; j < 6; j++) p_stage[j + 1] = current_joint_goal[j];
+        double p_stage[NP];
+        for (int j=0;j<NP;j++) p_stage[j]=0.0;
+        p_stage[0] = pow(gamma, ii);
+        for (int j = 0; j < 6; j++) {
+            p_stage[j + 1] = nearest_equivalent_angle(
+                current_joint_goal[j], current_joint_position[j]);
         }
+        for (int j = 0; j < 56; j++) p_stage[j + 7] = current_human_position[j];
+        p_stage[63] = cgoal[0]; p_stage[64] = cgoal[1]; p_stage[65] = cgoal[2];
         UR5_acados_update_params(acados_ocp_capsule, ii, p_stage, NP);
     }
 
@@ -158,24 +193,37 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
     double xtraj[NX * (N+1)];
     double utraj[NU * N];
 
+    // Warm-start or cold-start initialization
+    if (has_prev_solution) {
+        // Shift previous solution by one step: stage k gets prev stage k+1
+        for (int i = 0; i < N - 1; i++) {
+            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "x", &prev_xtraj[(i + 1) * NX]);
+            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "u", &prev_utraj[(i + 1) * NU]);
+        }
+        // Last interval: replicate terminal state/control
+        ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, N - 1, "x", &prev_xtraj[N * NX]);
+        ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, N - 1, "u", &prev_utraj[(N - 1) * NU]);
+        ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, N,     "x", &prev_xtraj[N * NX]);
+    } else {
+        // Cold start on first call
+        for (int i = 0; i < N; i++) {
+            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "x", x_init);
+            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "u", u0);
+        }
+        ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, N, "x", x_init);
+    }
+
     // solve ocp in loop
     int rti_phase = 0;
     double ocp_cost = 0.0;
     for (int ii = 0; ii < NTIMINGS; ii++)
     {
-        // initialize solution
-        for (int i = 0; i < N; i++)
-        {
-            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "x", x_init); 
-            ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "u", u0);
-        }
-        ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, N, "x", x_init);
         ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "rti_phase", &rti_phase);
         status = UR5_acados_solve(acados_ocp_capsule);
         ocp_nlp_get(nlp_config, nlp_solver, "time_tot", &elapsed_time);
         exec_time = exec_time + elapsed_time;
-                
-        ocp_nlp_eval_cost(nlp_solver,nlp_in,nlp_out); 
+
+        ocp_nlp_eval_cost(nlp_solver,nlp_in,nlp_out);
         ocp_nlp_get(nlp_config, nlp_solver,"cost_value", &ocp_cost);
     }
 
@@ -184,6 +232,13 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
         ocp_nlp_out_get(nlp_config, nlp_dims, nlp_out, ii, "x", &xtraj[ii*NX]);
     for (int ii = 0; ii < nlp_dims->N; ii++)
         ocp_nlp_out_get(nlp_config, nlp_dims, nlp_out, ii, "u", &utraj[ii*NU]);
+
+    // Store solution for warm-starting next call
+    for (int ii = 0; ii <= N; ii++)
+        for (int j = 0; j < NX; j++) prev_xtraj[ii*NX + j] = xtraj[ii*NX + j];
+    for (int ii = 0; ii < N; ii++)
+        for (int j = 0; j < NU; j++) prev_utraj[ii*NU + j] = utraj[ii*NU + j];
+    has_prev_solution = true;
     
     //***************************************
     /*results[30] = 0.0; // NaN marker
@@ -228,10 +283,10 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
     for (int i=0;i<6;i++) {
         if (xtraj[i+6]!=xtraj[i+6]) results[15] = 1.0; // x = [theta(6) omega(6)]
         else results[i] = xtraj[i+6];
-        if (xtraj[i+6+12]!=xtraj[i+6+12]) results[15] = 1.0; // second horizon
-        else results[i+6] = xtraj[i+6+12];
+        if (xtraj[i+6+12]!=xtraj[i+6+12]) results[15] = 1.0; // second horizon (x_1)
+        else results[i+6] = xtraj[i+6+NX];
     }
-    // Store first-stage control input u[0..5] for logging (joint accelerations).
+    // Store stage-0 control input u[0..5] so it matches x_1 predicted from (x_0, u_0).
     for (int i = 0; i < 6; i++) {
         if (utraj[i] != utraj[i]) results[15] = 1.0;
         else results[16 + i] = utraj[i];
@@ -239,9 +294,15 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
 
     results[12] = sqp_iter; results[13] = exec_time*1000; results[14] = ocp_cost;
 
-    for (int j=0;j<20;j++) { // here we fix number of steps to pass to low-level controller to 10 instead of 20
-        for (int i=0;i<6;i++) full_trajectory[7*j+i] = xtraj[NX*j+i];
-        full_trajectory[7*j+6] = 0.250;// fixed dt; utraj[NU*j+6];
+    const int vel_offset = 7 * N;
+    const int acc_offset = vel_offset + 6 * N;
+    for (int j = 0; j < N; j++) {
+        for (int i = 0; i < 6; i++) {
+            full_trajectory[7 * j + i] = xtraj[NX * j + i];
+            full_trajectory[vel_offset + 6 * j + i] = xtraj[NX * j + 6 + i];
+            full_trajectory[acc_offset + 6 * j + i] = utraj[NU * j + i];
+        }
+        full_trajectory[7 * j + 6] = 0.250; // fixed dt for exported horizon
     }
 
     //***************************************
@@ -253,6 +314,10 @@ int my_NMPC_solver::solve_my_mpc(double current_joint_position[6],
 
     return status;
   }  // end of 'solve' function
+
+void my_NMPC_solver::reset_warmstart(){
+    has_prev_solution = false;
+}
 
 int my_NMPC_solver::reset_solver(){
     int status = -1;

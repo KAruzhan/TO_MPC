@@ -1,5 +1,0 @@
-[0.039s] Invoking command in '/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chri/CHRI_2025/Time_optimal_baseline/install/sim_utils:/home/chri/CHRI_2025/Time_optimal_baseline/install/pb_ur5_sim:/home/chri/CHRI_2025/Time_optimal_baseline/install/mppi_controller:/opt/ros/humble /usr/bin/cmake --build /home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high -- -j16 -l16
-[0.110s] [35m[1mConsolidate compiler generated dependencies of target high_solver[0m
-[0.150s] [ 10%] [32mBuilding CXX object CMakeFiles/high_solver.dir/src/high_solver1.cpp.o[0m
-[17.486s] [ 20%] [32m[1mLinking CXX executable high_solver[0m
-[18.773s] [100%] Built target high_solver

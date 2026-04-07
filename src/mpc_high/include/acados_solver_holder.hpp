@@ -56,12 +56,16 @@ private:
     int num_steps;
     int number_of_current_steps;
     UR5_solver_capsule *acados_ocp_capsule;
+    bool has_prev_solution;
+    double *prev_xtraj;
+    double *prev_utraj;
 
 public:
     my_NMPC_solver(int n, int number_of_current_steps_specified);
     int solve_my_mpc(double current_joint_position[6],
+        double current_joint_velocity[6], //removed in the 1st version
         // double current_human_position[56], 
-        double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[22], double my_weights[10], double full_trajectory[140]);
+        double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[22], double my_weights[10], double *full_trajectory);
         //double current_joint_goal[6], double tracking_goal[60], double cgoal[3], double results[16], double my_weights[10], double full_trajectory[140]);
     int reset_solver();
 };

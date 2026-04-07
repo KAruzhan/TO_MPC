@@ -12,16 +12,19 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 add_executable(low_solver 
-  src/low_solver.cpp
+  src/low_solver1.cpp #src/low_solver1.cpp
   src/kinematics_functions.cpp
-  solver_low/UR5_model/UR5_expl_ode_fun.c
-  solver_low/UR5_model/UR5_expl_vde_forw.c
-  solver_low/UR5_model/UR5_expl_vde_adj.c
-  solver_low/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c
-  solver_low/UR5_constraints/UR5_constr_h_fun.c
-  solver_low/acados_solver_UR5.c
-  solver_low/acados_sim_solver_UR5.c
-  solver_low/acados_solver_holder.cpp
+  # solver_low/UR5_model/UR5_expl_ode_fun.c #explicit dynamics
+  # solver_low/UR5_model/UR5_expl_vde_forw.c #explicit dynamics
+  # solver_low/UR5_model/UR5_expl_vde_adj.c #explicit dynamics
+  solver_low_disc/UR5_model/UR5_dyn_disc_phi_fun_jac_hess.c
+  solver_low_disc/UR5_model/UR5_dyn_disc_phi_fun_jac.c
+  solver_low_disc/UR5_model/UR5_dyn_disc_phi_fun.c
+  solver_low_disc/UR5_constraints/UR5_constr_h_fun_jac_uxt_zt.c
+  solver_low_disc/UR5_constraints/UR5_constr_h_fun.c
+  solver_low_disc/acados_solver_UR5.c
+  # solver_low_disc/acados_sim_solver_UR5.c #explicit dynamics
+  solver_low_disc/acados_solver_holder.cpp
 )
 target_include_directories(low_solver PUBLIC
   include
@@ -29,7 +32,7 @@ target_include_directories(low_solver PUBLIC
   include/acados_c
   include/blasfeo/include
   include/hpipm/include
-  solver_low/
+  solver_low_disc/
   ${rclcpp_INCLUDE_DIRS}
 )
 link_directories(~/Documents/acados/lib)

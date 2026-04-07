@@ -639,6 +639,12 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     idxbx0[3] = 3;
     idxbx0[4] = 4;
     idxbx0[5] = 5;
+    idxbx0[6] = 6;
+    idxbx0[7] = 7;
+    idxbx0[8] = 8;
+    idxbx0[9] = 9;
+    idxbx0[10] = 10;
+    idxbx0[11] = 11;
 
     double* lubx0 = calloc(2*NBX0, sizeof(double));
     double* lbx0 = lubx0;
@@ -682,18 +688,18 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     double* lbu = lubu;
     double* ubu = lubu + NBU;
     
-    lbu[0] = -2.0;
-    ubu[0] = 2.0;
-    lbu[1] = -2.0;
-    ubu[1] = 2.0;
-    lbu[2] = -2.0;
-    ubu[2] = 2.0;
-    lbu[3] = -2.0;
-    ubu[3] = 2.0;
-    lbu[4] = -2.0;
-    ubu[4] = 2.0;
-    lbu[5] = -2.0;
-    ubu[5] = 2.0;
+    lbu[0] = -2;
+    ubu[0] = 2;
+    lbu[1] = -2;
+    ubu[1] = 2;
+    lbu[2] = -2;
+    ubu[2] = 2;
+    lbu[3] = -2;
+    ubu[3] = 2;
+    lbu[4] = -2;
+    ubu[4] = 2;
+    lbu[5] = -2;
+    ubu[5] = 2;
 
     for (int i = 0; i < N; i++)
     {
@@ -742,18 +748,18 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     ubx[4] = 6.283185307179586;
     lbx[5] = -6.283185307179586;
     ubx[5] = 6.283185307179586;
-    lbx[6] = -10.0;
-    ubx[6] = 10.0;
-    lbx[7] = -10.0;
-    ubx[7] = 10.0;
-    lbx[8] = -10.0;
-    ubx[8] = 10.0;
-    lbx[9] = -10.0;
-    ubx[9] = 10.0;
-    lbx[10] = -10.0;
-    ubx[10] = 10.0;
-    lbx[11] = -10.0;
-    ubx[11] = 10.0;
+    lbx[6] = -10;
+    ubx[6] = 10;
+    lbx[7] = -10;
+    ubx[7] = 10;
+    lbx[8] = -10;
+    ubx[8] = 10;
+    lbx[9] = -10;
+    ubx[9] = 10;
+    lbx[10] = -10;
+    ubx[10] = 10;
+    lbx[11] = -10;
+    ubx[11] = 10;
 
     for (int i = 1; i < N; i++)
     {
@@ -917,7 +923,14 @@ void UR5_acados_create_7_set_nlp_out(UR5_solver_capsule* capsule)
     double* xu0 = calloc(NX+NU, sizeof(double));
     double* x0 = xu0;
 
-    // initialize with zeros
+    // initialize with x0
+    
+    x0[1] = -2.3;
+    x0[2] = -1.1;
+    x0[3] = -1.2;
+    x0[4] = -1.2;
+    x0[5] = 0.5;
+
 
     double* u0 = xu0 + NX;
 

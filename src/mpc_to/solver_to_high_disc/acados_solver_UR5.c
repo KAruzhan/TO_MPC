@@ -149,7 +149,7 @@ void UR5_acados_create_1_set_plan(ocp_nlp_plan_t* nlp_solver_plan, const int N)
 
     nlp_solver_plan->nlp_solver = SQP_RTI;
 
-    nlp_solver_plan->ocp_qp_solver_plan.qp_solver = FULL_CONDENSING_HPIPM;
+    nlp_solver_plan->ocp_qp_solver_plan.qp_solver = PARTIAL_CONDENSING_HPIPM;
 
     nlp_solver_plan->nlp_cost[0] = EXTERNAL;
     for (int i = 1; i < N; i++)
@@ -322,12 +322,10 @@ void UR5_acados_create_3_create_and_set_functions(UR5_solver_capsule* capsule)
         capsule->__CAPSULE_FNC__.casadi_sparsity_in = & __MODEL_BASE_FNC__ ## _sparsity_in; \
         capsule->__CAPSULE_FNC__.casadi_sparsity_out = & __MODEL_BASE_FNC__ ## _sparsity_out; \
         capsule->__CAPSULE_FNC__.casadi_work = & __MODEL_BASE_FNC__ ## _work; \
-        external_function_param_casadi_create(&capsule->__CAPSULE_FNC__ , 7); \
+        external_function_param_casadi_create(&capsule->__CAPSULE_FNC__ , 66); \
     } while(false)
     MAP_CASADI_FNC(nl_constr_h_0_fun_jac, UR5_constr_h_0_fun_jac_uxt_zt);
     MAP_CASADI_FNC(nl_constr_h_0_fun, UR5_constr_h_0_fun);
-    MAP_CASADI_FNC(nl_constr_h_0_fun_jac_hess, UR5_constr_h_0_fun_jac_uxt_zt_hess);
-    
     // constraints.constr_type == "BGH" and dims.nh > 0
     capsule->nl_constr_h_fun_jac = (external_function_param_casadi *) malloc(sizeof(external_function_param_casadi)*(N-1));
     for (int i = 0; i < N-1; i++) {
@@ -336,11 +334,6 @@ void UR5_acados_create_3_create_and_set_functions(UR5_solver_capsule* capsule)
     capsule->nl_constr_h_fun = (external_function_param_casadi *) malloc(sizeof(external_function_param_casadi)*(N-1));
     for (int i = 0; i < N-1; i++) {
         MAP_CASADI_FNC(nl_constr_h_fun[i], UR5_constr_h_fun);
-    }
-    
-    capsule->nl_constr_h_fun_jac_hess = (external_function_param_casadi *) malloc(sizeof(external_function_param_casadi)*(N-1));
-    for (int i = 0; i < N-1; i++) {
-        MAP_CASADI_FNC(nl_constr_h_fun_jac_hess[i], UR5_constr_h_fun_jac_uxt_zt_hess);
     }
     
 
@@ -362,11 +355,6 @@ void UR5_acados_create_3_create_and_set_functions(UR5_solver_capsule* capsule)
   
 
   
-    capsule->discr_dyn_phi_fun_jac_ut_xt_hess = (external_function_param_casadi *) malloc(sizeof(external_function_param_casadi)*N);
-    for (int i = 0; i < N; i++)
-    {
-        MAP_CASADI_FNC(discr_dyn_phi_fun_jac_ut_xt_hess[i], UR5_dyn_disc_phi_fun_jac_hess);
-    }
     // external cost
     MAP_CASADI_FNC(ext_cost_0_fun, UR5_cost_ext_cost_0_fun);
     MAP_CASADI_FNC(ext_cost_0_fun_jac, UR5_cost_ext_cost_0_fun_jac);
@@ -423,12 +411,71 @@ void UR5_acados_create_4_set_default_parameters(UR5_solver_capsule* capsule) {
     // initialize parameters to nominal value
     double* p = calloc(NP, sizeof(double));
     p[0] = 1;
-    p[1] = 3;
+    p[1] = 2;
     p[2] = -1.6;
     p[3] = -1.7;
     p[4] = -1.7;
     p[5] = -1.7;
     p[6] = 1;
+    p[7] = 100;
+    p[8] = -0.5;
+    p[9] = 0.45;
+    p[10] = 0.15;
+    p[11] = 100.0658;
+    p[12] = 0.4526;
+    p[13] = 0.8624;
+    p[14] = 0.25;
+    p[15] = 100.0844;
+    p[16] = 0.7044;
+    p[17] = 0.9207;
+    p[18] = 0.15;
+    p[19] = 100.2083;
+    p[20] = 0.3075;
+    p[21] = 1.0208;
+    p[22] = 0.15;
+    p[23] = 100.0556;
+    p[24] = 0.6289;
+    p[25] = 0.7595;
+    p[26] = 0.15;
+    p[27] = 100.2024;
+    p[28] = 0.2732;
+    p[29] = 0.8478;
+    p[30] = 0.15;
+    p[31] = 100.0267;
+    p[32] = 0.5535;
+    p[33] = 0.5983;
+    p[34] = 0.15;
+    p[35] = 100.1965;
+    p[36] = 0.2389;
+    p[37] = 0.6749;
+    p[38] = 0.15;
+    p[39] = -100.0208;
+    p[40] = 0.3964;
+    p[41] = 0.5857;
+    p[42] = 0.1;
+    p[43] = 100.0546;
+    p[44] = 0.2951;
+    p[45] = 0.6132;
+    p[46] = 0.1;
+    p[47] = -100.1062;
+    p[48] = 0.2444;
+    p[49] = 0.5897;
+    p[50] = 0.13;
+    p[51] = -100.0998;
+    p[52] = 0.3062;
+    p[53] = 0.5387;
+    p[54] = 0.13;
+    p[55] = 100.1908;
+    p[56] = 0.529;
+    p[57] = 1.0016;
+    p[58] = 0.2;
+    p[59] = 100.2106;
+    p[60] = 0.4602;
+    p[61] = 0.6915;
+    p[62] = 0.25;
+    p[63] = 0.4824;
+    p[64] = -0.1737;
+    p[65] = 0.4643;
 
     for (int i = 0; i <= N; i++) {
         UR5_acados_update_params(capsule, i, p, NP);
@@ -462,7 +509,7 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
         UR5_acados_update_time_steps(capsule, N, new_time_steps);
     }
     else
-    {double time_step = 1;
+    {double time_step = 0.25;
         for (int i = 0; i < N; i++)
         {
             ocp_nlp_in_set(nlp_config, nlp_dims, nlp_in, i, "Ts", &time_step);
@@ -478,8 +525,6 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
                                    &capsule->discr_dyn_phi_fun_jac_ut_xt[i]);
         
         
-        ocp_nlp_dynamics_model_set(nlp_config, nlp_dims, nlp_in, i, "disc_dyn_fun_jac_hess",
-                                   &capsule->discr_dyn_phi_fun_jac_ut_xt_hess[i]);
     }
 
     /**** Cost ****/
@@ -504,6 +549,22 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
 
 
 
+    // slacks
+    double* zlumem = calloc(4*NS, sizeof(double));
+    double* Zl = zlumem+NS*0;
+    double* Zu = zlumem+NS*1;
+    double* zl = zlumem+NS*2;
+    double* zu = zlumem+NS*3;
+    // change only the non-zero elements:
+
+    for (int i = 1; i < N; i++)
+    {
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, i, "Zl", Zl);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, i, "Zu", Zu);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, i, "zl", zl);
+        ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, i, "zu", zu);
+    }
+    free(zlumem);
 
 
 
@@ -518,6 +579,12 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     idxbx0[3] = 3;
     idxbx0[4] = 4;
     idxbx0[5] = 5;
+    idxbx0[6] = 6;
+    idxbx0[7] = 7;
+    idxbx0[8] = 8;
+    idxbx0[9] = 9;
+    idxbx0[10] = 10;
+    idxbx0[11] = 11;
 
     double* lubx0 = calloc(2*NBX0, sizeof(double));
     double* lbx0 = lubx0;
@@ -566,14 +633,117 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     lh_0[16] = -1000000000;
     lh_0[17] = -1000000000;
     lh_0[18] = -1000000000;
+    lh_0[19] = -1000000000;
+    lh_0[20] = -1000000000;
+    lh_0[21] = -1000000000;
+    lh_0[22] = -1000000000;
+    lh_0[23] = -1000000000;
+    lh_0[24] = -1000000000;
+    lh_0[25] = -1000000000;
+    lh_0[26] = -1000000000;
+    lh_0[27] = -1000000000;
+    lh_0[28] = -1000000000;
+    lh_0[29] = -1000000000;
+    lh_0[30] = -1000000000;
+    lh_0[31] = -1000000000;
+    lh_0[32] = -1000000000;
+    lh_0[33] = -1000000000;
+    lh_0[34] = -1000000000;
+    lh_0[35] = -1000000000;
+    lh_0[36] = -1000000000;
+    lh_0[37] = -1000000000;
+    lh_0[38] = -1000000000;
+    lh_0[39] = -1000000000;
+    lh_0[40] = -1000000000;
+    lh_0[41] = -1000000000;
+    lh_0[42] = -1000000000;
+    lh_0[43] = -1000000000;
+    lh_0[44] = -1000000000;
+    lh_0[45] = -1000000000;
+    lh_0[46] = -1000000000;
+    lh_0[47] = -1000000000;
+    lh_0[48] = -1000000000;
+    lh_0[49] = -1000000000;
+    lh_0[50] = -1000000000;
+    lh_0[51] = -1000000000;
+    lh_0[52] = -1000000000;
+    lh_0[53] = -1000000000;
+    lh_0[54] = -1000000000;
+    lh_0[55] = -1000000000;
+    lh_0[56] = -1000000000;
+    lh_0[57] = -1000000000;
+    lh_0[58] = -1000000000;
+    lh_0[59] = -1000000000;
+    lh_0[60] = -1000000000;
+    lh_0[61] = -1000000000;
+    lh_0[62] = -1000000000;
+    lh_0[63] = -1000000000;
+    lh_0[64] = -1000000000;
+    lh_0[65] = -1000000000;
+    lh_0[66] = -1000000000;
+    lh_0[67] = -1000000000;
+    lh_0[68] = -1000000000;
+    lh_0[69] = -1000000000;
+    lh_0[70] = -1000000000;
+    lh_0[71] = -1000000000;
+    lh_0[72] = -1000000000;
+    lh_0[73] = -1000000000;
+    lh_0[74] = -1000000000;
+    lh_0[75] = -1000000000;
+    lh_0[76] = -1000000000;
+    lh_0[77] = -1000000000;
+    lh_0[78] = -1000000000;
+    lh_0[79] = -1000000000;
+    lh_0[80] = -1000000000;
+    lh_0[81] = -1000000000;
+    lh_0[82] = -1000000000;
+    lh_0[83] = -1000000000;
+    lh_0[84] = -1000000000;
+    lh_0[85] = -1000000000;
+    lh_0[86] = -1000000000;
+    lh_0[87] = -1000000000;
+    lh_0[88] = -1000000000;
+    lh_0[89] = -1000000000;
+    lh_0[90] = -1000000000;
+    lh_0[91] = -1000000000;
+    lh_0[92] = -1000000000;
+    lh_0[93] = -1000000000;
+    lh_0[94] = -1000000000;
+    lh_0[95] = -1000000000;
+    lh_0[96] = -1000000000;
+    lh_0[97] = -1000000000;
+    lh_0[98] = -1000000000;
+    lh_0[99] = -1000000000;
+    lh_0[100] = -1000000000;
+    lh_0[101] = -1000000000;
+    lh_0[102] = -1000000000;
+    lh_0[103] = -1000000000;
+    lh_0[104] = -1000000000;
+    lh_0[105] = -1000000000;
+    lh_0[106] = -1000000000;
+    lh_0[107] = -1000000000;
+    lh_0[108] = -1000000000;
+    lh_0[109] = -1000000000;
+    lh_0[110] = -1000000000;
+    lh_0[111] = -1000000000;
+    lh_0[112] = -1000000000;
+    lh_0[113] = -1000000000;
+    lh_0[114] = -1000000000;
+    lh_0[115] = -1000000000;
+    lh_0[116] = -1000000000;
+    lh_0[117] = -1000000000;
+    lh_0[118] = -1000000000;
+    lh_0[119] = -1000000000;
+    lh_0[120] = -1000000000;
+    lh_0[121] = -1000000000;
+    lh_0[122] = -1000000000;
+    lh_0[123] = -1000000000;
+    lh_0[124] = -1000000000;
 
     
 
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "nl_constr_h_fun_jac", &capsule->nl_constr_h_0_fun_jac);
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "nl_constr_h_fun", &capsule->nl_constr_h_0_fun);
-    
-    ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "nl_constr_h_fun_jac_hess",
-                                  &capsule->nl_constr_h_0_fun_jac_hess);
     
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "lh", lh_0);
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, 0, "uh", uh_0);
@@ -599,6 +769,12 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     idxbu[9] = 9;
     idxbu[10] = 10;
     idxbu[11] = 11;
+    idxbu[12] = 12;
+    idxbu[13] = 13;
+    idxbu[14] = 14;
+    idxbu[15] = 15;
+    idxbu[16] = 16;
+    idxbu[17] = 17;
     double* lubu = calloc(2*NBU, sizeof(double));
     double* lbu = lubu;
     double* ubu = lubu + NBU;
@@ -621,6 +797,12 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     ubu[9] = 1000000;
     ubu[10] = 1000000;
     ubu[11] = 1000000;
+    ubu[12] = 1000000;
+    ubu[13] = 1000000;
+    ubu[14] = 1000000;
+    ubu[15] = 1000000;
+    ubu[16] = 1000000;
+    ubu[17] = 1000000;
 
     for (int i = 0; i < N; i++)
     {
@@ -634,6 +816,106 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
 
 
 
+    // set up soft bounds for nonlinear constraints
+    int* idxsh = malloc(NSH * sizeof(int));
+    
+    idxsh[0] = 4;
+    idxsh[1] = 5;
+    idxsh[2] = 6;
+    idxsh[3] = 7;
+    idxsh[4] = 8;
+    idxsh[5] = 9;
+    idxsh[6] = 10;
+    idxsh[7] = 11;
+    idxsh[8] = 12;
+    idxsh[9] = 13;
+    idxsh[10] = 14;
+    idxsh[11] = 15;
+    idxsh[12] = 16;
+    idxsh[13] = 17;
+    idxsh[14] = 18;
+    idxsh[15] = 19;
+    idxsh[16] = 20;
+    idxsh[17] = 21;
+    idxsh[18] = 22;
+    idxsh[19] = 23;
+    idxsh[20] = 24;
+    idxsh[21] = 25;
+    idxsh[22] = 26;
+    idxsh[23] = 27;
+    idxsh[24] = 28;
+    idxsh[25] = 29;
+    idxsh[26] = 30;
+    idxsh[27] = 31;
+    idxsh[28] = 32;
+    idxsh[29] = 33;
+    idxsh[30] = 34;
+    idxsh[31] = 35;
+    idxsh[32] = 36;
+    idxsh[33] = 37;
+    idxsh[34] = 38;
+    idxsh[35] = 39;
+    idxsh[36] = 40;
+    idxsh[37] = 41;
+    idxsh[38] = 42;
+    idxsh[39] = 43;
+    idxsh[40] = 44;
+    idxsh[41] = 45;
+    idxsh[42] = 46;
+    idxsh[43] = 47;
+    idxsh[44] = 48;
+    idxsh[45] = 49;
+    idxsh[46] = 50;
+    idxsh[47] = 51;
+    idxsh[48] = 52;
+    idxsh[49] = 53;
+    idxsh[50] = 54;
+    idxsh[51] = 55;
+    idxsh[52] = 56;
+    idxsh[53] = 57;
+    idxsh[54] = 58;
+    idxsh[55] = 59;
+    idxsh[56] = 60;
+    idxsh[57] = 61;
+    idxsh[58] = 62;
+    idxsh[59] = 63;
+    idxsh[60] = 64;
+    idxsh[61] = 65;
+    idxsh[62] = 66;
+    idxsh[63] = 67;
+    idxsh[64] = 68;
+    idxsh[65] = 69;
+    idxsh[66] = 70;
+    idxsh[67] = 71;
+    idxsh[68] = 72;
+    idxsh[69] = 73;
+    idxsh[70] = 74;
+    idxsh[71] = 75;
+    idxsh[72] = 76;
+    idxsh[73] = 77;
+    idxsh[74] = 78;
+    idxsh[75] = 79;
+    idxsh[76] = 80;
+    idxsh[77] = 81;
+    idxsh[78] = 82;
+    idxsh[79] = 83;
+    idxsh[80] = 84;
+    idxsh[81] = 85;
+    idxsh[82] = 86;
+    idxsh[83] = 87;
+    double* lush = calloc(2*NSH, sizeof(double));
+    double* lsh = lush;
+    double* ush = lush + NSH;
+    
+
+    for (int i = 1; i < N; i++)
+    {
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "idxsh", idxsh);
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "lsh", lsh);
+        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "ush", ush);
+    }
+    free(idxsh);
+    free(lush);
 
 
 
@@ -719,6 +1001,112 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     lh[16] = -1000000000;
     lh[17] = -1000000000;
     lh[18] = -1000000000;
+    lh[19] = -1000000000;
+    lh[20] = -1000000000;
+    lh[21] = -1000000000;
+    lh[22] = -1000000000;
+    lh[23] = -1000000000;
+    lh[24] = -1000000000;
+    lh[25] = -1000000000;
+    lh[26] = -1000000000;
+    lh[27] = -1000000000;
+    lh[28] = -1000000000;
+    lh[29] = -1000000000;
+    lh[30] = -1000000000;
+    lh[31] = -1000000000;
+    lh[32] = -1000000000;
+    lh[33] = -1000000000;
+    lh[34] = -1000000000;
+    lh[35] = -1000000000;
+    lh[36] = -1000000000;
+    lh[37] = -1000000000;
+    lh[38] = -1000000000;
+    lh[39] = -1000000000;
+    lh[40] = -1000000000;
+    lh[41] = -1000000000;
+    lh[42] = -1000000000;
+    lh[43] = -1000000000;
+    lh[44] = -1000000000;
+    lh[45] = -1000000000;
+    lh[46] = -1000000000;
+    lh[47] = -1000000000;
+    lh[48] = -1000000000;
+    lh[49] = -1000000000;
+    lh[50] = -1000000000;
+    lh[51] = -1000000000;
+    lh[52] = -1000000000;
+    lh[53] = -1000000000;
+    lh[54] = -1000000000;
+    lh[55] = -1000000000;
+    lh[56] = -1000000000;
+    lh[57] = -1000000000;
+    lh[58] = -1000000000;
+    lh[59] = -1000000000;
+    lh[60] = -1000000000;
+    lh[61] = -1000000000;
+    lh[62] = -1000000000;
+    lh[63] = -1000000000;
+    lh[64] = -1000000000;
+    lh[65] = -1000000000;
+    lh[66] = -1000000000;
+    lh[67] = -1000000000;
+    lh[68] = -1000000000;
+    lh[69] = -1000000000;
+    lh[70] = -1000000000;
+    lh[71] = -1000000000;
+    lh[72] = -1000000000;
+    lh[73] = -1000000000;
+    lh[74] = -1000000000;
+    lh[75] = -1000000000;
+    lh[76] = -1000000000;
+    lh[77] = -1000000000;
+    lh[78] = -1000000000;
+    lh[79] = -1000000000;
+    lh[80] = -1000000000;
+    lh[81] = -1000000000;
+    lh[82] = -1000000000;
+    lh[83] = -1000000000;
+    lh[84] = -1000000000;
+    lh[85] = -1000000000;
+    lh[86] = -1000000000;
+    lh[87] = -1000000000;
+    lh[88] = -1000000000;
+    lh[89] = -1000000000;
+    lh[90] = -1000000000;
+    lh[91] = -1000000000;
+    lh[92] = -1000000000;
+    lh[93] = -1000000000;
+    lh[94] = -1000000000;
+    lh[95] = -1000000000;
+    lh[96] = -1000000000;
+    lh[97] = -1000000000;
+    lh[98] = -1000000000;
+    lh[99] = -1000000000;
+    lh[100] = -1000000000;
+    lh[101] = -1000000000;
+    lh[102] = -1000000000;
+    lh[103] = -1000000000;
+    lh[104] = -1000000000;
+    lh[105] = -1000000000;
+    lh[106] = -1000000000;
+    lh[107] = -1000000000;
+    lh[108] = -1000000000;
+    lh[109] = -1000000000;
+    lh[110] = -1000000000;
+    lh[111] = -1000000000;
+    lh[112] = -1000000000;
+    lh[113] = -1000000000;
+    lh[114] = -1000000000;
+    lh[115] = -1000000000;
+    lh[116] = -1000000000;
+    lh[117] = -1000000000;
+    lh[118] = -1000000000;
+    lh[119] = -1000000000;
+    lh[120] = -1000000000;
+    lh[121] = -1000000000;
+    lh[122] = -1000000000;
+    lh[123] = -1000000000;
+    lh[124] = -1000000000;
 
     
 
@@ -728,9 +1116,6 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
                                       &capsule->nl_constr_h_fun_jac[i-1]);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "nl_constr_h_fun",
                                       &capsule->nl_constr_h_fun[i-1]);
-        
-        ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i,
-                                      "nl_constr_h_fun_jac_hess", &capsule->nl_constr_h_fun_jac_hess[i-1]);
         
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "lh", lh);
         ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, i, "uh", uh);
@@ -751,12 +1136,18 @@ void UR5_acados_create_5_set_nlp_in(UR5_solver_capsule* capsule, const int N, do
     idxbx_e[3] = 3;
     idxbx_e[4] = 4;
     idxbx_e[5] = 5;
+    idxbx_e[6] = 6;
+    idxbx_e[7] = 7;
+    idxbx_e[8] = 8;
+    idxbx_e[9] = 9;
+    idxbx_e[10] = 10;
+    idxbx_e[11] = 11;
     double* lubx_e = calloc(2*NBXN, sizeof(double));
     double* lbx_e = lubx_e;
     double* ubx_e = lubx_e + NBXN;
     
-    lbx_e[0] = 3;
-    ubx_e[0] = 3;
+    lbx_e[0] = 2;
+    ubx_e[0] = 2;
     lbx_e[1] = -1.6;
     ubx_e[1] = -1.6;
     lbx_e[2] = -1.7;
@@ -800,18 +1191,7 @@ void UR5_acados_create_6_set_opts(UR5_solver_capsule* capsule)
     *  opts
     ************************************************/
 
-
-    int nlp_solver_exact_hessian = 1;
-    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "exact_hess", &nlp_solver_exact_hessian);
-
-    int exact_hess_dyn = 1;
-    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "exact_hess_dyn", &exact_hess_dyn);
-
-    int exact_hess_cost = 1;
-    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "exact_hess_cost", &exact_hess_cost);
-
-    int exact_hess_constr = 1;
-    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "exact_hess_constr", &exact_hess_constr);int fixed_hess = 0;
+int fixed_hess = 0;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "fixed_hess", &fixed_hess);
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "globalization", "fixed_step");int with_solution_sens_wrt_params = false;
     ocp_nlp_solver_opts_set(nlp_config, capsule->nlp_opts, "with_solution_sens_wrt_params", &with_solution_sens_wrt_params);
@@ -829,8 +1209,11 @@ void UR5_acados_create_6_set_opts(UR5_solver_capsule* capsule)
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "levenberg_marquardt", &levenberg_marquardt);
 
     /* options QP solver */
+    int qp_solver_cond_N;const int qp_solver_cond_N_ori = 5;
+    qp_solver_cond_N = N < qp_solver_cond_N_ori ? N : qp_solver_cond_N_ori; // use the minimum value here
+    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "qp_cond_N", &qp_solver_cond_N);
 
-    int nlp_solver_ext_qp_res = 1;
+    int nlp_solver_ext_qp_res = 0;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "ext_qp_res", &nlp_solver_ext_qp_res);
     // set HPIPM mode: should be done before setting other QP solver options
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "qp_hpipm_mode", "BALANCE");
@@ -845,7 +1228,7 @@ void UR5_acados_create_6_set_opts(UR5_solver_capsule* capsule)
     int rti_log_residuals = 0;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "rti_log_residuals", &rti_log_residuals);
 
-    int qp_solver_iter_max = 50;
+    int qp_solver_iter_max = 20;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "qp_iter_max", &qp_solver_iter_max);
 
 
@@ -854,6 +1237,12 @@ void UR5_acados_create_6_set_opts(UR5_solver_capsule* capsule)
 
     int print_level = 0;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "print_level", &print_level);
+    int qp_solver_cond_ric_alg = 1;
+    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "qp_cond_ric_alg", &qp_solver_cond_ric_alg);
+
+    int qp_solver_ric_alg = 1;
+    ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "qp_ric_alg", &qp_solver_ric_alg);
+
 
     int ext_cost_num_hess = 0;
     for (int i = 0; i < N; i++)
@@ -881,7 +1270,14 @@ void UR5_acados_create_7_set_nlp_out(UR5_solver_capsule* capsule)
     double* xu0 = calloc(NX+NU, sizeof(double));
     double* x0 = xu0;
 
-    // initialize with zeros
+    // initialize with x0
+    
+    x0[1] = -2.3;
+    x0[2] = -1.1;
+    x0[3] = -1.2;
+    x0[4] = -1.2;
+    x0[5] = 0.5;
+
 
     double* u0 = xu0 + NX;
 
@@ -976,9 +1372,22 @@ int UR5_acados_create_with_discretization(UR5_solver_capsule* capsule, int N, do
  */
 int UR5_acados_update_qp_solver_cond_N(UR5_solver_capsule* capsule, int qp_solver_cond_N)
 {
-    printf("\nacados_update_qp_solver_cond_N() not implemented, since no partial condensing solver is used!\n\n");
-    exit(1);
-    return -1;
+    // 1) destroy solver
+    ocp_nlp_solver_destroy(capsule->nlp_solver);
+
+    // 2) set new value for "qp_cond_N"
+    const int N = capsule->nlp_solver_plan->N;
+    if(qp_solver_cond_N > N)
+        printf("Warning: qp_solver_cond_N = %d > N = %d\n", qp_solver_cond_N, N);
+    ocp_nlp_solver_opts_set(capsule->nlp_config, capsule->nlp_opts, "qp_cond_N", &qp_solver_cond_N);
+
+    // 3) continue with the remaining steps from UR5_acados_create_with_discretization(...):
+    // -> 8) create solver
+    capsule->nlp_solver = ocp_nlp_solver_create(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_opts);
+
+    // -> 9) do precomputations
+    int status = UR5_acados_create_9_precompute(capsule);
+    return status;
 }
 
 
@@ -1010,6 +1419,14 @@ int UR5_acados_reset(UR5_solver_capsule* capsule, int reset_qp_solver_mem)
             ocp_nlp_out_set(nlp_config, nlp_dims, nlp_out, i, "pi", buffer);
         }
     }
+    // get qp_status: if NaN -> reset memory
+    int qp_status;
+    ocp_nlp_get(capsule->nlp_config, capsule->nlp_solver, "qp_status", &qp_status);
+    if (reset_qp_solver_mem || (qp_status == 3))
+    {
+        // printf("\nin reset qp_status %d -> resetting QP memory\n", qp_status);
+        ocp_nlp_solver_reset_qp_memory(nlp_solver, nlp_in, nlp_out);
+    }
 
     free(buffer);
     return 0;
@@ -1022,7 +1439,7 @@ int UR5_acados_update_params(UR5_solver_capsule* capsule, int stage, double *p, 
 {
     int solver_status = 0;
 
-    int casadi_np = 7;
+    int casadi_np = 66;
     if (casadi_np != np) {
         printf("acados_update_params: trying to set %i parameters for external functions."
             " External function has %i parameters. Exiting.\n", np, casadi_np);
@@ -1036,20 +1453,17 @@ int UR5_acados_update_params(UR5_solver_capsule* capsule, int stage, double *p, 
         capsule->discr_dyn_phi_fun_jac_ut_xt[stage].set_param(capsule->discr_dyn_phi_fun_jac_ut_xt+stage, p);
         
         
-        capsule->discr_dyn_phi_fun_jac_ut_xt_hess[stage].set_param(capsule->discr_dyn_phi_fun_jac_ut_xt_hess+stage, p);
 
         // constraints
         if (stage == 0)
         {
             capsule->nl_constr_h_0_fun_jac.set_param(&capsule->nl_constr_h_0_fun_jac, p);
             capsule->nl_constr_h_0_fun.set_param(&capsule->nl_constr_h_0_fun, p);
-            capsule->nl_constr_h_0_fun_jac_hess.set_param(&capsule->nl_constr_h_0_fun_jac_hess, p);
         }
         else
         {
             capsule->nl_constr_h_fun_jac[stage-1].set_param(capsule->nl_constr_h_fun_jac+stage-1, p);
             capsule->nl_constr_h_fun[stage-1].set_param(capsule->nl_constr_h_fun+stage-1, p);
-            capsule->nl_constr_h_fun_jac_hess[stage-1].set_param(capsule->nl_constr_h_fun_jac_hess+stage-1, p);
         }
 
         // cost
@@ -1091,7 +1505,7 @@ int UR5_acados_update_params_sparse(UR5_solver_capsule * capsule, int stage, int
 {
     int solver_status = 0;
 
-    int casadi_np = 7;
+    int casadi_np = 66;
     if (casadi_np < n_update) {
         printf("UR5_acados_update_params_sparse: trying to set %d parameters for external functions."
             " External function has %d parameters. Exiting.\n", n_update, casadi_np);
@@ -1113,20 +1527,17 @@ int UR5_acados_update_params_sparse(UR5_solver_capsule * capsule, int stage, int
         capsule->discr_dyn_phi_fun_jac_ut_xt[stage].set_param_sparse(capsule->discr_dyn_phi_fun_jac_ut_xt+stage, n_update, idx, p);
         
         
-        capsule->discr_dyn_phi_fun_jac_ut_xt_hess[stage].set_param_sparse(capsule->discr_dyn_phi_fun_jac_ut_xt_hess+stage, n_update, idx, p);
 
         // constraints
         if (stage == 0)
         {
             capsule->nl_constr_h_0_fun_jac.set_param_sparse(&capsule->nl_constr_h_0_fun_jac, n_update, idx, p);
             capsule->nl_constr_h_0_fun.set_param_sparse(&capsule->nl_constr_h_0_fun, n_update, idx, p);
-            capsule->nl_constr_h_0_fun_jac_hess.set_param_sparse(&capsule->nl_constr_h_0_fun_jac_hess, n_update, idx, p);
         }
         else
         {
             capsule->nl_constr_h_fun_jac[stage-1].set_param_sparse(capsule->nl_constr_h_fun_jac+stage-1, n_update, idx, p);
             capsule->nl_constr_h_fun[stage-1].set_param_sparse(capsule->nl_constr_h_fun+stage-1, n_update, idx, p);
-            capsule->nl_constr_h_fun_jac_hess[stage-1].set_param_sparse(capsule->nl_constr_h_fun_jac_hess+stage-1, n_update, idx, p);
         }
 
         // cost
@@ -1208,13 +1619,11 @@ int UR5_acados_free(UR5_solver_capsule* capsule)
         external_function_param_casadi_free(&capsule->discr_dyn_phi_fun_jac_ut_xt[i]);
         
         
-        external_function_param_casadi_free(&capsule->discr_dyn_phi_fun_jac_ut_xt_hess[i]);
     }
     free(capsule->discr_dyn_phi_fun);
     free(capsule->discr_dyn_phi_fun_jac_ut_xt);
   
   
-    free(capsule->discr_dyn_phi_fun_jac_ut_xt_hess);
 
     // cost
     external_function_param_casadi_free(&capsule->ext_cost_0_fun);
@@ -1244,14 +1653,11 @@ int UR5_acados_free(UR5_solver_capsule* capsule)
     {
         external_function_param_casadi_free(&capsule->nl_constr_h_fun_jac[i]);
         external_function_param_casadi_free(&capsule->nl_constr_h_fun[i]);
-        external_function_param_casadi_free(&capsule->nl_constr_h_fun_jac_hess[i]);
     }
     free(capsule->nl_constr_h_fun_jac);
     free(capsule->nl_constr_h_fun);
-    free(capsule->nl_constr_h_fun_jac_hess);
     external_function_param_casadi_free(&capsule->nl_constr_h_0_fun_jac);
     external_function_param_casadi_free(&capsule->nl_constr_h_0_fun);
-    external_function_param_casadi_free(&capsule->nl_constr_h_0_fun_jac_hess);
 
     return 0;
 }

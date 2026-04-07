@@ -1,1 +1,0 @@
-/home/chri/CHRI_2025/Time_optimal_baseline/build/mpc_high/ament_cmake_core/mpc_highConfig-version.cmake
